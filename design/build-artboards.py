@@ -157,7 +157,7 @@ class Component extends DCLogic {{
 </body>
 </html>
 """
-    (ROOT / f"{name}.dc.html").write_text(dc)
+    (ROOT / "design/canvas" / f"{name}.dc.html").write_text(dc)
 
     # preview renders the English strings literally so a browser screenshot is accurate
     prev = body

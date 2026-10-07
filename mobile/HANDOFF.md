@@ -122,7 +122,7 @@ opens?" — rather than about notifications in the abstract.
 Walked end to end by `funnel.js`, which also checks the account step can be skipped
 and that no credential field ever appears.
 
-**The art is in.** Both screens carry generated explainers (`design/img-brief4.md`
+**The art is in.** Both screens carry generated explainers (`design/briefs/image-4.md`
 was the brief): a top-down neighbourhood with courts, pins and radius rings on the
 place step, and players behind a shield with the things you would be saving on the
 account step.

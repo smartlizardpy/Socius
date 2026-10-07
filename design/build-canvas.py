@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Rebuild avenza-mobile-app.html — the design canvas published as an artifact.
+"""Rebuild socius-mobile-app.html — the design canvas published as an artifact.
 
 The canvas page carries its own editable state: one <script type="application/json"
 id="appifact-doc"> block holding the title, every .dc.html artboard, canvas.json and
 the images they reference. The editor code around it comes from the artifact runtime
 and is never regenerated here — it is copied from whatever version is live.
 
-    python3 design/build-artboards.py --default-en     # design/src/*.body.html -> *.dc.html
-    python3 design/build-canvas.py <live-page.html>    # *.dc.html + canvas.json -> the bundle
+    python3 design/build-artboards.py --default-en     # design/src/*.body.html -> canvas/*.dc.html
+    python3 design/build-canvas.py <live-page.html>    # design/canvas/*.dc.html + canvas.json -> the bundle
 
 <live-page.html> is the artifact as served (Artifact action:"read" saves one). Its frame
 runtime prelude and closing wrapper are stripped so the shell is the published source and
@@ -20,7 +20,8 @@ import base64, json, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 IMG = ROOT / "design/assets/img"
-OUT = ROOT / "avenza-mobile-app.html"
+CANVAS = ROOT / "design/canvas"
+OUT = CANVAS / "socius-mobile-app.html"
 TITLE = "Avenza Mobile App"
 
 DOC_RE = re.compile(r'(<script[^>]*id="appifact-doc"[^>]*>)(.*?)(</script>)', re.S)
@@ -64,9 +65,9 @@ def shell(source: pathlib.Path) -> str:
 def files() -> dict:
     """Every artboard, the layout, and only the images they ask for."""
     out = {}
-    for dc in sorted(ROOT.glob("*.dc.html")):
+    for dc in sorted(CANVAS.glob("*.dc.html")):
         out[dc.name] = dc.read_text()
-    out["canvas.json"] = (ROOT / "canvas.json").read_text()
+    out["canvas.json"] = (CANVAS / "canvas.json").read_text()
 
     placed = {a["file"] for a in json.loads(out["canvas.json"])["artboards"]}
     missing = placed - set(out)

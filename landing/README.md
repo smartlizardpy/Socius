@@ -76,7 +76,7 @@ height and crops back. Without that the bottom 88px of every screen goes missing
 **Illustrations** (`illo/`) — GPT-Image via the Codex CLI, same route as the app's art:
 
 ```sh
-cd .. && codex exec --sandbox workspace-write --skip-git-repo-check - < design/landing/brief-a.md
+cd .. && codex exec --sandbox workspace-write --skip-git-repo-check - < design/briefs/landing-a.md
 python3 design/landing/trim.py landing/src/assets/illo/land-*.png
 ```
 

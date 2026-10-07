@@ -16,7 +16,7 @@ Raw material on disk: `raw_tr.json` · `core_tr.json` · `findings.json` · `pal
 **The trust layer is misdirected, not wrong. It cannot be an acquisition story, because it does
 not exist at install — and Avenza already ships the mechanism that does work.**
 
-`design/expo-brief.md` stakes the product on one sentence:
+`design/briefs/expo-app.md` stakes the product on one sentence:
 
 > *"The trust layer is the differentiator. Nobody else knows whether the stranger you matched
 > with will actually turn up, or is really the level they claim."*
