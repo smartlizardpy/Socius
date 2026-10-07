@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { color, radius, gutter, motion } from '../../theme';
-import { Icon, type IconName } from '../../Icon';
+import { Icon, type IconName } from '../Icon';
 import { Txt } from '../Txt';
 import { Animated, landSpring, ease, useSharedValue, useAnimatedStyle, useReducedMotion, withSpring, withTiming } from '../motion';
 

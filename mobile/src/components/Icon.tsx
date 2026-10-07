@@ -1,7 +1,7 @@
 import React from 'react';
 import Svg, { Path } from 'react-native-svg';
-import { ICON_PATHS, type IconName } from './icons.gen';
-import { color as tokens } from './theme';
+import { ICON_PATHS, type IconName } from '../generated/icons.gen';
+import { color as tokens } from '../theme';
 
 export type { IconName };
 

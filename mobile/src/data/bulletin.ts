@@ -4,7 +4,7 @@ import { useStore } from '../store';
 import { useAllActivities } from './activities';
 import { courses, eligible, img, sportFilters, type SportKey } from './seed';
 import { venueId } from './venues';
-import { NEWS_IMAGES } from '../news-images.gen';
+import { NEWS_IMAGES } from '../generated/news-images.gen';
 import raw from './bulletin.json';
 import adsRaw from './ads.json';
 import world from './bulletin.world.json';

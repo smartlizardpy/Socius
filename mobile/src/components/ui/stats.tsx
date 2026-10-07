@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { View, Pressable, StyleSheet, type StyleProp, type ViewStyle } from 'react-native';
 import { withSequence } from 'react-native-reanimated';
 import { color, gutter } from '../../theme';
-import { Icon } from '../../Icon';
+import { Icon } from '../Icon';
 import { Txt, SectionHead } from '../Txt';
 import { Animated, ease, useSharedValue, useAnimatedStyle, useReducedMotion, withSpring, withTiming } from '../motion';
 import * as Haptics from 'expo-haptics';

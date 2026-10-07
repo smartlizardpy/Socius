@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import * as Location from 'expo-location';
 
-import { nearbySemts, nearestSemt, OUT_OF_TOWN_KM } from './data/semts';
+import { nearbySemts, nearestSemt, OUT_OF_TOWN_KM } from '../data/semts';
 
 /**
  * What the fix was and what was done with it, in the Metro console.

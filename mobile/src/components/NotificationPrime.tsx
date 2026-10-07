@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 
 import { color, gutter, radius } from '../theme';
-import { Icon } from '../Icon';
+import { Icon } from './Icon';
 import { Txt } from './Txt';
 import { GhostButton, PrimaryButton, Sheet } from './ui';
 import { useI18n } from '../i18n';

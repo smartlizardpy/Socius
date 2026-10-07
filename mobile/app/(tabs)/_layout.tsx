@@ -5,7 +5,7 @@ import type { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { color, radius, tabBarHeight } from '../../src/theme';
-import { Icon, type IconName } from '../../src/Icon';
+import { Icon, type IconName } from '../../src/components/Icon';
 import { Txt } from '../../src/components/Txt';
 import { PressScale } from '../../src/components/motion';
 import { useI18n } from '../../src/i18n';

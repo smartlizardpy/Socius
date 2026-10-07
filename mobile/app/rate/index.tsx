@@ -5,7 +5,7 @@ import * as Haptics from 'expo-haptics';
 import { withSequence } from 'react-native-reanimated';
 
 import { color, radius, gutter, motion } from '../../src/theme';
-import { Icon } from '../../src/Icon';
+import { Icon } from '../../src/components/Icon';
 import { Txt, SectionHead } from '../../src/components/Txt';
 import {
   PrimaryButton,

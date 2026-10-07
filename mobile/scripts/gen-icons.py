@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Generate src/icons.gen.ts from design/assets/icons/*.svg (Phosphor, 0 0 256 256)."""
+"""Generate src/generated/icons.gen.ts from design/assets/icons/*.svg (Phosphor, 0 0 256 256)."""
 import re, pathlib, json
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 ICONS = ROOT / "design/assets/icons"
-OUT = ROOT / "mobile/src/icons.gen.ts"
+OUT = ROOT / "mobile/src/generated/icons.gen.ts"
 
 path_re = re.compile(r'<path fill="currentColor" d="([^"]*)"')
 

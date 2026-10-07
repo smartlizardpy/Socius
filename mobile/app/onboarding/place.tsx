@@ -3,7 +3,7 @@ import { View, Image, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import { color, radius, gutter } from '../../src/theme';
-import { Icon, type IconName } from '../../src/Icon';
+import { Icon, type IconName } from '../../src/components/Icon';
 import { Txt, SectionHead } from '../../src/components/Txt';
 import {
   PrimaryButton,
@@ -20,7 +20,7 @@ import { useStore } from '../../src/store';
 import { useAllActivities } from '../../src/data/activities';
 import { cities, eligible, img } from '../../src/data/seed';
 import { covered, semts } from '../../src/data/semts';
-import { useDeviceSemt, type SemtState } from '../../src/location';
+import { useDeviceSemt, type SemtState } from '../../src/lib/location';
 
 const RADII = [2, 5, 10];
 

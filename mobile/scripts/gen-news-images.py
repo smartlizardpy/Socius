@@ -18,7 +18,7 @@ from PIL import Image
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 SRC = ROOT / "design/assets/news"
 DST = ROOT / "mobile/assets/news"
-OUT = ROOT / "mobile/src/news-images.gen.ts"
+OUT = ROOT / "mobile/src/generated/news-images.gen.ts"
 
 WIDE = 700   # 350pt story hero at 2x
 MIN_W = 400  # anything narrower than this is not worth showing
@@ -58,7 +58,7 @@ lines = [
     "export const NEWS_IMAGES: Record<string, ImageSourcePropType> = {",
 ]
 for stem in entries:
-    lines.append(f"  {stem!r}: require('../assets/news/{stem}.jpg'),".replace("'", '"', 2))
+    lines.append(f"  {stem!r}: require('../../assets/news/{stem}.jpg'),".replace("'", '"', 2))
 lines += ["};", ""]
 OUT.write_text("\n".join(lines))
 

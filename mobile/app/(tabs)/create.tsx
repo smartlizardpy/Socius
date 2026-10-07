@@ -3,7 +3,7 @@ import { View, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import { color, radius, gutter } from '../../src/theme';
-import { Icon } from '../../src/Icon';
+import { Icon } from '../../src/components/Icon';
 import { Txt, SectionHead } from '../../src/components/Txt';
 import {
   RoundButton,

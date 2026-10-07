@@ -3,7 +3,7 @@ import { View, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import { color, radius, gutter } from '../theme';
-import { Icon } from '../Icon';
+import { Icon } from './Icon';
 import { Txt, SectionHead } from './Txt';
 import {
   Avatar,

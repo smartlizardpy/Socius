@@ -3,7 +3,7 @@ import { View, Image, ScrollView } from 'react-native';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 
 import { color, gutter } from '../../src/theme';
-import { Icon } from '../../src/Icon';
+import { Icon } from '../../src/components/Icon';
 import { Txt } from '../../src/components/Txt';
 import { GhostButton, PrimaryButton, RoundButton, useTopPad } from '../../src/components/ui';
 import { GoogleG } from '../../src/components/GoogleG';

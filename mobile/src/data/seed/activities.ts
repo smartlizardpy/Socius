@@ -1,5 +1,5 @@
 import type { ImageSourcePropType } from 'react-native';
-import type { IconName } from '../../Icon';
+import type { IconName } from '../../components/Icon';
 import { img } from './images';
 import { PersonId } from './people';
 

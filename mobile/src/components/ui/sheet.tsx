@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Modal, Pressable, ScrollView } from 'react-native';
 import { color, radius, gutter } from '../../theme';
-import { Icon } from '../../Icon';
+import { Icon } from '../Icon';
 import { Txt } from '../Txt';
 import { PressScale, Swap } from '../motion';
 import * as Haptics from 'expo-haptics';

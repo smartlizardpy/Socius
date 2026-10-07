@@ -2,7 +2,7 @@ import React from 'react';
 import { View, type StyleProp, type ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { color, gutter, tabBarHeight } from '../../theme';
-import { type IconName } from '../../Icon';
+import { type IconName } from '../Icon';
 import { Txt } from '../Txt';
 import { RoundButton } from './buttons';
 

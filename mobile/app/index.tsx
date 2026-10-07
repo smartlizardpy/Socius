@@ -3,7 +3,7 @@ import { View, Image, Pressable, useWindowDimensions } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import { color, radius, gutter, blueGlow } from '../src/theme';
-import { Icon } from '../src/Icon';
+import { Icon } from '../src/components/Icon';
 import { Txt } from '../src/components/Txt';
 import { PrimaryButton, Avatar, BottomBar, useTopPad } from '../src/components/ui';
 import { PressScale } from '../src/components/motion';

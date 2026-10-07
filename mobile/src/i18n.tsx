@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useCallback, useMemo } from 'react';
-import { TR } from './strings.gen';
+import { TR } from './generated/strings.gen';
 import { useStore } from './store';
 
 export type Lang = 'en' | 'tr';

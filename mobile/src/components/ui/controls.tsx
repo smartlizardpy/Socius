@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { View, Pressable } from 'react-native';
 import { color, radius } from '../../theme';
-import { Icon } from '../../Icon';
+import { Icon } from '../Icon';
 import { Txt } from '../Txt';
 import { Animated, PressScale, useSharedValue, useAnimatedStyle, useReducedMotion, withSpring } from '../motion';
 

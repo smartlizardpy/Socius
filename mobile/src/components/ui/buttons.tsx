@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, type StyleProp, type ViewStyle } from 'react-native';
 import { color, radius, blueGlow } from '../../theme';
-import { Icon, type IconName } from '../../Icon';
+import { Icon, type IconName } from '../Icon';
 import { Txt } from '../Txt';
 import { PressScale } from '../motion';
 

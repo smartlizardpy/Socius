@@ -3,7 +3,7 @@ import { View, Image, ScrollView, Linking } from 'react-native';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 
 import { color, radius, gutter } from '../../src/theme';
-import { Icon, type IconName } from '../../src/Icon';
+import { Icon, type IconName } from '../../src/components/Icon';
 import { Txt, SectionHead } from '../../src/components/Txt';
 import { RoundButton, GhostButton, EmptyState, Toast, useToast, useTopPad } from '../../src/components/ui';
 import { EnterUp, PressScale } from '../../src/components/motion';

@@ -1,6 +1,6 @@
 import { View, Image, type StyleProp, type ImageStyle, type ImageSourcePropType } from 'react-native';
 import { color, radius } from '../../theme';
-import { Icon } from '../../Icon';
+import { Icon } from '../Icon';
 
 /* ---------------------------------------------------------------- avatars -- */
 

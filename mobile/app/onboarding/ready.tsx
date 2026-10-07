@@ -3,7 +3,7 @@ import { View, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import { color, gutter } from '../../src/theme';
-import { Icon } from '../../src/Icon';
+import { Icon } from '../../src/components/Icon';
 import { Txt, SectionHead } from '../../src/components/Txt';
 import { PrimaryButton, ProgressSteps, BottomBar, useTopPad } from '../../src/components/ui';
 import { EnterUp } from '../../src/components/motion';

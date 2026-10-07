@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { color, radius, gutter, elevation } from '../../src/theme';
-import { Icon } from '../../src/Icon';
+import { Icon } from '../../src/components/Icon';
 import { Txt, SectionHead } from '../../src/components/Txt';
 import { RoundButton, EmptyState, useTopPad } from '../../src/components/ui';
 import { EnterUp, PressScale } from '../../src/components/motion';

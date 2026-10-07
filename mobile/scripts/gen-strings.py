@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Generate src/strings.gen.ts from design/strings.json (flat English -> Turkish)."""
+"""Generate src/generated/strings.gen.ts from design/strings.json (flat English -> Turkish)."""
 import json, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 SRC = ROOT / "design/strings.json"
-OUT = ROOT / "mobile/src/strings.gen.ts"
+OUT = ROOT / "mobile/src/generated/strings.gen.ts"
 
 data = json.loads(SRC.read_text())
 lines = [
