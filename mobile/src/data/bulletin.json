@@ -1,5 +1,5 @@
 {
-  "_comment": "The bulletin feed. Two sources of truth in one ranked list: scope 'local' items are written from Avenza's own data (venues, host tournaments, court prices, leagues) and can end in a game; scope 'world' items come from the news feed, are summarised, credited and link out. A feed job rewrites the 'world' entries and leaves 'local' alone. An item may name a venue or an activityId; the story's foot card is chosen from whichever it has.",
+  "_comment": "The bulletin feed. Two sources of truth in one ranked list: scope 'local' items are written from Socius's own data (venues, host tournaments, court prices, leagues) and can end in a game; scope 'world' items come from the news feed, are summarised, credited and link out. A feed job rewrites the 'world' entries and leaves 'local' alone. An item may name a venue or an activityId; the story's foot card is chosen from whichever it has.",
   "edition": "2026-08-28",
   "dateLine": {
     "en": "FRIDAY 28 AUGUST",

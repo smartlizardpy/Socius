@@ -1,4 +1,4 @@
-# Illustration commission 2 — Avenza onboarding
+# Illustration commission 2 — Socius onboarding
 
 Write flat vector SVG illustrations into `design/assets/illustrations/`. Do not modify any
 other file. No network commands, no installs.

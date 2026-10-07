@@ -12,7 +12,7 @@ those three: same hand, same weight of shape, same flat vector language, same ge
 ground, same palette balance. They are for the marketing website of the same app, drawn much
 wider and much larger than the phone panels, so they carry more scene — but the same drawing.
 
-Avenza is how people in an Istanbul neighbourhood find other people to play sport with: padel,
+Socius is how people in an Istanbul neighbourhood find other people to play sport with: padel,
 football, tennis, running. Level-matched, ten minutes away, tonight.
 
 ## Background — read this first, previous attempts failed here

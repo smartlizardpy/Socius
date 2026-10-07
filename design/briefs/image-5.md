@@ -2,7 +2,7 @@ Use your image_gen tool to generate TWO illustrations into `design/assets/gen/`,
 existing files. Do not draw anything programmatically, do not modify any other file, no network
 commands, no installs.
 
-These are hero illustrations for two onboarding screens in a sports app called Avenza. Look at
+These are hero illustrations for two onboarding screens in a sports app called Socius. Look at
 `design/assets/gen/hero.png` and `celebrate.png` first — the new pair must read as obvious
 siblings of those.
 

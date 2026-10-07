@@ -17,7 +17,7 @@
  * Centroids are approximate to a few hundred metres, which is all a
  * nearest-match needs. Kadıköy and the shore east of it are dense because that
  * is where the games are; the rest of the city is one point per ilçe, enough to
- * name where somebody is and to know it is not somewhere Avenza covers yet.
+ * name where somebody is and to know it is not somewhere Socius covers yet.
  */
 
 export type Semt = {
@@ -143,7 +143,7 @@ export function nearbySemts(lat: number, lon: number, n = 3) {
 export const OUT_OF_TOWN_KM = 25;
 
 /**
- * Where Avenza actually has games, as a point and a radius.
+ * Where Socius actually has games, as a point and a radius.
  *
  * The seeded venues run from Moda to Ataşehir along the Anatolian shore. This
  * is what decides whether a detected semt gets a game count or an honest "not

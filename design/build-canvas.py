@@ -22,7 +22,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 IMG = ROOT / "design/assets/img"
 CANVAS = ROOT / "design/canvas"
 OUT = CANVAS / "socius-mobile-app.html"
-TITLE = "Avenza Mobile App"
+TITLE = "Socius Mobile App"
 
 DOC_RE = re.compile(r'(<script[^>]*id="appifact-doc"[^>]*>)(.*?)(</script>)', re.S)
 

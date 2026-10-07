@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Avenza artboards, bilingual (English / Türkçe).
+"""Build Socius artboards, bilingual (English / Türkçe).
 
 Sources: design/src/<Name>.body.html — screen markup only, with [[icon:name:size]] tokens.
 Strings: design/strings.json — a flat English -> Turkish map. Any text node whose text appears
@@ -193,7 +193,7 @@ def local(body):
 
 cards = "\n".join(f'<div><div class="cap">{n}</div>{local(previews[n])}</div>' for n in order)
 (PREVIEW / "index.html").write_text(f"""<!doctype html>
-<html><head><meta charset="utf-8"><title>Avenza screens</title>
+<html><head><meta charset="utf-8"><title>Socius screens</title>
 {FONTS}
 <style>{BASE_CSS}
   body {{ background: #DED8CD; padding: 40px; }}

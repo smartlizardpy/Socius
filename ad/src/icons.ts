@@ -1,4 +1,4 @@
-// Phosphor (regular), viewBox 0 0 256 256 — the exact path data the Avenza app ships.
+// Phosphor (regular), viewBox 0 0 256 256 — the exact path data the Socius app ships.
 // Copied verbatim from mobile/src/icons.gen.ts. Do not hand-edit; re-copy instead.
 
 export const ICON_PATHS = {

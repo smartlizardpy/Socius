@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Capture each Avenza app screen from the built Turkish preview as a 2x PNG.
+"""Capture each Socius app screen from the built Turkish preview as a 2x PNG.
 
 Source:  design/preview/index.html  (build with: python3 design/build-artboards.py --tr)
 Output:  design/landing/shots/<Name>.png at 780x1688 (390x844 @2x)

@@ -89,7 +89,7 @@ export default function Discover() {
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
             <Image source={img.mark} style={{ width: 30, height: 30 }} resizeMode="contain" />
             <Txt f="display" size={20} em={-0.03}>
-              avenza
+              socius
             </Txt>
           </View>
 

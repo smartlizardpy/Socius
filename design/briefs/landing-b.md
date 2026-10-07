@@ -11,7 +11,7 @@ Both new images must read as obvious siblings of those: same hand, same weight o
 vector language, same generous empty ground, same palette balance. They are for the marketing
 website of the same app, drawn wider and larger than the phone panels.
 
-Avenza is how people in an Istanbul neighbourhood find other people to play sport with. Two ideas
+Socius is how people in an Istanbul neighbourhood find other people to play sport with. Two ideas
 are being illustrated: that you get matched with people at your own level, and that the people you
 match with actually turn up.
 

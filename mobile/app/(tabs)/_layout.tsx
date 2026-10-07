@@ -30,7 +30,7 @@ const TABS: TabDef[] = [
 export default function TabsLayout() {
   return (
     <>
-      <Tabs screenOptions={{ headerShown: false }} tabBar={(props) => <AvenzaTabBar {...props} />}>
+      <Tabs screenOptions={{ headerShown: false }} tabBar={(props) => <SociusTabBar {...props} />}>
         {TABS.map((tab) => (
           <Tabs.Screen key={tab.name} name={tab.name} />
         ))}
@@ -43,7 +43,7 @@ export default function TabsLayout() {
 }
 
 /** Source: the tab bar drawn at the foot of Main.body.html and Search.body.html. */
-function AvenzaTabBar({ state, navigation }: BottomTabBarProps) {
+function SociusTabBar({ state, navigation }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
   const { t } = useI18n();
 

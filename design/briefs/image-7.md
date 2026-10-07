@@ -2,7 +2,7 @@ Use your image_gen tool to generate TWO illustrations into `design/assets/gen/`,
 existing files at those paths. Do not draw anything programmatically, do not modify any other file,
 no network commands, no installs.
 
-These replace two existing onboarding illustrations in a sports app called Avenza. Avenza is how people in a city neighbourhood find other
+These replace two existing onboarding illustrations in a sports app called Socius. Socius is how people in a city neighbourhood find other
 people to play sport with. Look at `design/assets/gen/onb-how-find.png`,
 `design/assets/gen/onb-how-match.png` and `design/assets/gen/onb-how-play.png` FIRST — those three
 are the standard the whole set is now held to, and the two new images must read as obvious siblings

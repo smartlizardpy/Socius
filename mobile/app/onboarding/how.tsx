@@ -34,7 +34,7 @@ const PANELS = [
     art: img.howFind,
     alt: 'Three players walking towards each other from a few streets away',
     head: 'Someone nearby wants to play',
-    body: 'Avenza shows you the games happening a few streets away — tonight, this week, at the times you are actually free.',
+    body: 'Socius shows you the games happening a few streets away — tonight, this week, at the times you are actually free.',
   },
   {
     art: img.howMatch,

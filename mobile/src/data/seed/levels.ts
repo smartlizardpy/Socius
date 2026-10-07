@@ -25,7 +25,7 @@ export const sportIcon = (key: string): IconName =>
 /**
  * A level for each sport, as the onboarding promises.
  *
- * Every rated sport sits on one shared 1.0–7.0 Avenza scale — that is the number
+ * Every rated sport sits on one shared 1.0–7.0 Socius scale — that is the number
  * the app matches on, and it is why a tier carries a `rail` position as well as a
  * label. Pace sports are not rated, so they answer a different question and their
  * rail runs fastest-to-slowest instead. Gym has no scale at all: nothing about a

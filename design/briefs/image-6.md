@@ -3,7 +3,7 @@ existing files at those paths. Do not draw anything programmatically, do not mod
 no network commands, no installs.
 
 These are the hero illustrations for a three-panel "how it works" explainer at the very start of
-onboarding in a sports app called Avenza. Avenza is how people in a city neighbourhood find other
+onboarding in a sports app called Socius. Socius is how people in a city neighbourhood find other
 people to play sport with. Look at `design/assets/gen/hero.png` and `design/assets/gen/celebrate.png`
 FIRST — the three new images must read as obvious siblings of those two, same hand, same weight of
 shape, same flat vector language.

@@ -1,11 +1,11 @@
-# Build a high-fidelity Expo demo of Avenza
+# Build a high-fidelity Expo demo of Socius
 
-Run this from `/home/ozi/Projects/avenza`. A complete, finished design already exists in this
+Run this from `/home/ozi/Projects/socius`. A complete, finished design already exists in this
 repo. **You are porting it, not redesigning it.** Every visual decision is settled and recorded —
 if you find yourself choosing a colour, a size or a spacing value, stop and go read the source
 instead.
 
-## What Avenza is
+## What Socius is
 
 A mobile social app for finding people to play sport with in Istanbul. You set the sports you
 play and your level; the app shows activities near you ranked by level and distance; you join,

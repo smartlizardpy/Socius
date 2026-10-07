@@ -166,7 +166,7 @@ with no level beside it. Gym has no level step at all.
 
 ## Logo
 
-`mark-avenza.png` — two figures, arms up, in the app's own orange and blue. The
+`mark-socius.png` — two figures, arms up, in the app's own orange and blue. The
 teal original is kept as `img.markTeal` and the generated arcs mark as
 `img.markArcs`, so either is one line to restore.
 
@@ -476,7 +476,7 @@ with it instead of wiping it.
 ### Renamed to Socius (2026-09-06)
 
 The landing page ships as **Socius**. Everything else in this repo — the app, the
-artboard deck, `strings.json`, the `mark-avenza.png` filename, the Neon project
+artboard deck, `strings.json`, the `mark-socius.png` filename, the Neon project
 `avenza-landing` — still says Avenza, and was deliberately left alone: the rename was
 scoped to the one surface that was being built.
 

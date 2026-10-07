@@ -106,7 +106,7 @@ export default function Story() {
                   items are not summarised, so they carry the masthead instead */}
               <Icon name={fromFeed ? 'sparkle' : 'newspaper'} size={15} color={color.blue} />
               <Txt f="medium" size={12.5} c={color.inkMuted}>
-                {`${fromFeed ? t('Summarised by Avenza') : 'Avenza'} · ${editionLabel(lang)}`}
+                {`${fromFeed ? t('Summarised by Socius') : 'Socius'} · ${editionLabel(lang)}`}
               </Txt>
             </View>
           </View>

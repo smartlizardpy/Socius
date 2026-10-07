@@ -1,4 +1,4 @@
-# Avenza — overnight pass
+# Socius — overnight pass
 
 The mockup is now a working app. Every screen exists, every control does something,
 and the state survives a reload.
@@ -35,7 +35,7 @@ A full lap, all on hard-coded data:
 6. **Activity.** Share, bookmark and the overflow menu all work — directions, calendar,
    message, report, and **Leave this game**, which frees your spot again everywhere.
 7. **Pay.** Card picker, and the breakdown shows the **court total**, your share, the
-   10% Avenza fee and the real total — that was your `toplam maliyet de görünsün` note.
+   10% Socius fee and the real total — that was your `toplam maliyet de görünsün` note.
 8. **Games.** Upcoming / Played. Anything you joined appears here with a real date tile
    and live spot counts. Empty states for both tabs.
 9. **Rate.** Three players, then a **finish screen** — the mockup just closed itself.
@@ -85,7 +85,7 @@ A full lap, all on hard-coded data:
 
 ## The fee
 
-Avenza takes **10%**. One constant (`FEE_RATE`), disclosed on the activity's price
+Socius takes **10%**. One constant (`FEE_RATE`), disclosed on the activity's price
 line and broken out on Pay: court total ₺720 → your share ₺180 → fee ₺18 →
 **total ₺198**, and the button charges ₺198. The old "free while in beta" line is
 gone; it was a promise nobody had made.
@@ -163,18 +163,18 @@ before that was caught.
 header. Design artboards for both are in `design/src/`, on **page 3** of the canvas.
 
 **One ranked feed, mixed.** Near-you and world sport interleave in a single list.
-Local items come from Avenza's own data (new venues, host tournaments, court prices,
+Local items come from Socius's own data (new venues, host tournaments, court prices,
 a league with spots) and can end in a game. World items come from real news sites,
 summarised and credited. The publisher name in the kicker is the only thing
 separating them — `TENNIS · NTV SPOR · 15H` against `MODA · 4H` — and it does the
 attribution a feed deal requires without importing a single logo into the palette.
 
 **The lead slot stays local.** Ranked purely on interest a Süper Lig headline beats
-a new court in Kadıköy every day, and the one thing only Avenza can do gets buried.
+a new court in Kadıköy every day, and the one thing only Socius can do gets buried.
 
 **Feed stories are summarised, credited and linked out — never reproduced.** The
 story screen is a labelled AI summary, a *Read the full story on ‹source›* out-link,
-then Avenza's own contribution: *2 football games near you · cheapest ₺120*, which
+then Socius's own contribution: *2 football games near you · cheapest ₺120*, which
 respects the same eligibility rule as the rest of the app. Its footer says why it
 ranked. No invented score — the lock forbids those.
 
@@ -244,7 +244,7 @@ already showed "Running" with no number beside it.
 
 ## Logo
 
-**Current:** `mark-avenza.png` — your two-figure mark in the app's orange and blue,
+**Current:** `mark-socius.png` — your two-figure mark in the app's orange and blue,
 cropped and keyed transparent at 144px. This resolved the palette problem the teal
 version had. Legible to 26px; the pale figure gets faint below 30px on paper.
 `img.markTeal` and `img.markArcs` are still there if you want either back.

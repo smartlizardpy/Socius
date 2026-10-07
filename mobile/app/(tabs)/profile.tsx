@@ -333,7 +333,7 @@ export default function Profile() {
         <View style={{ alignItems: 'center', paddingTop: 22 }}>
           <Image source={img.mark} style={{ width: 26, height: 26, opacity: 0.5 }} resizeMode="contain" />
           <Txt f="medium" size={11.5} c={color.inkMuted} style={{ marginTop: 8 }}>
-            {`avenza · ${t('demo build')}`}
+            {`socius · ${t('demo build')}`}
           </Txt>
         </View>
       </ScrollView>

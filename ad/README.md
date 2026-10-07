@@ -18,7 +18,7 @@ the old carried none — mean energy above 3.5 kHz goes 5.0% → 12.5% on the li
 opening and 2.5% → 15.4% on the closing tag, with sustained frames at 99%. That
 is `Socius'ta` / `Socius.`, not `Avenza'da` / `Avenza.`
 
-**Still outstanding: the symbol.** `public/img/mark-avenza.png` is the Avenza
+**Still outstanding: the symbol.** `public/img/mark-socius.png` is the Avenza
 glyph and no amount of code changes that. It is the only Avenza left in the
 render. Drop the Socius symbol in at 144×144 and repoint `mark` in `src/data.ts`.
 

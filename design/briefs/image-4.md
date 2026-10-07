@@ -1,7 +1,7 @@
 Use your image_gen tool to generate TWO illustrations into `design/assets/gen/`. Do not draw
 anything programmatically, do not modify any other file, no network commands, no installs.
 
-These are hero illustrations for two new onboarding screens in a sports app called Avenza, and
+These are hero illustrations for two new onboarding screens in a sports app called Socius, and
 they must sit beside the existing set (`design/assets/gen/hero.png`, `celebrate.png`) as
 obvious siblings. Look at those two files first and match their style exactly.
 

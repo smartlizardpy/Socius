@@ -15,7 +15,7 @@ export type Bi = { en: string; tr: string };
 
 export type BulletinItem = {
   id: string;
-  /** 'local' is written from Avenza's own data; 'world' comes from the news feed */
+  /** 'local' is written from Socius's own data; 'world' comes from the news feed */
   scope: 'local' | 'world';
   /** kept for the JSON's shape; ordering is decided by rank(), not by a flag */
   lead?: boolean;
@@ -109,7 +109,7 @@ export const sourceCaps = (item: BulletinItem) => item.source?.toLocaleUpperCase
  *
  * Sports news leads and the app's own local items follow. That is a deliberate
  * reversal: the first cut reserved the lead for a local story on the argument
- * that a Süper Lig headline would otherwise bury the one thing only Avenza can
+ * that a Süper Lig headline would otherwise bury the one thing only Socius can
  * do. The call went the other way — this is a sports bulletin, so the sports
  * news is the reason to open it, and the local items are what you find once you
  * are here.

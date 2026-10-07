@@ -3,7 +3,7 @@
 /* ------------------------------------------------------------------- fee --- */
 
 /**
- * What Avenza takes on a booking. Beta does not mean free — the deck used to say
+ * What Socius takes on a booking. Beta does not mean free — the deck used to say
  * "free while in beta", which was a promise nobody made.
  */
 export const FEE_RATE = 0.1;

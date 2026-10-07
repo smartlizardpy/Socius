@@ -18,7 +18,7 @@ import { nearbySemts, nearestSemt, OUT_OF_TOWN_KM } from '../data/semts';
  * not something to leave lying in a log.
  */
 const log = (...parts: unknown[]) => {
-  if (__DEV__) console.log('[avenza:location]', ...parts);
+  if (__DEV__) console.log('[socius:location]', ...parts);
 };
 
 const round = (n: number, p = 5) => Number(n.toFixed(p));

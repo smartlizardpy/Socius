@@ -3,7 +3,7 @@ existing files at those paths. Do not draw anything programmatically, do not mod
 no network commands, no installs.
 
 This is the fourth and final panel of a "how it works" explainer at the start of onboarding in a
-sports app called Avenza, which is how people in a city neighbourhood find other people to play
+sports app called Socius, which is how people in a city neighbourhood find other people to play
 sport with. Look at `design/assets/gen/onb-how-find.png`, `design/assets/gen/onb-how-match.png` and
 `design/assets/gen/onb-how-play.png` FIRST — the new image must read as an obvious sibling of those
 three: same hand, same weight of shape, same flat vector language, same generous empty ground, same

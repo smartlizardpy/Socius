@@ -37,7 +37,7 @@
       "y": 0,
       "w": 1440,
       "h": 900,
-      "title": "Avenza"
+      "title": "Socius"
     },
     {
       "file": "Welcome.dc.html",
@@ -269,7 +269,7 @@
       "x": 0,
       "y": -210,
       "w": 1000,
-      "text": "THE BULLETIN — one ranked feed, near-you and world sport mixed.\nLocal items come from Avenza's own data — new courts, court prices, a league with spots — and end in a place you can play. World stories are summarised, credited and linked out, never reproduced: the summary is labelled as machine-written, the publisher's photograph is credited on screen, and the out-link is the only way to the article. The publisher name in the kicker is the only thing separating the two, and it does the attribution a feed deal requires without importing a single logo into the palette.\nThe lead slot stays local. Ranked on interest alone a Süper Lig headline beats a new court in Kadıköy every day, and the one thing only Avenza can do gets buried.\nEvery story carries one card at the foot, chosen by what the story is about — a game, a venue, a course, or a sponsor. Ours are tinted blue and act; anything sold is plain and says SPONSORED on the title line, because an ad wearing the product's clothes is what this surface must never do."
+      "text": "THE BULLETIN — one ranked feed, near-you and world sport mixed.\nLocal items come from Socius's own data — new courts, court prices, a league with spots — and end in a place you can play. World stories are summarised, credited and linked out, never reproduced: the summary is labelled as machine-written, the publisher's photograph is credited on screen, and the out-link is the only way to the article. The publisher name in the kicker is the only thing separating the two, and it does the attribution a feed deal requires without importing a single logo into the palette.\nThe lead slot stays local. Ranked on interest alone a Süper Lig headline beats a new court in Kadıköy every day, and the one thing only Socius can do gets buried.\nEvery story carries one card at the foot, chosen by what the story is about — a game, a venue, a course, or a sponsor. Ours are tinted blue and act; anything sold is plain and says SPONSORED on the title line, because an ad wearing the product's clothes is what this surface must never do."
     },
     {
       "id": "n-supply",
@@ -277,7 +277,7 @@
       "x": 0,
       "y": -230,
       "w": 1050,
-      "text": "SUPPLY AND MONEY — where activities come from, and where revenue comes from.\nAnyone can create an activity in under a minute. The host is asked once, in WHO CAN JOIN, whether players outside the level band may ask anyway — off by default, and it is what gives the activity screen three honest states rather than a button that lies. Coaches, academies and clubs list paid courses. Venues are derived from the games played at them, never asserted separately.\nAvenza takes 10%. One constant, disclosed on the price line and broken out on Pay: court total ₺720 → your share ₺180 → fee ₺18 → total ₺198.\nThe second line is the bulletin: one sponsor slot per story, sold against the sport it is about and labelled inside the card.\nPrices shown are sample values for a pitch, not a pricing decision."
+      "text": "SUPPLY AND MONEY — where activities come from, and where revenue comes from.\nAnyone can create an activity in under a minute. The host is asked once, in WHO CAN JOIN, whether players outside the level band may ask anyway — off by default, and it is what gives the activity screen three honest states rather than a button that lies. Coaches, academies and clubs list paid courses. Venues are derived from the games played at them, never asserted separately.\nSocius takes 10%. One constant, disclosed on the price line and broken out on Pay: court total ₺720 → your share ₺180 → fee ₺18 → total ₺198.\nThe second line is the bulletin: one sponsor slot per story, sold against the sport it is about and labelled inside the card.\nPrices shown are sample values for a pitch, not a pricing decision."
     },
     {
       "id": "n-dec",

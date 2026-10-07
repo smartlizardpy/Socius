@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Put the Avenza mark on the splash screen, the app icon and the favicon.
+"""Put the Socius mark on the splash screen, the app icon and the favicon.
 
 All four shipped as Expo's stock artwork — the grey concentric circles — which is
 what Expo Go was still showing on launch.
@@ -17,7 +17,7 @@ import pathlib
 from PIL import Image, ImageChops, ImageFilter
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SRC = ROOT / "assets/img/mark-avenza.png"
+SRC = ROOT / "assets/img/mark-socius.png"
 OUT = ROOT / "assets"
 
 PAPER = (251, 248, 243)

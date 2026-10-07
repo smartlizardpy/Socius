@@ -1,10 +1,10 @@
-# Avenza Halı Saha UGC Ad — Creative Concept
+# Socius Halı Saha UGC Ad — Creative Concept
 
 > This document is a creative brief only. It is **not** an implementation plan and contains no Remotion code.
 
 ## The core idea
 
-A Turkish vertical UGC ad that begins like a real person spontaneously calling out a familiar halı saha problem, shifts into a fast premium presentation of the **real Avenza product**, and returns to the same person or a clean brand finish.
+A Turkish vertical UGC ad that begins like a real person spontaneously calling out a familiar halı saha problem, shifts into a fast premium presentation of the **real Socius product**, and returns to the same person or a clean brand finish.
 
 The feeling should be:
 
@@ -25,7 +25,7 @@ The simple promise:
 - Target length: roughly 25–28 seconds
 - AI-video allowance: two 5-second Higgsfield clips
 - Voice: one consistent ElevenLabs Turkish voice across the entire ad
-- Middle section: animated presentation using real Avenza screens and assets
+- Middle section: animated presentation using real Socius screens and assets
 - Language: natural conversational Turkish, not corporate Turkish
 
 ## Structure
@@ -44,12 +44,12 @@ On-screen captions should emphasize **“iki kişi eksik”**.
 
 ### 2. Product presentation — approximately 0:05–0:22
 
-Her ElevenLabs voice continues over the visuals. This is **not a plain screen recording** and not a fake app mockup. It is a premium product-film treatment made from the latest real Avenza screens.
+Her ElevenLabs voice continues over the visuals. This is **not a plain screen recording** and not a fake app mockup. It is a premium product-film treatment made from the latest real Socius screens.
 
 Narrative flow:
 
 1. **Find football nearby**  
-   The Avenza discovery screen enters. The football / halı saha filter is selected. Nearby matches become the visual focus.
+   The Socius discovery screen enters. The football / halı saha filter is selected. Nearby matches become the visual focus.
 
 2. **Choose what fits you**  
    The camera travels into a real match card. Time, location, skill level, price, and remaining player slots are revealed in sequence.
@@ -62,7 +62,7 @@ Narrative flow:
 
 Suggested voiceover:
 
-> “Avenza’da yakınındaki halı saha maçlarını buluyorsun. Saatine ve seviyene uyan maçı seçiyorsun. Katılmadan önce kimlerin geleceğini, hatta oyuncuların maçlara gerçekten gelip gelmediğini görebiliyorsun. Sana uyan maça tek dokunuşla katılıyorsun.”
+> “Socius’ta yakınındaki halı saha maçlarını buluyorsun. Saatine ve seviyene uyan maçı seçiyorsun. Katılmadan önce kimlerin geleceğini, hatta oyuncuların maçlara gerçekten gelip gelmediğini görebiliyorsun. Sana uyan maça tek dokunuşla katılıyorsun.”
 
 This wording is a draft. Before production, time it against the final ElevenLabs recording and shorten it rather than accelerating the voice unnaturally.
 
@@ -72,13 +72,13 @@ Preferred close:
 
 > **“Grubun tamamlanmasını bekleme. Maçını bul. Sahaya çık.”**
 
-Finish with the real Avenza mark and one direct CTA:
+Finish with the real Socius mark and one direct CTA:
 
-> **“Avenza’da bul.”**
+> **“Socius’ta bul.”**
 
 The second 5-second Higgsfield credit can be used in one of two ways:
 
-- preferred: return to the same woman at the side of the pitch for a human closing line, then cut to the Avenza mark;
+- preferred: return to the same woman at the side of the pitch for a human closing line, then cut to the Socius mark;
 - safer continuity option: use a short non-speaking reaction—she looks toward the pitch, smiles, and walks in—while the ElevenLabs voice delivers the close.
 
 The non-speaking ending avoids a second lip-sync risk and feels more cinematic.
@@ -89,7 +89,7 @@ The middle should feel like a moving editorial presentation, not someone slowly 
 
 Use:
 
-- the **actual latest Avenza app screens**;
+- the **actual latest Socius app screens**;
 - the established design system and **TasteMaster** decisions;
 - real typography, colors, spacing, cards, icons, photos, and copy;
 - layered 2.5D depth made from exported screen components;
@@ -100,7 +100,7 @@ Use:
 
 Do not use:
 
-- invented or approximate Avenza UI;
+- invented or approximate Socius UI;
 - a generic phone floating in the center for the whole ad;
 - long static screenshots;
 - excessive glassmorphism, neon, particles, or template-like transitions;
@@ -113,7 +113,7 @@ The camera should guide one visual idea at a time. Each shot needs a clear focal
 
 ## Visual transition idea
 
-The opening woman or camera moves close enough that a dark jacket, hand, or football briefly fills the frame. That shape becomes the transition into a similarly colored element on the Avenza screen. At the end, a circular UI element or player avatar can match-cut back to the football or the pitch floodlight.
+The opening woman or camera moves close enough that a dark jacket, hand, or football briefly fills the frame. That shape becomes the transition into a similarly colored element on the Socius screen. At the end, a circular UI element or player avatar can match-cut back to the football or the pitch floodlight.
 
 This connects UGC and product presentation without a generic flash or swipe transition.
 
@@ -165,7 +165,7 @@ The ad does not need perfect visible speech for all five seconds. It needs a con
 
 Before designing any animation, the agent must inspect:
 
-1. the latest running Avenza app;
+1. the latest running Socius app;
 2. the existing design documentation;
 3. the TasteMaster output / taste decisions;
 4. the exact football discovery, match-detail, participant, and join states.

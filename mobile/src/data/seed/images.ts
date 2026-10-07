@@ -6,7 +6,7 @@ export const img = {
    * This is the one that resolves the palette tension — the teal version read as a
    * third hue wherever the mark and the UI shared a frame.
    */
-  mark: require('../../../assets/img/mark-avenza.png'),
+  mark: require('../../../assets/img/mark-socius.png'),
   /** the teal original, and the generated arcs mark before it — both reversible */
   markTeal: require('../../../assets/img/mark-original.png'),
   markArcs: require('../../../assets/img/mark.png'),

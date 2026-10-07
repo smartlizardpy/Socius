@@ -192,7 +192,7 @@ export default function Pay() {
             top={14}
           />
           <Line
-            label={tf('Avenza fee · {pct}%', { pct: Math.round(FEE_RATE * 100) })}
+            label={tf('Socius fee · {pct}%', { pct: Math.round(FEE_RATE * 100) })}
             value={`₺${fee}`}
             top={12}
             muted

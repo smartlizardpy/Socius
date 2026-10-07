@@ -42,7 +42,7 @@ export default function Welcome() {
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
           <Image source={img.mark} style={{ width: 32, height: 32 }} />
           <Txt f="display" size={23} em={-0.035}>
-            avenza
+            socius
           </Txt>
         </View>
 

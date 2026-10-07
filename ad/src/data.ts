@@ -133,7 +133,7 @@ export const secondMatchSpots = secondMatch.capacity - secondMatch.joinedCount;
  * This file is still the Avenza glyph. Nothing in the code can change that:
  * drop the Socius symbol in at 144×144 and repoint this line.
  */
-export const mark = staticFile('img/mark-avenza.png');
+export const mark = staticFile('img/mark-socius.png');
 
 /* ----------------------------------------------------------- arithmetic -- */
 /* The same four functions the app derives every reliability figure from.     */

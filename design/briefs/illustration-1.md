@@ -1,4 +1,4 @@
-# Illustration commission — Avenza (sports social app)
+# Illustration commission — Socius (sports social app)
 
 Write flat vector SVG illustrations to `design/assets/illustrations/`. Do not modify any other
 file. Do not install anything. Do not run any network commands.

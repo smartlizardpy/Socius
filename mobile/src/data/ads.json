@@ -6,7 +6,7 @@
       "sports": ["football", "basketball", "volleyball"],
       "icon": "barbell",
       "name": "Vives Spor Salonu",
-      "line": { "en": "Moda · first session free for Avenza players", "tr": "Moda · Avenza oyuncularına ilk ders ücretsiz" }
+      "line": { "en": "Moda · first session free for Socius players", "tr": "Moda · Socius oyuncularına ilk ders ücretsiz" }
     },
     {
       "id": "raket-evi",
