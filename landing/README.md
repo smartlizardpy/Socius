@@ -3,8 +3,9 @@
 Türkçe marketing page for Socius. Astro, mostly static, with one server route for beta
 signups.
 
-The product was called **Avenza** until 2026-09-06. The rename was scoped to this page —
-the app, the artboard deck, `strings.json` and the Neon project name all still say Avenza.
+The product was called **Avenza** until 2026-09-06. This page was renamed first; the app,
+the artboard deck and `strings.json` followed on 2026-10-07. Only the Neon project name
+still says Avenza.
 
 Design comes from `../.tastemaker/style-lock.md` — the same palette and type as the app.
 The page's *shape* (pill nav, sticker-shadowed controls, confetti, alternating full-bleed

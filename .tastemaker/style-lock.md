@@ -1,4 +1,4 @@
-# Avenza — style lock
+# Socius — style lock
 
 Mobile sports-social app (find people to play with, join local activities, courses,
 athlete reputation). Cold start: empty repo, no existing design system, no brand assets.
@@ -93,7 +93,7 @@ ground and never a fill under white text. Accent footprint stays ≲5% of a scre
   is what keeps the people the same size as you swipe.
   The earlier hand-coded SVGs in `design/assets/illustrations/` are superseded — kept only as
   the rejected first pass.
-- **App icon and splash**: the Avenza mark, not Expo's stock grey circles.
+- **App icon and splash**: the Socius mark, not Expo's stock grey circles.
   Expo's docs are explicit that **Expo Go renders the app icon** as its launch
   image rather than `splash-icon.png`, so `icon.png` is the file that changes
   what you see on launch in Expo Go; the splash proper is configured through the
@@ -229,7 +229,7 @@ ilçe and the table knows the semt. There is no "you are not in İstanbul" state
 the geocoder names Çankaya as readily as Moda — so the failures left are a
 refusal and an honest "could not work out where you are".
 
-The count still refuses to quote games for a place Avenza has none in: the
+The count still refuses to quote games for a place Socius has none in: the
 seeded distances are all measured from the Anatolian shore, and would otherwise
 report "6 games within 5 km of Bakırköy" on the one screen that just measured
 where you are. One line, no lecture around it.
@@ -304,7 +304,7 @@ the Create form and is **off by default**. That opt-in is the only thing that ma
 screen its three honest states: in band → Join · opted in → Join anyway · closed →
 "Not open at your level", with no button.
 
-**Avenza takes 10%.** `FEE_RATE` in the seed, disclosed on the activity's price
+**Socius takes 10%.** `FEE_RATE` in the seed, disclosed on the activity's price
 line and broken out on Pay, never sprung at checkout. The deck previously said
 "free while in beta", which was a promise nobody had made.
 
@@ -324,7 +324,7 @@ feed it:
 
 | | comes from | kicker | tapping it |
 |---|---|---|---|
-| local | Avenza's own data — new venues, host tournaments, court prices, leagues with spots | `MODA · 4H` (neighbourhood) | an internal screen, often a game |
+| local | Socius's own data — new venues, host tournaments, court prices, leagues with spots | `MODA · 4H` (neighbourhood) | an internal screen, often a game |
 | world | 1–2 licensed news feeds, ranked and summarised by AI | `FOOTBALL · FANATİK · 1H` (publisher) | a summary that links out |
 
 **The publisher name in the kicker is the only thing separating them**, and it is
@@ -334,12 +334,12 @@ at all.
 
 **The lead slot stays local.** This is the guardrail on the mix, not a layout
 preference: ranked purely on interest, a Süper Lig headline beats a new court in
-Kadıköy every day of the week, and the one thing only Avenza can do gets buried by
+Kadıköy every day of the week, and the one thing only Socius can do gets buried by
 the thing everyone else already does.
 
 **A publisher story is summarised, credited and linked — never reproduced.** The
-story screen is an AI summary labelled as one (`Summarised by Avenza`), a
-full-width **Read the full story on ‹source›** out-link, and then Avenza's own
+story screen is an AI summary labelled as one (`Summarised by Socius`), a
+full-width **Read the full story on ‹source›** out-link, and then Socius's own
 contribution: the loop-closer, *"4 padel games in Kadıköy · from ₺130"*. Reprinting
 the publisher's text would be someone else's copyright, and the summary plus the
 local hook is the better product anyway.
@@ -475,16 +475,12 @@ with it instead of wiping it.
 
 ### Renamed to Socius (2026-09-06)
 
-The landing page ships as **Socius**. Everything else in this repo — the app, the
-artboard deck, `strings.json`, the `mark-socius.png` filename, the Neon project
-`avenza-landing` — still says Avenza, and was deliberately left alone: the rename was
-scoped to the one surface that was being built.
-
-It was cheap to scope that way because **none of the three screenshots the page uses
-(Level, Profile, Bulletin) show the wordmark or the mark**. If a future landing section
-pulls in Main, Welcome, Cover, Pay or Story, that stops being true — those five carry the
-wordmark or the string "Avenza komisyonu", and the deck would have to be renamed and
-re-shot before they could be used.
+The landing page shipped as **Socius** first. The rest of the repo — the app, the
+artboard deck, `strings.json` and the `mark-socius.png` filename (formerly
+`mark-avenza.png`) — followed on 2026-10-07. What still says Avenza on purpose: the
+Neon project `avenza-landing`, the Expo `name`, `slug` and `scheme` in `mobile/app.json`,
+and the `avenza-demo` AsyncStorage key, because changing them affects deployments,
+deep links and saved demo state.
 
 The mark itself carries over unchanged: it is two figures, not a wordmark, so it says
 nothing about the name.
