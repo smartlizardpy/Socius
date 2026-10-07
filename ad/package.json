@@ -8,7 +8,8 @@
     "voice:measure": "tools/measure-voiceover.sh",
     "render": "remotion render SociusHalisaha out/socius-halisaha.mp4",
     "render:ugc": "remotion render SociusHalisahaUgc out/socius-halisaha-ugc.mp4",
-    "still": "remotion still"
+    "still": "remotion still",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@remotion/cli": "4.0.518",
