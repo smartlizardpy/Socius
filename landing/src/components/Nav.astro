@@ -1,0 +1,113 @@
+---
+// N3 · Floating pill — content-sized, not a rounded full-width bar.
+import { Image } from 'astro:assets';
+import mark from '../assets/mark.png';
+
+const links = [
+	{ href: '#nasil', label: 'Nasıl çalışır' },
+	{ href: '#seviye', label: 'Seviye' },
+	{ href: '#guvenilirlik', label: 'Güvenilirlik' },
+	{ href: '#sss', label: 'SSS' },
+];
+---
+
+<header class="nav">
+	<nav class="pill" aria-label="Ana menü">
+		<a class="brand" href="/">
+			<Image src={mark} alt="" width={30} height={30} densities={[1, 2]} />
+			<span>socius</span>
+		</a>
+
+		<ul class="links">
+			{
+				links.map((l) => (
+					<li>
+						<a href={l.href}>{l.label}</a>
+					</li>
+				))
+			}
+		</ul>
+
+		<a class="btn nav-cta" href="#basla">Hemen başla</a>
+	</nav>
+</header>
+
+<style>
+	.nav {
+		position: sticky;
+		top: 0;
+		z-index: 50;
+		padding: var(--s16) var(--gutter) 0;
+		display: flex;
+		justify-content: center;
+		pointer-events: none;
+	}
+
+	.pill {
+		pointer-events: auto;
+		display: flex;
+		align-items: center;
+		gap: var(--s20);
+		padding: var(--s8) var(--s8) var(--s8) var(--s16);
+		border-radius: var(--r-pill);
+		background: color-mix(in srgb, var(--surface) 82%, transparent);
+		backdrop-filter: blur(14px) saturate(1.4);
+		box-shadow: var(--sticker);
+	}
+
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: var(--s8);
+		font-family: var(--font-display);
+		font-size: 1.25rem;
+		font-weight: 700;
+		letter-spacing: -0.03em;
+		color: var(--ink);
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		gap: var(--s6);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.links a {
+		display: block;
+		padding: var(--s10) var(--s14);
+		border-radius: var(--r-pill);
+		color: var(--ink-muted);
+		font-size: var(--step-meta);
+		font-weight: 500;
+		white-space: nowrap;
+		transition: background-color 0.15s var(--ease), color 0.15s var(--ease);
+	}
+
+	.links a:hover {
+		background: var(--primary-tint);
+		color: var(--primary-deep);
+	}
+
+	.nav-cta {
+		min-height: 44px;
+		padding-inline: var(--s20);
+		font-size: var(--step-meta);
+	}
+
+	/* Below the pill's natural width the links go; the mark and the action stay. */
+	@media (max-width: 62rem) {
+		.links {
+			display: none;
+		}
+	}
+
+	@media (max-width: 26rem) {
+		.pill {
+			width: 100%;
+			justify-content: space-between;
+		}
+	}
+</style>

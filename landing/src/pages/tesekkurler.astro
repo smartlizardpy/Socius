@@ -1,0 +1,61 @@
+---
+// Where a plain form post lands when JavaScript is off. Prerendered, so the state comes
+// from the query string on the client rather than from the server.
+import Base from '../layouts/Base.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base
+	title="Teşekkürler — Socius"
+	description="Socius erken erişim listesine kaydolundu."
+>
+	<main class="band band--lg band--deep screen">
+		<div class="wrap">
+			<h1 data-ok>Listedesin.</h1>
+			<p class="lede" data-ok>
+				Socius İstanbul'da açıldığı gün sana haber vereceğiz. Başka bir şey göndermiyoruz.
+			</p>
+
+			<h1 hidden data-invalid>Bu adres doğru görünmüyor.</h1>
+			<p class="lede" hidden data-invalid>Bir harf kaçmış olabilir. Geri dönüp tekrar dener misin?</p>
+
+			<h1 hidden data-error>Kaydedemedik.</h1>
+			<p class="lede" hidden data-error>
+				Bizim tarafta bir sorun çıktı. Birazdan tekrar denersen büyük ihtimalle geçer.
+			</p>
+
+			<p class="back"><a class="btn btn--on-deep" href="/">Ana sayfaya dön</a></p>
+		</div>
+	</main>
+	<Footer />
+</Base>
+
+<script>
+	const durum = new URLSearchParams(location.search).get('durum');
+	const show = (name: string) => {
+		document.querySelectorAll<HTMLElement>('[data-ok]').forEach((el) => (el.hidden = true));
+		document.querySelectorAll<HTMLElement>(`[data-${name}]`).forEach((el) => (el.hidden = false));
+	};
+	if (durum === 'gecersiz') show('invalid');
+	else if (durum === 'hata') show('error');
+</script>
+
+<style>
+	.screen {
+		min-height: 68vh;
+		display: flex;
+		align-items: center;
+	}
+
+	h1 {
+		max-width: 14ch;
+	}
+
+	.lede {
+		margin-top: var(--s20);
+	}
+
+	.back {
+		margin-top: var(--s32);
+	}
+</style>

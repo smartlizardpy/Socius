@@ -1,0 +1,41 @@
+---
+// A real screen capture from the app, presented in a plain rounded frame.
+// No drawn notch, status bar or home indicator: the captures already reserve the
+// device's own 44px status strip, and the lock forbids faking any of that chrome.
+import { Image } from 'astro:assets';
+
+interface Props {
+	src: ImageMetadata;
+	alt: string;
+	width?: number;
+	loading?: 'lazy' | 'eager';
+	class?: string;
+}
+
+const { src, alt, width = 300, loading = 'lazy', class: klass = '' } = Astro.props;
+---
+
+<figure class={`phone ${klass}`} style={`--phone-w:${width}px`}>
+	<Image src={src} alt={alt} widths={[width, width * 2]} sizes={`${width}px`} loading={loading} />
+</figure>
+
+<style>
+	.phone {
+		width: var(--phone-w);
+		max-width: 100%;
+		margin: 0;
+		border-radius: var(--r-hero);
+		overflow: hidden;
+		background: var(--paper);
+		box-shadow: var(--lift);
+		/* A hairline instead of a drawn bezel — enough to separate the cream screen
+		   from a cream band without pretending to be hardware. */
+		outline: 1px solid rgba(16, 26, 43, 0.08);
+		outline-offset: -1px;
+	}
+
+	.phone :global(img) {
+		width: 100%;
+		height: auto;
+	}
+</style>

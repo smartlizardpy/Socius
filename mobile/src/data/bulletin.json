@@ -1,0 +1,184 @@
+{
+  "_comment": "The bulletin feed. Two sources of truth in one ranked list: scope 'local' items are written from Avenza's own data (venues, host tournaments, court prices, leagues) and can end in a game; scope 'world' items come from the news feed, are summarised, credited and link out. A feed job rewrites the 'world' entries and leaves 'local' alone. An item may name a venue or an activityId; the story's foot card is chosen from whichever it has.",
+  "edition": "2026-08-28",
+  "dateLine": {
+    "en": "FRIDAY 28 AUGUST",
+    "tr": "28 AĞUSTOS CUMA"
+  },
+  "items": [
+    {
+      "id": "kadikoy-new-courts",
+      "scope": "local",
+      "category": {
+        "en": "KADIKÖY · PADEL",
+        "tr": "KADIKÖY · PADEL"
+      },
+      "source": null,
+      "sourceUrl": null,
+      "hoursAgo": 2,
+      "headline": {
+        "en": "Three new courts open on the Fenerbahçe side",
+        "tr": "Fenerbahçe tarafında üç yeni kort açıldı"
+      },
+      "summary": [
+        {
+          "en": "Three covered padel courts opened this week off Bağdat Caddesi, taking the number in Kadıköy to eleven.",
+          "tr": "Bu hafta Bağdat Caddesi civarında üç kapalı padel kortu açıldı; Kadıköy'deki kort sayısı on bire çıktı."
+        },
+        {
+          "en": "Off-peak hours run at ₺520 for the court — ₺130 a player for doubles, around 15% under the Caddebostan rate.",
+          "tr": "Yoğun olmayan saatlerde kort ₺520; çiftlerde kişi başı ₺130 ediyor, Caddebostan tarifesinin yaklaşık %15 altında."
+        },
+        {
+          "en": "The new courts are filling through September, with two a night held back for open games.",
+          "tr": "Yeni kortlar eylül boyunca doluyor; her akşam iki kort açık maçlara ayrılıyor."
+        }
+      ],
+      "image": "cardPadel",
+      "badge": null,
+      "sport": "padel",
+      "activityId": null,
+      "why": {
+        "en": "In your feed because you play padel",
+        "tr": "Padel oynadığın için akışında"
+      },
+      "venue": "caddebostan-tenis-kulubu"
+    },
+    {
+      "id": "kadikoy-padel-open",
+      "scope": "local",
+      "category": {
+        "en": "TOURNAMENT",
+        "tr": "TURNUVA"
+      },
+      "source": null,
+      "sourceUrl": null,
+      "hoursAgo": 3,
+      "headline": {
+        "en": "Kadıköy Padel Open is taking entries",
+        "tr": "Kadıköy Padel Open başvuruları açıldı"
+      },
+      "summary": [
+        {
+          "en": "The third Kadıköy Padel Open runs over two weekends in October, in three level brackets from 3.0 upward.",
+          "tr": "Üçüncü Kadıköy Padel Open ekimde iki hafta sonu sürüyor; 3.0 ve üzeri üç seviye kategorisi var."
+        },
+        {
+          "en": "Entry is ₺400 a pair and closes on Friday. Sixty-four pairs are taken, and about half the places have gone.",
+          "tr": "Katılım çift başına ₺400 ve cuma kapanıyor. Altmış dört çift alınıyor, yerlerin yaklaşık yarısı doldu."
+        }
+      ],
+      "image": null,
+      "badge": {
+        "en": "ENTRIES CLOSE FRI",
+        "tr": "SON BAŞVURU CUMA"
+      },
+      "sport": "padel",
+      "activityId": null,
+      "why": {
+        "en": "In your feed because you play padel",
+        "tr": "Padel oynadığın için akışında"
+      }
+    },
+    {
+      "id": "moda-tuesday-league",
+      "scope": "local",
+      "category": {
+        "en": "MODA",
+        "tr": "MODA"
+      },
+      "source": null,
+      "sourceUrl": null,
+      "hoursAgo": 4,
+      "headline": {
+        "en": "Tuesday league has three spots",
+        "tr": "Salı liginde üç yer var"
+      },
+      "summary": [
+        {
+          "en": "Three players dropped out of the Tuesday five-a-side league at Moda Halı Saha before the autumn round starts.",
+          "tr": "Moda Halı Saha'daki salı akşamı halı saha liginde, sonbahar turu başlamadan üç oyuncu ayrıldı."
+        },
+        {
+          "en": "It runs eight weeks from 21.00, and the places go to whoever asks first.",
+          "tr": "Lig 21.00'de başlayıp sekiz hafta sürüyor; yerler ilk isteyene veriliyor."
+        }
+      ],
+      "image": "cardPitch",
+      "badge": null,
+      "sport": "football",
+      "activityId": "five-a-side-moda",
+      "why": {
+        "en": "In your feed because you play football",
+        "tr": "Futbol oynadığın için akışında"
+      }
+    },
+    {
+      "id": "moda-winter-rates",
+      "scope": "local",
+      "category": {
+        "en": "COURT PRICES",
+        "tr": "KORT ÜCRETLERİ"
+      },
+      "source": null,
+      "sourceUrl": null,
+      "hoursAgo": 6,
+      "headline": {
+        "en": "Winter rates start at Moda on 1 October",
+        "tr": "Moda'da kış tarifesi 1 Ekim'de başlıyor"
+      },
+      "summary": [
+        {
+          "en": "Indoor court hire at Moda goes to the winter rate on 1 October, about 12% above the summer price.",
+          "tr": "Moda'da kapalı kort kirası 1 Ekim'de kış tarifesine geçiyor; yaz fiyatının yaklaşık %12 üzerinde."
+        },
+        {
+          "en": "Weekday mornings stay at the old rate, which makes them the cheapest hours in the neighbourhood.",
+          "tr": "Hafta içi sabahlar eski tarifede kalıyor; bu da onları mahallenin en ucuz saatleri yapıyor."
+        }
+      ],
+      "image": null,
+      "badge": null,
+      "sport": "padel",
+      "activityId": null,
+      "why": {
+        "en": "In your feed because you play in Kadıköy",
+        "tr": "Kadıköy'de oynadığın için akışında"
+      },
+      "venue": "moda-hali-saha"
+    },
+    {
+      "id": "moda-parkrun-time",
+      "scope": "local",
+      "category": {
+        "en": "KADIKÖY · RUNNING",
+        "tr": "KADIKÖY · KOŞU"
+      },
+      "source": null,
+      "sourceUrl": null,
+      "hoursAgo": 11,
+      "headline": {
+        "en": "Moda parkrun moves to an 08.30 start",
+        "tr": "Moda parkrun 08.30'a alındı"
+      },
+      "summary": [
+        {
+          "en": "The Saturday 5k along Moda sahili starts half an hour earlier from September, to get ahead of the heat.",
+          "tr": "Moda sahilindeki cumartesi 5 km, sıcaktan kaçmak için eylülden itibaren yarım saat erken başlıyor."
+        },
+        {
+          "en": "The route is unchanged and it is still free. Around 120 people ran it last week.",
+          "tr": "Parkur aynı ve katılım yine ücretsiz. Geçen hafta yaklaşık 120 kişi koştu."
+        }
+      ],
+      "image": "thumbRun",
+      "badge": null,
+      "sport": "run",
+      "activityId": null,
+      "why": {
+        "en": "In your feed because you run",
+        "tr": "Koştuğun için akışında"
+      }
+    }
+  ]
+}

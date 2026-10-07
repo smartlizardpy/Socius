@@ -1,0 +1,40 @@
+{
+  "_comment": "Sponsor slots for the bulletin. Fictional Kadıköy businesses — inventing an offer on behalf of a real gym would be putting words in a real company's mouth. Targeted by sport; `sports: []` means it can fill any slot.",
+  "ads": [
+    {
+      "id": "vives-spor",
+      "sports": ["football", "basketball", "volleyball"],
+      "icon": "barbell",
+      "name": "Vives Spor Salonu",
+      "line": { "en": "Moda · first session free for Avenza players", "tr": "Moda · Avenza oyuncularına ilk ders ücretsiz" }
+    },
+    {
+      "id": "raket-evi",
+      "sports": ["padel", "tennis"],
+      "icon": "racquet",
+      "name": "Raket Evi",
+      "line": { "en": "Caddebostan · restringing while you wait", "tr": "Caddebostan · beklerken kordaj değişimi" }
+    },
+    {
+      "id": "sahil-bisiklet",
+      "sports": ["cycling"],
+      "icon": "bicycle",
+      "name": "Sahil Bisiklet",
+      "line": { "en": "Moda sahili · free tune-up before the Tour", "tr": "Moda sahili · Tour öncesi ücretsiz bakım" }
+    },
+    {
+      "id": "adim-kosu",
+      "sports": ["running"],
+      "icon": "sneaker-move",
+      "name": "Adım Koşu Mağazası",
+      "line": { "en": "Kadıköy · gait analysis, no appointment", "tr": "Kadıköy · randevusuz koşu analizi" }
+    },
+    {
+      "id": "kadikoy-fizyo",
+      "sports": [],
+      "icon": "hand-heart",
+      "name": "Kadıköy Fizyoterapi",
+      "line": { "en": "Bahariye · sports injuries, evening slots", "tr": "Bahariye · spor sakatlıkları, akşam seansları" }
+    }
+  ]
+}

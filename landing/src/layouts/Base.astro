@@ -1,0 +1,75 @@
+---
+import { Font } from 'astro:assets';
+import '../styles/tokens.css';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="theme-color" content="#fbf8f3" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="tr_TR" />
+		<meta property="og:site_name" content="Socius" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={new URL('/og.png', Astro.site)} />
+		<meta name="twitter:card" content="summary_large_image" />
+
+		<Font cssVariable="--font-bricolage" preload />
+		<Font cssVariable="--font-instrument" preload />
+
+		<script is:inline>
+			// Set before paint so reveal targets start hidden only when JS can un-hide them.
+			// The failsafe is the important half: if the motion bundle never arrives, this
+			// puts the page back rather than leaving a visitor staring at empty bands.
+			document.documentElement.classList.add('js');
+			window.__revealFailsafe = setTimeout(function () {
+				document.documentElement.classList.remove('js');
+			}, 2500);
+		</script>
+	</head>
+	<body>
+		<a class="skip" href="#icerik">İçeriğe geç</a>
+		<slot />
+
+		<script>
+			import '../scripts/motion';
+		</script>
+
+		<style>
+			.skip {
+				position: absolute;
+				left: -9999px;
+				top: var(--s8);
+				z-index: 100;
+				padding: var(--s12) var(--s20);
+				border-radius: var(--r-pill);
+				background: var(--ink);
+				color: var(--surface);
+				font-weight: 600;
+			}
+
+			.skip:focus {
+				left: var(--s16);
+			}
+		</style>
+	</body>
+</html>

@@ -1,0 +1,896 @@
+{
+ "findings": [
+  {
+   "claim": "HalıSaha+ already ships Avenza's entire stated differentiator — an attendance-reliability score, level-based matching, per-person payment split and post-match player rating — and explicitly names Kadıköy as a covered district.",
+   "evidence": "iTunes lookup API (id=6761794919, country=tr, fetched 2026-09-01; version 1.1.6, updated 2026-08-31) returns a description with a dedicated section: \"GÜVEN PUANI — MAÇ İPTALİ DERDİ BİTSİN • Halı Saha+ Güven Puanı, maçı satıp ekibi yarı yolda bırakanları filtreler • Her oyuncunun katılım güvenilirliği profilinde görünür • Söz veren sahaya gelir\" (\"Trust Score — end the match-cancellation problem: it filters out those who sell the match and leave the squad stranded; every player's attendance reliability is visible on their profile\"). Same description: \"Mevkini, seviyeni, ilçeni ve boş saatlerini seç • Yapay zekâ seni performans puanına ve oyun sertliğine göre en dengeli maça yerleştirir\" and \"iyzico ile kredi kartı veya havale/EFT — herkes kendi payını öder\" and \"maç sonrası oyuncu değerlendirme\". Corroborated on the vendor's own site: halisahaplus.com/tr/features states \"İlçe, uygun saat ve seviye seç; sistem seni kadrosu dolu, dengeli bir maça eşleştirsin\" under a \"Güven & itibar\" section listing \"Oyuncu değerlendirmesi\" and \"Maç performans puanı\", plus \"Kaptan hepsini öder, herkes kendi payını öder ya da iki kaptan paylaşır\". The homepage lists levels as four tiers (Başlangıç/Orta/İyi/Rekabetçi) and names Kadıköy, Beşiktaş, Çankaya among its districts. No commission percentage was disclosed anywhere on the site (homepage, /tr/features, /tr/faq all checked).",
+   "sources": [
+    "https://itunes.apple.com/lookup?id=6761794919&country=tr",
+    "https://apps.apple.com/tr/app/hal%C4%B1saha-rezervasyon-kadro/id6761794919",
+    "https://halisahaplus.com",
+    "https://halisahaplus.com/tr/features",
+    "https://halisahaplus.com/tr/faq"
+   ],
+   "consequence": "The verbatim bet — \"Nobody else knows whether the stranger you matched with will actually turn up, or is really the level they claim\" — is false as written for football in Kadıköy as of 31 Aug 2026. RELIABILITY (the % attendance score) and the LEVEL-range match are not novel; a competitor is shipping both plus the piece Avenza deferred (real iyzico money movement with per-person split). Avenza should stop positioning the trust layer as the differentiator and re-anchor on what HalıSaha+ does not do: it is football-only, whereas Avenza's LEVEL is per-sport across eight sports and its VENUE pages and BULLETIN are cross-sport. Also note HalıSaha+ shows level as four coarse self-selected tiers, not a 1.0–7.0 number.",
+   "confidence": "high",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "claim": "No one in the Turkish halı saha app market has distribution: all 17 apps launched in 2025–26 have 26 or fewer App Store TR ratings each and 167 ratings between them, fewer than the single abandoned incumbent Halısahavar's 154.",
+   "evidence": "iTunes search API (term=halısaha, entity=software, country=tr, limit=25, fetched 2026-09-01) returned 25 results; excluding 3 non-Turkish lineup apps leaves 22. Of those, 17 first released in 2025 or 2026. Every one has userRatingCount ≤ 26 (max: Altıpas 26 and Saha Bul 26; HalıSaha+ 18; Maçla 17; Santra 13; Pasona 11), summing to 167 across all 17. Halısahavar (id 1583998724) has 154 ratings at 4.60 but its iOS version 1.2.4 was last updated 2022-06-29 and its Android build was last updated \"29 Ara 2021\" (scraped from the Google Play TR page for com.halisahavarapp.halisahavar). The only three apps reaching Google Play's \"10 B+\" (10,000+) install bucket are Halısahavar (dead since Dec 2021), Adam Eksik (adam.eksik, 3.94 from 121 ratings, last updated 12 Eki 2024) and Altıpas. Santra's Play listing shows only \"50+\" installs despite shipping 23 Ağu 2026.",
+   "sources": [
+    "https://itunes.apple.com/search?term=hal%C4%B1saha&entity=software&country=tr&limit=25",
+    "https://play.google.com/store/apps/details?id=com.halisahavarapp.halisahavar&hl=tr",
+    "https://play.google.com/store/apps/details?id=adam.eksik&hl=tr",
+    "https://play.google.com/store/apps/details?id=com.altipas.app&hl=tr",
+    "https://play.google.com/store/apps/details?id=com.furkandede.santra&hl=tr"
+   ],
+   "consequence": "The moat is liquidity in one district, not the trust layer — everyone has features, nobody has players. This makes Avenza's ELIGIBILITY rule its single biggest product risk: hard-filtering a game out of Discover and Search when the level range excludes you removes inventory from a feed that will start near-empty in Kadıköy. At competitor densities (tens of active users), a level-filtered Discover shows a new user nothing and they churn before the loop ever reaches Play->Rate->Reputation. Recommend the host's \"let others ask anyway\" opt-in be defaulted ON, or the filter be softened to a demotion rather than a hard hide, until a district has enough concurrent games to survive filtering.",
+   "confidence": "high",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "claim": "The WhatsApp-group-and-missing-players problem that Avenza's ad concept names is now the explicit marketing hook of at least two live competitors, and the 2026 answer is WhatsApp interop plus no-account joining — not replacing the group chat.",
+   "evidence": "Santra's App Store TR description (id 6757343159, v1.8.0, updated 2026-08-24) opens verbatim: \"Halı saha maçı ayarlamak, WhatsApp grubunda 'kim var, kim yok' mesajlarında kaybolmasın.\" Altıpas's release notes for v2.1.0 (updated 2026-08-27) lead with: \"WhatsApp kadronu yapıştır: kadron ve dizilişin saniyeler içinde hazır olsun. Maçını linkle paylaş, uygulamada olmayan arkadaşların da kadrodan yer alsın\", and its description adds \"UYGULAMADA OLMAYAN ARKADAŞLARIN İÇİN — Maç bağlantısını paylaş; arkadaşların uygulamayı indirmeden linke tıklayıp kadrodaki yerini alsın.\" By contrast the oldest and largest player-finding incumbent, Adam Eksik (Play since 2 Ara 2019, 10 B+ installs, 121 ratings, last updated Oct 2024), still hands off out of the app: its Play page states \"oyuncu profil bilgileri kısmından mobil numarasından ulaşarak maçınıza davet edebilirsiniz\" (invite them by reaching them on their mobile number), and adameksik.com is a forum with threads like \"Adana maç arıyorum\". A Turkish 2026 directory of halı saha player/opponent WhatsApp groups is still being published (gruplari.com.tr).",
+   "sources": [
+    "https://itunes.apple.com/lookup?id=6757343159&country=tr",
+    "https://apps.apple.com/tr/app/santra-hal%C4%B1-saha-kadro/id6757343159",
+    "https://itunes.apple.com/lookup?id=6761342905&country=tr",
+    "https://apps.apple.com/tr/app/alt%C4%B1pas-hal%C4%B1-saha-ma%C3%A7%C4%B1-bul/id6761342905",
+    "https://play.google.com/store/apps/details?id=adam.eksik&hl=tr",
+    "https://adameksik.com"
+   ],
+   "consequence": "Avenza's ad concept is no longer a wedge; it is the category's shared pitch line. Two concrete gaps this opens in Avenza's own flows: (1) CREATE has no import path — Altıpas turns a pasted WhatsApp roster into a squad in seconds, which is how it seeds a game with real people rather than strangers; (2) ONBOARDING's deferred-signup / Google-Apple-only design is directionally correct but stops short of Altıpas's install-free link join, so a host who fills 6 of 10 spots from their existing group still has to make four friends install Avenza. Adding roster import and a web link-join to CREATE is a cheaper liquidity mechanism than the trust layer.",
+   "confidence": "high",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "claim": "Every Turkish halı saha competitor exposes skill as a visible coarse label the player picks or earns, and none hides matches from a player because of it — Avenza's hidden 1.0–7.0 number combined with silent filtering is unique in this market and untested on Turkish players.",
+   "evidence": "Three distinct display conventions, all read from App Store TR descriptions fetched via the iTunes lookup API on 2026-09-01. HalıSaha+ (id 6761794919): four self-selected tiers, \"Mevkini, seviyeni, ilçeni ve boş saatlerini seç\", listed on halisahaplus.com as Başlangıç/Orta/İyi/Rekabetçi — the player declares level, the system then places them (\"seni ... en dengeli maça yerleştirir\"), it does not hide games. Santra (id 6757343159): a FIFA-style earned card, \"Hız, şut, pas, dribling, defans, fizik - 6 yetenek kategorisi\" and \"Oyuncu yetenek kartı: Bronz → Gümüş → Altın → Elmas\", plus \"Fair play puanıyla centilmenliğini göster\". Altıpas (id 6761342905): \"Her maç sonrası yapılan değerlendirmelerle gelişen bir oyuncu kartın oluşur. Maç sayısı, galibiyet, gol, asist ve MVP oyların profilinde birikir; topluluk sıralamasında yüksel.\" Halısahavar (dead, but 154 ratings) used \"HALISAHAVAR KARTINI OLUŞTUR! Mevkini seç, özelliklerini belirle\". No description among the 22 Turkish apps examined describes suppressing or hiding matches on the basis of a player's level.",
+   "sources": [
+    "https://itunes.apple.com/lookup?id=6761794919&country=tr",
+    "https://itunes.apple.com/lookup?id=6757343159&country=tr",
+    "https://itunes.apple.com/lookup?id=6761342905&country=tr",
+    "https://itunes.apple.com/lookup?id=1583998724&country=tr",
+    "https://halisahaplus.com"
+   ],
+   "consequence": "Bears directly on LEVEL and ELIGIBILITY. Two implications. First, the market's convention is that level is a badge you show off and grow (bronze to diamond, MVP votes, community ranking) — a motivational surface. Avenza stores 1.0–7.0, matches on the number, displays 1–5 stars, and uses it destructively: it removes games from view. A player who cannot see what they were excluded from cannot understand or contest the number, which is the opposite of the reputation-as-reward loop competitors are building. Second, if Avenza keeps the hard filter it should at minimum surface the count of hidden games and the reason (\"3 games near you need level 4+\"), which preserves the filter's matching benefit while giving the LEVEL number a visible payoff and a reason to play again.",
+   "confidence": "medium",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "claim": "Playtomic's player level runs 0 to 7 per sport and its profile already shows a percentage labelled \"reliability\" — so Avenza's 1.0-7.0 level AND its \"reliability %\" are both direct collisions with the category leader's existing vocabulary, with reliability meaning two completely different things.",
+   "evidence": "Fetched Playtomic's own help centre with curl (WebFetch was blocked 403 by their bot filter). Article 19831827459345 states verbatim: \"The Playtomic levels range from 0 to 7.\" Article 19831576375313 (\"What does each section of the Playtomic player profile represent?\") states verbatim: \"The percentage of the reliability represents how reliable your level is. This is used to adjust your level after playing a match - the lower the percentage, the more it varies.\" Article 43310980754193 confirms the pipeline is questionnaire-seeded then match-derived: \"This initial assessment can only be completed once and gives you your starting level\", then level updates on match result, opponent levels, partner level, and \"Your reliability score\". It also confirms per-sport scope (\"padel, tennis and pickleball\") and that reliability \"is set automatically by the system - neither you nor Playtomic Customer Care can adjust it manually\", with a certified leveling session setting it to \"medium (50%)\". Article 19831855406609 confirms peer ratings already nudge level: \"You need to receive a sufficient number of positive reviews from opponents you've played against... the level can increase by up to 0.5 points.\"",
+   "sources": [
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19831827459345-The-Playtomic-Levels-ups-downs",
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19831576375313-What-does-each-section-of-the-Playtomic-player-profile-represent",
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/43310980754193-How-the-Playtomic-level-system-works",
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19831855406609-How-to-change-your-level"
+   ],
+   "consequence": "Two of Avenza's three headline mechanics are pre-owned. (1) LEVEL: Avenza's 1.0-7.0 overlaps six of Playtomic's seven points, and Playtomic's version is per-sport, questionnaire-seeded, match-derived and peer-review-nudged — exactly Avenza's Rate -> Reputation -> better-matches loop, already shipped. Avenza displaying it as 1-5 stars while storing 1.0-7.0 is the only real divergence, and it is a lossy one: a Playtomic user who reads their own level as \"3.25\" gets a coarser number in Avenza. (2) RELIABILITY: Avenza puts a percentage on the profile next to a level and means attendance; Playtomic puts a percentage on the profile next to a level and means confidence-in-level. Any padel player arriving from Playtomic will misread Avenza's 94%. Avenza should either rename the mechanic (\"Attendance\", \"Katılım\") or explicitly contrast it in-product — the current label is the incumbent's word for something else.",
+   "confidence": "high",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "claim": "Playtomic does NOT hide out-of-level open matches — it shows them, labels them \"Out of range\", and always offers a \"Request a spot\" path requiring unanimous approval from every already-enrolled player. Avenza's default (filter ineligible games out of Discover and Search entirely, host opt-in off) is strictly more restrictive than the category leader's.",
+   "evidence": "Fetched article 19832027031569 by curl. Verbatim: \"If you want to join an open match but you don't have the required level for that match, you can 'Request a spot' to be included, even if you couldn't join due to level and accuracy restrictions.\" And from its FAQ block: \"'Registration requirements not met' or 'Out of range' message: This means the match level is outside your current level range. You can still send a spot request - the existing players will be notified and can choose to accept you despite the level difference.\" The approval rule is unanimous and one-vote-vetoed: \"The player who wants to join the match must be accepted by all of the other players who joined previously. However, it is enough for one player to reject the requested in order to not be accepted.\" Rejections are also reversible via a \"Requests for places\" list.",
+   "sources": [
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19832027031569-How-to-request-a-spot-in-a-open-match"
+   ],
+   "consequence": "Directly contradicts Avenza's ELIGIBILITY design. The incumbent that has the most level data and the most liquidity still chose to show ineligible matches, because hiding supply from a user with nothing else to look at is a churn event. Avenza will launch in one district of one city with a fraction of Playtomic's supply, so a hard filter empties Discover far faster. Two concrete moves: flip the host's \"let others ask anyway\" default to ON, and replace hard hiding with Playtomic's pattern — render the game, badge it \"Seviye dışı / Out of range\", and route to a request. Also note Playtomic's approval is unanimous-with-veto, not host-only; Avenza's host-only ask is a weaker social filter and worth reconsidering, since the existing players are the ones who bear a mismatched fourth.",
+   "confidence": "high",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "claim": "Playtomic is effectively absent from Turkey — no Turkish localisation, 188 Turkish ratings against 75,597 in Spain, no Turkey in its published fee schedule, and zero Turkish clubs in a 140-club random sample of its 6,879-club sitemap — but at least three Turkey-built racquet apps already ship level-matching plus open matches plus cost-splitting, so Avenza's LEVEL mechanic is not a differentiator in Istanbul.",
+   "evidence": "Apple's keyless API (itunes.apple.com/lookup?id=1242321076) across nine storefronts: TR 188 ratings vs ES 75,597, IT 39,943, GB 33,040, DE 13,393, SE 12,054, NL 10,752. languageCodesISO2A = ['CA','DA','NL','EN','FI','FR','DE','IT','NB','PL','PT','ES','SV'] — 13 languages, no TR. Pulled playtomic.com/sitemap.xml: locale prefixes are es/it/pt/fi/sv/nl/fr/de only, no /tr/; 61,911 URLs resolve to 6,879 unique clubs. Fetched 140 randomly sampled club pages concurrently and parsed the meta description (\"Welcome to X, in <city>\") — 0 Turkish cities (top hits Roma, Madrid, Zapopan, Centurion, Dubai). sitemap-pages.xml has 26 padel-courts and 26 tennis-courts city landing pages including Doha, Dubai, Singapore, Cape Town, Nicosia, Tijuana — none Turkish. The Service Fee article lists 36 countries; Türkiye is not among them. Against that, the TR App Store returns Turkey-built rivals whose own descriptions claim the mechanic: Matchabit (36 TR ratings) — \"an advanced leveling system that adjusts based on match outcomes\", \"join public matches\", \"share court costs\", \"get paired with players at your level\"; Padeon (11 ratings, EN+TR) — \"Through the level-matching system, players can find suitable opponents, create matches, or join existing ones\"; Raqet House (5 ratings) — \"Açık maçlar oluşturun veya katılın; seviyenize uygun oyuncularla eşleşin\" plus an \"RQT puanı\" city ranking. Other internationals are equally absent: MATCHi 5 TR ratings and no Turkish among 14 languages, Anybuddy 2 TR ratings (EN/FR/ES only), Sportya not in the TR store, Padel Manager 0 TR ratings.",
+   "sources": [
+    "https://itunes.apple.com/lookup?id=1242321076&country=tr",
+    "https://playtomic.com/sitemap.xml",
+    "https://playtomic.com/sitemap-clubs-0.xml",
+    "https://playtomic.com/sitemap-pages.xml",
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19831779272337-Service-Fee",
+    "https://itunes.apple.com/search?term=padel%20rezervasyon&entity=software&country=tr&limit=12"
+   ],
+   "consequence": "Splits the stated bet in two. The good half: no incumbent has claimed Istanbul, and Playtomic's own no-show handling is a manual Customer Care ticket that creates a debt and then explicitly voids the match (\"The match result will be marked as void so it doesn't affect any player's level\") — there is no persistent attendance number anywhere on a Playtomic profile, and none of Matchabit, Padeon or Raqet House advertises one. So Avenza's RELIABILITY-as-attendance really is unoccupied ground and the brief's bet holds. The bad half: the brief's claim that \"nobody else knows... whether they are really the level they claim\" is false in Istanbul as of now — three local racquet apps already assert match-derived level matching in Turkish. Avenza should stop pitching LEVEL as the differentiator and pitch attendance only, and should not expect padel alone to be defensible turf.",
+   "confidence": "high",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "claim": "Playtomic charges players NOTHING for a plain court booking in every market checked, and its open-match fee is either hard-capped at about one euro (UK 20% capped at GBP 0.99; Poland 20% capped at PLN 3.99) or a low flat rate in emerging markets (Morocco 4%, no maximum) — so Avenza's uncapped flat 10% on every player share is roughly 2.5x the nearest comparable rate and applies where the incumbent charges zero.",
+   "evidence": "Playtomic's Service Fee help article renders its per-country fee schedule as PNG images; I downloaded three attachments by curl and read them. United Kingdom (attachment 39560464635793): Open Matches GBP 20.0%, Min 0.24, Max 0.99; Player Bookings NO FEE / NO FEE / NO FEE; Classes 4.0%; Courses 2.0%; Leagues 2.0%; Tournaments 4.0%. Poland (39560464619025): Open Matches PLN 20.0%, Min 1.24, Max 3.99; Player Bookings NO FEE, NO MIN, NO MAX. Morocco (39560464609681): Open Matches MAD 4.0%, Min 3, NO MAX; Player Bookings NO FEE, NO MIN, NO MAX. The article text adds that the fee \"applies to every transaction processed online, except for wallet transactions\", is not refunded on reservation or tournament cancellation, but IS refunded \"if you delete yourself from an open match or if the match is canceled\", and does not apply to vouchers, club wallets, or when the court fee is 0. Türkiye appears nowhere in the 36-country schedule.",
+   "sources": [
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19831779272337-Service-Fee",
+    "https://playerhelp.playtomic.com/hc/article_attachments/39560464635793",
+    "https://playerhelp.playtomic.com/hc/article_attachments/39560464619025",
+    "https://playerhelp.playtomic.com/hc/article_attachments/39560464609681"
+   ],
+   "consequence": "Prices Avenza's MONEY mechanic against a real ceiling. On Avenza's own worked example (720 TL court, 180 TL share), Avenza takes 18 TL; Playtomic's emerging-market rate (Morocco, 4%) would take 7.2 TL, and its UK/Poland structure would cap the take near one euro no matter how expensive the court. Two structural lessons Avenza's fee design currently ignores: (1) Playtomic charges 0% on a straight booking and monetises only the social open-match layer — Avenza taxing every player share, including a host booking a court to split with friends, is a strictly worse deal than the incumbent's free tier. (2) Playtomic caps the absolute fee; Istanbul padel courts run 1,000-3,000 TL/hour (unverified, from Turkish club-guide blogs), so an uncapped 10% on a 3,000 TL premium court means a 75 TL fee on a 750 TL share — a number no incumbent charges anywhere. Given host payouts are explicitly not built yet, the fee is also currently revenue Avenza cannot legally route; the cap-and-free-booking design is worth adopting before the payments provider conversation, not after.",
+   "confidence": "high",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "claim": "Avenza's exact trust layer — a per-player attendance-reliability score used to filter out people who bail — is already shipping in Turkey inside HalıSaha+, which also ships level-based match placement, per-person cost split via a licensed PSP, and post-match player rating.",
+   "evidence": "Fetched the live Turkish App Store listing via the public iTunes API (https://itunes.apple.com/lookup?id=6761794919&country=tr), version 1.1.6, currentVersionReleaseDate 2026-08-31 (one day before this run). The description contains a dedicated section headed \"GÜVEN PUANI — MAÇ İPTALİ DERDİ BİTSİN\" (Trust Score — end the match-cancellation problem) with the bullets: \"Halı Saha+ Güven Puanı, maçı satıp ekibi yarı yolda bırakanları filtreler\" (the Trust Score filters out those who sell out a match and leave the team stranded) and \"Her oyuncunun katılım güvenilirliği profilinde görünür\" (every player's ATTENDANCE RELIABILITY is visible on their profile). Same listing: \"Yapay zekâ seni performans puanına ve oyun sertliğine göre en dengeli maça yerleştirir\" (AI places you in the most balanced match by performance score and play intensity); \"herkes kendi payını öder\" with \"iyzico ile kredi kartı veya havale/EFT\"; and \"maç sonrası oyuncu değerlendirme, bekleme listesiyle kadro tamamlama\". I then downloaded the 626px store screenshots and read them: screenshot 8 renders a live profile card with 177 Maç, 78/26/44 W-D-L, \"4.0 Puan\", \"Puan Detayı (59 değerlendirme)\" (rating detail from 59 evaluations) and \"Seviye · Altın II · Lvl 14 · 7.541 XP\", plus a location chip \"İstanbul · Adalar +38\" (39 neighbourhoods). Screenshot 7 shows district chat rooms live in Ümraniye, Pendik, Beyoğlu, Esenyurt (Istanbul, both shores). The vendor site halisahaplus.com corroborates the rating infrastructure — \"Oyuncu sahayı, saha oyuncuyu, kaptan rakip takımı, katılımcı organizatörü puanlıyor\" — and lists Istanbul among cities served, though it does not use the term \"Güven Puanı\", so the score's in-app rendering is verified only as far as the games-played + star-rating half of the profile card.",
+   "sources": [
+    "https://itunes.apple.com/lookup?id=6761794919&country=tr",
+    "https://apps.apple.com/tr/app/hal%C4%B1saha-rezervasyon-kadro/id6761794919",
+    "https://halisahaplus.com"
+   ],
+   "consequence": "This directly falsifies the brief's verbatim bet that \"Nobody else knows whether the stranger you matched with will actually turn up.\" Someone in Turkey does, and says so in their store copy. Worse for sequencing: Avenza's RELIABILITY percentage, LEVEL number, post-game RATE step, neighbourhood onboarding step and per-person MONEY split are all present in one shipped Turkish app, and it has already crossed the bridge Avenza's brief explicitly defers — \"host payouts are explicitly NOT built: that needs a payments provider and probably a licence\" — by integrating iyzico. Avenza cannot lead with the trust layer as the differentiator in this market; it must either lead with something else or beat HalıSaha+ on execution of a claim the incumbent has already staked. Mitigating detail worth weighing: the listing has only 18 ratings (4.33) and its Discover screenshot still shows a seeded \"HalıSaha+ Demo Park Halı Saha\" venue in Ankara, so the claim is shipped but the marketplace is thin — the position is taken in copy, not yet won in liquidity.",
+   "confidence": "high",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "claim": "Not one of the large Western pickup platforms ships a reliability SCORE; every one of them enforces attendance with money or with a binary ban instead — and the money version is the harder deterrent, already live in Turkey via Playtomic.",
+   "evidence": "Playtomic's public help centre (retrieved over plain HTTP with a browser user-agent after the fetch tool got 403; the page is public and unauthenticated) states verbatim: \"Players can remove themselves up to 24 hours before the match starts. After this time, if they don't show up, it's considered a no-show... The absent player will be charged for the court fees. A debt is created in the app, and the no-show player must pay this debt in-app with a card in order to continue using the app.\" It adds \"The match result will be marked as void so it doesn't affect any player's level\" — i.e. Playtomic deliberately keeps no-shows OUT of its rating system and handles them financially. Plei's Terms state: \"If a user does not show up for a confirmed Event and does not notify Plei before the Event start time, no refund or Event credit will be issued, and in addition, a $5 no-show fee will apply\", plus \"the user... may be banned from participating in other free Events. A user's account may be deactivated in the case of multiple no-shows.\" I read the full current App Store descriptions of the three largest Western pickup apps via the iTunes API — Plei (4.84, n=12,427), GoodRec (4.86, n=13,693), OpenSports (4.91, n=2,323) — and none mentions attendance, reliability, no-shows or a trust score; GoodRec's release notes offer only \"Safety tools — Block and report players\", and OpenSports offers \"Check-in attendees\" and \"Group reviews\" but no player reliability metric. The only two products positioning explicitly on a reliability score are tiny or unlaunched: LinkedUp (\"Reliability Score based on real-world attendance, so you can see who follows through before you tap in\"; \"Lose score for no-shows\"; \"Extra score for showing up when the weather is unfavorable\") has an email-capture waitlist and returned no App Store listing in a targeted iTunes search; Pickup LLC (\"Built-in reputation system ensures reliable attendance\") has 12 ratings. Playtomic is live in Turkey: TR App Store, 4.88, n=188, version 6.88.0 updated 2026-08-31.",
+   "sources": [
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/43240624037393-What-happens-if-a-player-doesn-t-show-up",
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19831672824465-Cancellation-Policy-for-Open-Matches",
+    "https://www.plei.com/terms/terms-conditions",
+    "https://itunes.apple.com/lookup?id=1225575821&country=us",
+    "https://itunes.apple.com/lookup?id=1510554246&country=us",
+    "https://itunes.apple.com/lookup?id=1056940981&country=us",
+    "https://itunes.apple.com/lookup?id=1242321076&country=tr",
+    "https://getlinkedup.app/",
+    "https://apps.apple.com/us/app/pickup-connect-play-sports/id6741133608"
+   ],
+   "consequence": "The cancellation-fee-vs-reliability-score distinction cuts against Avenza twice. First, it means the score is genuinely unbuilt at scale globally — that part of the bet survives — but it is unbuilt because the operators who have the most no-show data chose a different tool, and Playtomic explicitly voids no-show matches so they never touch its rating. That is evidence a score is the weaker instrument, not evidence of an unspotted gap. Second, Avenza's RELIABILITY percentage has no teeth: a 94% badge costs a defector nothing today, whereas Playtomic makes them pay the court fee before they can open the app again. Since Avenza already plans to touch money (the 10% fee on the player's share), the cheapest hardening of the trust layer is to attach a consequence to the existing MONEY mechanic — forfeit the player's share on a late bail — rather than to ship reputation alone. Note the interaction with ELIGIBILITY: because a game outside your level range is not shown at all, Avenza has no fallback surface on which a low-reliability user can still be offered games at a penalty, so reputation can only ever hide supply, never price it.",
+   "confidence": "high",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "claim": "Charging the player a commission on their share of the court fee is not the norm in the Turkish market — every Turkish player-matching app examined takes zero cut of the split and monetises elsewhere or not at all.",
+   "evidence": "I read the store description of HalıSaha+'s payment flow and then read its store screenshot 4 directly: it renders a live 6-step \"Rezervasyon Oluştur\" wizard, \"Adım 5 / 6: Ödeme Şekli\", offering \"Ben Ödüyorum\" (Ödemeniz ₺3.500) versus the selected \"Herkes Kendi Öder — Her oyuncu kendi payını öder. Toplam tutar kişi sayısına bölünür\" (Ödemeniz ₺250). 3.500 ÷ 250 = exactly 14 players, so the split is at face value with no visible markup, under the banner \"SAHA KİRALA / KENDİ PAYINI ÖDE — Online ödeme · nakit toplama derdi yok\". Its site describes the product as \"Ücretsiz kullan\" with no commission stated. Corroborating across four more Turkish listings pulled from the TR App Store API: \"Adam Eksik\" states \"Ödeme/komisyon yok — anlaşmalar ve ödemeler kullanıcılar arasında, elden\" (no payment/commission; deals and payments are between users, in cash); Altıpas states \"Altıpas ücretsizdir\"; Smashmate (Turkish company, KAPLANS BİLGİ TEKNOLOJİLERİ) states \"Finding opponents is free. Creating matches is free... No in-app purchases, no subscriptions\" and routes booking to the club's own system; Sporsepeti (SPORSEPETİ TEKNOLOJİ A.Ş., 4.25, n=271, live since 2022) monetises with a Premium subscription — \"You can send two match requests per week for free, or upgrade to Premium for unlimited requests\" — not a transaction cut.",
+   "sources": [
+    "https://apps.apple.com/tr/app/hal%C4%B1saha-rezervasyon-kadro/id6761794919",
+    "https://halisahaplus.com",
+    "https://apps.apple.com/tr/app/adam-eksik/id6776723968",
+    "https://apps.apple.com/tr/app/alt%C4%B1pas-hal%C4%B1-saha-ma%C3%A7%C4%B1-bul/id6761342905",
+    "https://apps.apple.com/tr/app/find-padel-players-smashmate/id6760764730",
+    "https://apps.apple.com/tr/app/sporsepeti-tennis-padel/id1628877345"
+   ],
+   "consequence": "Avenza's MONEY mechanic — 720 TL court, 180 TL share, 18 TL fee, 198 TL paid — asks the Kadıköy player to pay 10% more than the identical split costs them in HalıSaha+ or in cash, for a court Avenza does not own and a booking it does not hold. In a market where the free alternative already renders the split screen with a licensed PSP behind it, a player-side take rate is the single easiest thing for a competitor to point at. The two monetisation models actually validated in Turkish sports-social apps are subscription (Sporsepeti Premium, gating match requests) and the venue/organiser side (HalıSaha+ sells pitch automation, dynamic pricing and league tooling to işletmeler). Both are compatible with Avenza's existing surfaces — the BULLETIN already has \"local sponsor slots\" and VENUES pages are already derived from games — and neither requires the payments licence the brief flags as blocking. Recommend re-testing the 10% before it is built, because it is being built onto the one mechanic where a competitor charges zero.",
+   "confidence": "high",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "claim": "The second half of Avenza's bet — that nobody knows whether a stranger \"is really the level they claim\" — is the more comprehensively owned half: level-verified matching has been shipping in Turkey since 2022, and Avenza's specific implementation (hide games outside your range) is a strictly weaker form of it than the ELO systems already in market.",
+   "evidence": "Sporsepeti (SPORSEPETİ TEKNOLOJİ A.Ş.) has been on the TR App Store since 2022-07-27, is at v2.16.0 with 271 ratings, and its current description reads: \"Answer the level assessment questions... Add your score after each match and watch your ELO rating update... Before matching, check your opponent's profile to see their match history, win rate, rallies, badges, tournament results, and level. Every match helps you find opponents who are better suited to your level.\" Smashmate, a Turkish company shipping since 2026-08-05, states: \"Every Smashmate player has an ELO rating. The player feed shows each opponent's ELO, win rate and match stats, so you get balanced, enjoyable games instead of one-sided ones\" and its match-creation flow includes \"Set the skill range\" — Avenza's ELIGIBILITY mechanic, verbatim. HalıSaha+ screenshot 3, which I read directly, renders a shipped \"Düello Arama İlanı\" form with a four-tier selector Başlangıç / Orta / İleri / Profesyonel under the caption \"Eşleştirmeler buna göre yapılır\" (matches are made accordingly). Altıpas states \"Her maç sonrası yapılan değerlendirmelerle gelişen bir oyuncu kartın oluşur\" (a player card that evolves from post-match evaluations). Critically, all four derive level from RESULTS — ELO updated from recorded scores, win rate, match history — whereas Avenza's brief derives its 1.0–7.0 number from self-declaration nudged by peer ratings.",
+   "sources": [
+    "https://apps.apple.com/tr/app/sporsepeti-tennis-padel/id1628877345",
+    "https://apps.apple.com/tr/app/find-padel-players-smashmate/id6760764730",
+    "https://apps.apple.com/tr/app/hal%C4%B1saha-rezervasyon-kadro/id6761794919",
+    "https://apps.apple.com/tr/app/alt%C4%B1pas-hal%C4%B1-saha-ma%C3%A7%C4%B1-bul/id6761342905"
+   ],
+   "consequence": "For padel and tennis — two of Avenza's eight sports and the two with the most Istanbul commercial momentum — the level problem is solved by incumbents using outcome-derived ELO, and Avenza would be entering with a softer signal. This also exposes a cold-start defect in ELIGIBILITY: because a game whose level range excludes you is NOT SHOWN AT ALL and the host opt-in to \"let others ask anyway\" is off by default, a brand-new Avenza user whose 1.0–7.0 number is still just a self-declaration gets silently filtered out of supply before the RATE step has ever run — the loop cannot reach \"Reputation\" because \"Discover\" already hid the games. Sporsepeti's \"level assessment questions\" at signup and Smashmate's browse-before-signup (\"browse padel matches and courts around you without signing up\") are both direct answers to that problem that Avenza's deferred-signup onboarding currently lacks. The defensible move is to make the default a visible, askable \"outside your range\" state rather than invisibility, and to derive level from recorded results for the racket sports where the comparison to Sporsepeti will be made.",
+   "confidence": "medium",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "claim": "Avenza does NOT need its own TCMB payment licence to run the 10% split — but only in an architecture where it never owns the funds; Law 6493 Art. 12(2) makes the technical-facilitator exclusion conditional on the platform not being the owner of the transferred funds at any moment of the transaction, and the own-licence fallback now costs 40 million TL of minimum equity.",
+   "evidence": "Downloaded the TCMB's own guide 'Ödemeler Alanında Sunulan İş Modellerinin Ödeme Hizmeti Türleri ile İlişkilendirilmesine İlişkin Rehber' (Eylül 2022) and ran pdftotext on it. It reproduces the Art. 12(2) exclusion list verbatim, including: 'Teknik hizmet sağlayanların sunduğu... teknik hizmet sağlayanların işlemin herhangi bir anında transfer edilen fonun sahibi olmadığı hizmetler' and the commercial-agent limb 'Ödeme işleminin, gönderen ya da alıcı namına mal veya hizmet pazarlığına ya da alım satımına yetkili olan ticari temsilci aracılığıyla yapılması'. It then states flatly: 'Bankamız ve yukarıda sayılan ödeme hizmeti sağlayıcıları dışındaki kişilerin ödeme hizmeti sunması yasaktır.' Separately, pdftotext on the TCMB Tebliğ (Resmî Gazete 31 Ocak 2026, Sayı 33154) gives the new capital floors verbatim: '...asgari özkaynak yükümlülüğü tutarları, sırasıyla yirmi milyon Türk Lirası, kırk milyon Türk Lirası ve yüzbeş milyon Türk Lirası olarak belirlenmiştir. Bu Tebliğ 30/6/2026 tarihinde yürürlüğe girer.' — i.e. 20m TL for bill-payment-only institutions, 40m TL for a general ödeme kuruluşu, 105m TL for an e-money institution, up from 15m/30m/80m. The exemption is not free either: two law-firm sources put a 50 million TL rolling-12-month transaction threshold on the ticari temsilci exemption, above which an annual January notification to TCMB is due. iyzico's pazaryeri docs confirm the compliant route: money lands in iyzico's account first ('para ilk olarak iyzico hesabına gelir'), iyzico is merchant of record, and sub-merchants may be Bireysel, Şahıs Şirketi or Limited/A.Ş.",
+   "sources": [
+    "https://tcmb.gov.tr/wps/wcm/connect/5b814310-a57b-4e64-82fe-76e520d0e0b1/%C3%96demeler+Alan%C4%B1nda+Sunulan+%C4%B0%C5%9F+Modellerine+%C4%B0li%C5%9Fkin+Rehber.pdf?MOD=AJPERES",
+    "https://www.tcmb.gov.tr/wps/wcm/connect/16401ca1-285b-4952-9f96-0835429a8fa9/Tebli%C4%9F.pdf?MOD=AJPERES",
+    "https://www.alomaliye.com/2026/01/31/odeme-ve-elektronik-para-kuruluslarinin-asgari-ozkaynak-miktarlari-2026/",
+    "https://www.tcmb.gov.tr/wps/wcm/connect/25571f4f-72ac-4f4b-ab59-2d683fcbc271/%C3%96deme+Hizmetleri+ve+Elektronik+Para+%C4%B0hrac%C4%B1+ile+%C3%96deme+Hizmeti+Sa%C4%9Flay%C4%B1c%C4%B1lar%C4%B1+Hakk%C4%B1nda+Y%C3%B6netmelik.pdf?MOD=AJPERES",
+    "https://fintechistanbul.org/2023/01/03/tcmbye-yapilacak-ticari-temsilci-ve-sinirli-ag-istisnalari-bildirimlerinde-dikkat-edilmesi-gerekenler/",
+    "https://docs.iyzico.com/urunler/pazaryeri"
+   ],
+   "consequence": "The brief's line 'host payouts... needs a payments provider and probably a licence' is half right and half wrong, and the wrong half is the expensive one. There is no licence needed IF Avenza never touches the money — but that constraint has a hard product consequence for the MONEY mechanic and for CREATE. Any design where Avenza holds a balance, runs a wallet, escrows the pot until the game is played, refunds a no-show from Avenza's own float, or pays out to an individual host's IBAN, breaks the 'fonun sahibi olmadığı' condition and pushes Avenza toward a 40m TL capital requirement from 30 June 2026. The safe build: iyzico pazaryeri, each player charged individually at join time, and the VENUE as the alt üye işyeri — never the peer host. Making the host the sub-merchant is legally possible (iyzico supports 'Bireysel') but drags in gider pusulası and income-tax stopaj obligations on every payout to a private individual, which is a second, avoidable regulatory surface. This also means the ELIGIBILITY/level filter, not a payment hold, has to be what protects the game — and that the 'let others ask anyway' opt-in should not become a money-holding flow.",
+   "confidence": "high",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "claim": "Avenza's 10% headline take is really about 3.5% net, because iyzico charges its ~4.29% + 0.25 TL commission on the FULL transaction amount and deducts it from the marketplace's share, not the seller's — so on the brief's own 198 TL example Avenza pays the PSP on all 198 TL while only 18 TL of it is Avenza's revenue.",
+   "evidence": "Scraped iyzico's own pricing and pazaryeri help pages with curl (WebFetch mangled them). Verbatim: 'iyzico komisyon ücreti, toplam işlem ücreti üzerinden hesaplanarak yeterli bakiyesi bulunan pazar yerinin payından kesilmektedir.' and 'iyzico üye iş yerlerine, her bir başarılı işlem için %4,29 ve 0,25 TL işlem ücreti uygulanmaktadır.' (non-company sellers: '%4,49'dan başlayan komisyon oranları + 0,25 TL'). KDV general rate is 20% since Karar 7346, Resmî Gazete 7 July 2023 no. 32241, effective 10 July 2023 (raised from 18%). Arithmetic on the brief's own numbers: player pays 198 TL; iyzico takes 4.29% x 198 + 0.25 = 8.74 TL out of Avenza's 18 TL; if the 18 TL is KDV-inclusive as Turkish consumer pricing normally is, net revenue is 18/1.20 = 15.00 TL; 15.00 - 8.74 = 6.26 TL retained = 3.5% of the player's 180 TL share, i.e. Avenza keeps ~35% of its own headline fee. On a real 2,800 TL indoor pitch split 14 ways the same maths yields ~6.98 TL per player, ~98 TL per game.",
+   "sources": [
+    "https://www.iyzico.com/fiyatlandirma",
+    "https://www.iyzico.com/destek/yardim-merkezi/urunler-ve-ozellikler/pazaryeri-odeme-cozumu",
+    "https://www.alomaliye.com/2023/07/07/katma-deger-vergisi-oranlari-karar-sayisi-7346/",
+    "https://docs.iyzico.com/urunler/pazaryeri/pazaryeri-entegrasyonu/pazaryeri-odemesi"
+   ],
+   "consequence": "The MONEY mechanic as specified is a ~3.5% business wearing a 10% label, and the gap is structural rather than a rate you can negotiate away: Avenza is paying card fees on the venue's money out of its own margin. Three levers, all of which change the UI copy: (a) raise the player fee to ~15-16% gross to net a true 10% — which would show as 180 TL + 28 TL on the join sheet and is well above the incumbent band in finding 3; (b) split the PSP cost with the venue via the pazaryeri commission agreement so the venue's share carries its own card cost; or (c) charge the venue a listing/commission rate instead of the player, which also removes the fee from the join flow entirely. Note the fee is also a KDV-bearing service supply, so ~1/6 of whatever is displayed is not revenue — the '10% fee, 18 TL' figure in the CREATE and join screens should be treated as gross-of-VAT, and per-sport unit economics should be modelled on ~3.5%, not 10%.",
+   "confidence": "medium",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "claim": "10% is at the top of the market band, not below it: Playtomic charges exactly 10.0% on open matches in Greece and 20.0% in the US and Albania, but only 3.0-4.0% (Greece/Albania) or nothing at all (US) on plain court bookings — and it caps the fee in most markets, which Avenza does not.",
+   "evidence": "Playtomic's help centre 403s to WebFetch, so I pulled it with curl and found the per-country fee schedules are published as images. I downloaded three attachments and read them directly. Greece: Open Matches 10.0% EUR, min 0.3, NO MAX; Player Bookings 3.0%, min 0.3, NO MAX; Classes/Courses/Leagues/Tournaments 4.0%, min 0.3, max 2.9. United States: Open Matches 20.0% USD, min 0.29, max 0.99; Player Bookings / Classes / Courses / Leagues / Tournaments all 'NO FEE'. Albania: Open Matches 20.0%, min 34, max 120 ALL; everything else 4.0%, min 34, max 240-290 ALL. The article text states the fee 'applies to every transaction processed online, except for wallet transactions', is not refunded on a cancelled reservation, but IS refunded 'if you delete yourself from an open match or if the match is canceled'. Turkey does not appear anywhere in the 36-country fee list (Albania, Australia, Austria, Bahrain, Bosnia, Croatia, Cyprus, Czech Republic, Denmark, Estonia, France, Germany, Greece, Hungary, Indonesia, Ireland, Kenya, Kuwait, Latvia, Malta, Morocco, New Zealand, Oman, Poland, Pakistan, Qatar, Romania, Saudi Arabia, Singapore, Slovenia, South Africa, Switzerland, Thailand, UK, UAE, US), although Playtomic is live on the Turkish App Store with 188 ratings.",
+   "sources": [
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19831779272337-Service-Fee",
+    "https://playerhelp.playtomic.com/hc/article_attachments/39560486419217",
+    "https://playerhelp.playtomic.com/hc/article_attachments/43933887956369",
+    "https://playerhelp.playtomic.com/hc/article_attachments/39560464584721",
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/26569889841169-Payment-Guidelines-FAQ",
+    "https://apps.apple.com/tr/app/playtomic-play-padel/id1242321076"
+   ],
+   "consequence": "The incumbent price-discriminates on exactly the axis Avenza's core loop sits on: joining a stranger's open match is the expensive product (10-20%), booking a court you already have friends for is cheap or free (0-4%). That validates charging the fee on Discover->Join, but it means Avenza's flat, uncapped 10% is mispriced for the CREATE path where a host brings a known group — those users are being charged an open-match rate for a booking-rate product, and they are the users most likely to defect back to WhatsApp plus a phone call to the pitch. Greece is the closest comparable market and it prices open matches at exactly 10.0%, so the number is defensible; the missing piece is a cap. Playtomic's Payment Guidelines FAQ also shows how it de-risks a split without a reliability score: it puts a pre-authorisation hold on the booker for the whole court and only releases it two hours after the match once every player has paid, with the booker covering anyone who did not. That is a direct commercial substitute for Avenza's RELIABILITY percentage — the trust layer is being solved with a card hold rather than a reputation number, and a card hold works on day one with zero games played, which Avenza's score does not.",
+   "confidence": "high",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "claim": "Avenza's hard-coded 720 TL court total is 3-4x below the real 2026 Istanbul price for a halı saha: the İstanbul Büyükşehir Belediyesi 2026 tariff lists an outdoor floodlit halı saha at 2,250.00 TL/hour and an indoor one at 2,800.00 TL/hour, KDV included.",
+   "evidence": "WebFetch could not read the IBB tariff PDF, but it saved the binary, so I ran pdftotext -layout on it locally. Section 10, 'HALI SAHA KİRALAMA': 10.1 Açık Halı Saha Aydınlatmasız — Saat — 1.500,00; 10.2 Açık Halı Saha Aydınlatmalı — Saat — 2.250,00; 10.3 Kapalı Halı Saha — Saat — 2.800,00. Section 22: Tenis Kort Kiralama (Aydınlatmalı) — Saat — 500,00; (Aydınlatmasız) 300,00. Section 27: Açık basketbol sahaları Aydınlatmalı — Saat — 250,00. Note 18 of the tariff: 'Tarifede belirtilen ücretlere KDV dahil olup Tüzel şirketlere yapılacak kiralamalarda (A.Ş,Ltd.Şti.) fiyatlara KDV dahil değildir.' These are municipal prices, i.e. the floor; Turkish press reports private Istanbul pitches reaching 4,200 TL/hour, but that article (gzt.com) returned 403 and I could not corroborate it, so treat the private-sector figure as unverified.",
+   "sources": [
+    "https://uploads.ibb.istanbul/uploads/Spor_Tesisleri_Uecret_Tarifesi_Revizesi_05_11_2025_798d57b571.pdf"
+   ],
+   "consequence": "The MONEY worked example in the brief (720 TL -> 180 TL -> 18 TL fee) is a padel-shaped number applied to a football-shaped product, and it makes the fee look smaller than it will be. On the municipal indoor rate, 2,800 TL over 14 players is a 200 TL share and a 20 TL fee; on the unverified 4,200 TL private rate it is a 300 TL share and a 30 TL fee — a real number to put in the join sheet. More importantly, the tariff exposes an asymmetry that a flat 10% handles badly across Avenza's eight sports: a floodlit tennis court at 500 TL split two ways is a 250 TL share and a 25 TL fee, while a 2,250 TL halı saha split fourteen ways is a 160 TL share and a 16 TL fee. The tennis player pays more fee than the footballer for a cheaper court, purely because of party size. Either cap the fee in absolute TL (as Playtomic does in the US and Albania) or set the rate per sport. Separately, municipal facilities sell at a fixed published tariff with no third-party commission line, so IBB pitches are supply that VENUES pages can list but that the 10% cannot be levied on without the venue agreeing to be an alt üye işyeri.",
+   "confidence": "high",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "claim": "Every pickup-sports app that has reached mass scale in North America/Europe operates its own pre-booked, prepaid game slots and does NOT let ordinary users host games; the user-hosted model survives only at roughly one-sixth the scale.",
+   "evidence": "Pulled from the apps' own App Store listings via the public iTunes API on 2026-09-01 (itunes.apple.com/lookup?id=...&country=us) and from their own sites via curl. Plei's own description, verbatim: \"We host soccer games across the US and ensure each game is well-organized with a combination of automation and a personal touch. Simply show up, play, and enjoy the game.\" Plei's feature list includes \"Create groups with friends\" but has NO create-a-game verb. GoodRec's own description: \"1. Pick your sport and city 2. Choose your game 3. Show up and play\" — again no create verb — plus \"Live in 70+ cities across the US, Canada and Europe.\" goodrec.com/pickup-soccer/new-york-city (curled, tags stripped): \"GoodRec organizes pickup soccer games every day in New York City\" followed by a list of ~50 named facilities it plays at (Pier 40, Chelsea Waterside, Socceroof Sunset Park, Upper 90 …). volosports.com: \"We handle the teams and gear\", \"13 Cities to play\". US App Store rating counts as a scale proxy: GoodRec 13,693 (4.86), Plei 12,427 (4.84) — both own-inventory; OpenSports, the user-hosted/organiser platform, 2,323 (4.91). Volo's own listing names its 10 cities: Baltimore, Boston, Charleston, Denver, DC, New Jersey, New York, San Diego, San Francisco, Seattle.",
+   "sources": [
+    "https://itunes.apple.com/lookup?id=1225575821&country=us",
+    "https://itunes.apple.com/lookup?id=1510554246&country=us",
+    "https://itunes.apple.com/lookup?id=1467419938&country=us",
+    "https://itunes.apple.com/lookup?id=1056940981&country=us",
+    "https://www.goodrec.com/pickup-soccer/new-york-city",
+    "https://www.goodrec.com/",
+    "https://www.volosports.com/"
+   ],
+   "consequence": "Avenza's CREATE mechanic — any user hosts, picking sport/time/venue/format/level range/spots/cost split — is the supply model that no scaled Western operator uses as its primary supply. The winners buy the pitch hour and sell seats. For Avenza this says: treat Create as a retention feature for groups that already exist (the WhatsApp halı saha crew), and seed Kadıköy supply operationally by pre-booking off-peak slots at 3-5 Anatolian-shore venues and listing them as Avenza-run games. Without that, DISCOVER is an empty feed on launch day, and the ELIGIBILITY filter (which hides games outside your level range entirely) makes an empty feed look emptier.",
+   "confidence": "high",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "claim": "The largest pickup app in North America treats mandatory prepayment — not an attendance or reliability score — as its stated answer to no-shows, and explicitly refuses to gate games by skill level.",
+   "evidence": "goodrec.com homepage FAQ, fetched by curl and tag-stripped, verbatim: \"Do I have to pay for games in advance? Yes! We do this for a few reasons, but a major one is to ensure game quality. Nothing is worse than last-minute dropouts or no-shows. If everyone has a little skin in the game, then we limit both and can just enjoy the game!\" Same FAQ, verbatim: \"Do I need to be at a specific level to join a game? Unless clearly stated in the game title and description, our games are open to all levels!\" The same page claims \"1M Players | 100,000+ Games | 20,000+ 5* Reviews\" — note GoodRec's own numbers are internally inconsistent, since its NYC page says \"700,000+ Players | 100,000+ Games | 10,000+ Reviews\", so treat the user counts as marketing, not measurement. Nowhere in GoodRec's site or App Store description is there any attendance percentage, reliability score or player rating.",
+   "sources": [
+    "https://www.goodrec.com/",
+    "https://www.goodrec.com/pickup-soccer/new-york-city",
+    "https://itunes.apple.com/lookup?id=1510554246&country=us"
+   ],
+   "consequence": "This directly contradicts Avenza's stated bet that \"the trust layer is the differentiator. Nobody else knows whether the stranger you matched with will actually turn up.\" GoodRec does know — it took the money first. Avenza already collects at join (180 TL share + 18 TL fee), so the deposit IS the trust layer and it is already built; the RELIABILITY percentage is a nice profile ornament, not a moat, and should not be the thing the pitch rests on. Second hit: Avenza's ELIGIBILITY rule hides out-of-range games completely with \"let others ask anyway\" off by default. The operator with 100,000+ games run considers level-gating too costly to apply at all. In one district of one city, hiding inventory is the wrong default — ship the ask-anyway toggle ON, or show ineligible games greyed with a request button.",
+   "confidence": "high",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "claim": "The best-documented pickup-sports 'find people to play with' failure did not die of an empty feed — it reached user scale and died of monetisation, and the founders' fix was to charge organisers, not players.",
+   "evidence": "645 Ventures' published interview with Brian Litvack, co-founder of Sportsvite (2006, a consumer social network for recreational sports), fetched by curl. Verbatim: \"Sportsvite got to reasonable scale in terms of users, but we found it difficult to market a consumer product and monetize the online community. We couldn't achieve a critical mass desired by advertisers. We started to realize that despite building out aspects of a successful online community it would be difficult to build a real consumer-based business in this market.\" And: \"The organizers were the super-users in the Sportsvite community.\" They pivoted in 2009 to LeagueApps, B2B league software, which the same article says has since done \"more than 7 million registrations\" with \"70+ employees\". Corroborating pattern, two more: Sportaneous (2011 NYC pickup-games app, NYC BigApps winner) — Columbia Entrepreneurship's own startup page, opened: \"In early 2013, Sportaneous was acquired by Greatist\", after the product had already shifted to helping people \"find and book sports activities and fitness classes\". And Sportyfriends ApS (Denmark) now ships white-label venue apps from the same App Store publisher account (Padel Center Middelfart, id 6450256097, updated 2026-08-24; Padel iQ, id 6443525435) while its social app Sportyfriends (id 1391773424) has not shipped since 2025-10-30 and has 1 US rating. Meanwhile the surviving user-hosted platform prices for organisers: opensports.net/pricing, curled verbatim — \"Event fees* 3%\", \"League & tournament fees* 3%\", tiers at \"$30 /mo\", \"$70 /mo\", \"$750+ /mo\", and \"* OpenSports transaction fees exclude Stripe fees\".",
+   "sources": [
+    "https://645ventures.medium.com/successfully-pivoting-a-saas-business-cef71c6d22f2",
+    "https://entrepreneurship.columbia.edu/startup/sportaneous/",
+    "https://opensports.net/pricing",
+    "https://itunes.apple.com/lookup?id=1391773424&country=us",
+    "https://itunes.apple.com/search?term=sportyfriends&entity=software&country=us&limit=6"
+   ],
+   "consequence": "Avenza's MONEY mechanic takes 10% from the player's share and explicitly does not build host payouts (\"that needs a payments provider and probably a licence\"). That is 3.3x OpenSports' 3%, charged to the side of the market that the one documented survivor found was not the paying side — and with no payout, the Kadıköy captain who today collects 720 TL over WhatsApp gets nothing from Avenza while his players pay 18 TL more each. CREATE has no economic reason to exist for the host. Two live options: cut the player fee toward 3-5% and monetise the venue/organiser side instead, or accept that host payouts are not optional and price the host, not the player. The 10% number should be treated as an untested assumption, not a settled design.",
+   "confidence": "high",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "claim": "Avenza's LEVEL mechanic — a numeric per-sport skill number on a 1.0-7.0 scale, nudged by post-game results, used to gate a match's level range — is already shipped by Playtomic on effectively the same scale, and Playtomic is live on the Turkish App Store with 188 ratings at 4.88 while carrying no Turkish localisation.",
+   "evidence": "playerhelp.playtomic.com level article, fetched by curl with a browser UA (WebFetch was 403'd), verbatim: \"you'll complete a brief level assessment... From there, your level will adjust automatically based on your match results\", with the factors listed as \"Match result – Opponent levels – Partner level – Your reliability score\". Note Playtomic's \"reliability\" is confidence in the level estimate, NOT attendance: \"When you're new to Playtomic, your reliability is low, so your level will fluctuate more dramatically as the system learns your true skill level.\" Playtomic's own blog gives the level chart as Beginner 1-2 / Lower intermediate 3-4 / Intermediate 5-6 / Advanced 7-8. Playtomic's Turkish App Store listing (itunes.apple.com/lookup?id=1242321076&country=tr, fetched 2026-09-01): 188 ratings, 4.88 average, version 6.88.0 released 2026-08-31, first released 2017-11-02; languageCodesISO2A is ['CA','DA','NL','EN','FI','FR','DE','IT','NB','PL','PT','ES','SV'] — TR is absent. Its description already contains Avenza's create-and-split loop verbatim: \"Create private matches at your favorite padel club... Make them public so that other players can join in the fun\", \"over 16,000 courts worldwide\", \"you will have the option to pay the court fees in full yourself or split them with the other players.\" Separately, a Turkish company shipped an ELO version of the same idea three weeks ago: SmashMate (id 6760764730, KAPLANS BILGI TEKNOLOJILERI TICARET LTD, first release 2026-08-05, 17 TR ratings), \"Every Smashmate player has an ELO rating... Set the skill range\", and it deliberately avoids the payments problem: \"Booking and payment happen through the club's own system; Smashmate points you to the right court.\"",
+   "sources": [
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/43310980754193-How-the-Playtomic-level-system-works",
+    "https://playtomic.com/blog/padel-levels",
+    "https://itunes.apple.com/lookup?id=1242321076&country=tr",
+    "https://itunes.apple.com/lookup?id=6760764730&country=tr",
+    "https://itunes.apple.com/search?term=padel&entity=software&country=tr&limit=15"
+   ],
+   "consequence": "For padel specifically, Avenza's LEVEL is not a differentiator — it is Playtomic's system with the stars redrawn, and a local Istanbul startup shipped an ELO variant last month. Two consequences. (1) Stop pitching the 1.0-7.0 level as novel; the defensible ground is multi-sport plus neighbourhood (halı saha + basketball + running in Kadıköy), which neither Playtomic nor SmashMate touches. (2) The two real openings are exactly the gaps: Playtomic has no Turkish localisation at all, and SmashMate explicitly refuses to handle money. Avenza's bilingual TR/EN onboarding and its in-app cost split are the only mechanics in the brief that neither incumbent offers in Istanbul — so those, not the trust layer, are what the product should lead with. Caveat: I could not verify Playtomic has bookable Istanbul clubs, so the 188 TR ratings may partly be Turkish users playing abroad.",
+   "confidence": "medium",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "claim": "Credit-plus-outlink does not clear Avenza to AI-summarise Hürriyet or NTV Spor articles: Hürriyet's terms bar attributed quotation outright and ban automated collection, NTV requires prior written permission, and FSEK m.36/II's press-summary exception is confined to social/political/economic daily articles appearing in a newspaper or magazine — which excludes sport and excludes broadcaster NTV Spor entirely.",
+   "evidence": "FSEK m.36/II text (via LEXPERA consolidated text + search corroboration): \"Gazete veya dergilerde çıkan içtimai, siyasi veya iktisadi günlük meselelere müteallik makale ve fıkraların iktibas hakkı sarahaten mahfuz tutulmamışsa aynen veya işlenmiş şekilde diğer gazete ve dergiler tarafından alınması ... serbesttir. İktibas hakkı mahfuz tutulsa bile sözü geçen makale ve fıkraların kısaltılarak basın özetleri şeklinde alınması ... caizdir.\" I downloaded the peer-reviewed analysis (Soykan, \"Fikrî Mülkiyet Hukukunda Basın İktibasları\", İÜHFM C.LXVII S.1-2 s.183-208, 2009) as PDF from DergiPark and ran pdftotext. p.197: \"FSEK m. 36/I'den farklı olarak tüm basın organlarında yer alan yayınlar, bu fıkranın uygulanma alanında değildir. Dolayısıyla radyodan veya televizyondan yapılacak alıntılar FSEK m. 36/II'nin kapsamına girmez\" — so TV/radio-origin content (NTV Spor) is outside m.36/II and falls under m.80/(C) broadcaster rights requiring written permission. p.198: \"günlük olaylara ilişkin olmayan gazete ve dergi içeriğinin iktibası hususunda FSEK m. 36/II uygulanmaz\" — the provision enumerates only içtimai/siyasi/iktisadi subject matter; sport is not among them. FAVOURABLE point for Avenza, same page: \"İktibas serbestisinden yararlanacak olan yayın organı konusunda ise kanun bir sınırlama koymamıştır\" — the law does NOT restrict who may take, so being an app rather than a newspaper is not itself fatal. Limit on the summary, p.199-200: \"yapılacak özet ... yazının aslına olan ihtiyacı ortadan kaldıramaz. Yalnızca yazının içeriği hakkında sınırlı bir bilgi vererek kamuoyunu yazının aslını okumaya yönlendirecek şekilde olabilir\" and a summary that removes the need for the original \"haksız rekabet oluşturur\" (constitutes unfair competition). Attribution standard, FSEK m.36/son quoted at p.201: \"iktibas edilen gazete, dergi ve ajansın ... adı, tarih ve sayısından başka makale sahiplerinin adı, müstear adı veya alameti zikredilmek icap eder\" — publisher name alone is NOT compliant; date, issue and the author's name are required. Hürriyet kullanım koşulları, fetched: \"izin alınmadan, kaynak gösterilerek dahi iktibas edilemez\" (cannot be excerpted even with attribution, without permission) and \"robot, örümcek veya başka otomatik aletler ya da manuel süreçler kullanmayacaklarını\". NTV kullanım koşulları: all news and materials usable \"only with written permission from the Company\".",
+   "sources": [
+    "https://www.lexpera.com.tr/mevzuat/kanunlar/fikir-ve-sanat-eserleri-kanunu-5846",
+    "https://dergipark.org.tr/tr/download/article-file/97589",
+    "https://www.hurriyet.com.tr/kullanim-kosullari",
+    "https://www.ntv.com.tr/turkiye/kullanim-kosullari-ve-gizlilik-haklari,KMOhAYZur06S3s-pUYle1w"
+   ],
+   "consequence": "Hits BULLETIN directly. The spec's \"credited to the publisher and out-linked, never reproduced\" is not a defence in Turkey, and two of the three named publishers (Hürriyet, NTV Spor) are the worst possible choices — one expressly reserves iktibas and bans crawlers, the other is a broadcaster outside the newspaper exception. Three concrete changes: (1) the credit string must carry author name + date + issue/URL, not just \"Milliyet\"; (2) for sport, fall back to FSEK m.36/I (\"günlük havadisler ve haberler serbestçe iktibas olunabilir\") and re-spec world-sport Bulletin items as fact-cards — score, transfer, result, who/when — generated from the event rather than as AI summaries of a named article, because m.36/I protects the fact and not the article's expression; (3) source via publisher RSS/API or a licensed wire (Anadolu Ajansı), never a crawler, since Hürriyet's robot ban is a contract/unfair-competition hook that survives regardless of how the copyright question comes out.",
+   "confidence": "high",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "claim": "A bill before the TBMM since 10 February 2026 names Avenza's exact Bulletin mechanic — \"otomatik özet\" and \"haber kartı/paneli\" — as a paid act and expressly denies safe harbour to link-sharing that carries any snippet; Avenza escapes only because it sits below a 100,000,000 TL revenue / 1,000,000 monthly-active-user threshold.",
+   "evidence": "I downloaded the bill text itself from the TBMM CDN (623 KB PDF, HTTP 200) and extracted it with pdftotext. MADDE 3(6): \"Ek Unsur: Salt bağlantı (URL) paylaşımı dışında; haber başlığı, spot, özet/snippet, otomatik özet, küçük görsel/thumbnail, video veya ses önizlemesi, haber kartı/paneli, trend/kategori kutusu, içerik üzerinde önbellekleme veya benzeri sunum unsurlarını\". MADDE 2 carve-out: \"Salt bağlantı (URL) paylaşımı ile kullanıcıların kişisel ve ticari olmayan paylaşımları; Ek Unsur içermemesi ve Ekonomik Değer Yaratan Kullanım niteliği taşımaması hâlinde bu Kanun kapsamında değerlendirilmez\" — i.e. the only safe form is a bare URL with no snippet at all. MADDE 3(5) defines Ekonomik Değer Yaratan Kullanım to include revenue from \"reklam, abonelik, komisyon/işlem ücreti, sponsorluk\" AND non-revenue benefit \"kullanıcı edinimi, elde tutma, etkileşim artışı veya hizmetin değerlenmesine katkı\" — Avenza's Bulletin has local sponsor slots and Avenza takes a 10% commission, and the feed's stated job is retention. MADDE 3(8) threshold: \"Türkiye kaynaklı yıllık brüt dijital hizmet geliri 100.000.000 Türk Lirasını aşan veya Türkiye'de aylık ortalama aktif kullanıcı sayısı 1.000.000'un üzerinde olan dijital platformu; aynı ekonomik bütünlük içindeki platformların eşiklerinin birlikte değerlendirilmesi suretiyle belirlenen platformu\". Corroborated independently by two Turkish law firms: Paksoy (Apr 2026) confirms the 10 Feb 2026 filing, BTK as regulator, a 1% floor of Turkey revenue on annual payments (BTK may set 1-3%), fines of 1-5% of Turkey revenue rising to 10% for repeat violations, and status \"under examination in relevant TBMM commissions\"; Tevetoğlu Legal (17 Feb 2026) and Pekin (19 Feb 2026) also cover it.",
+   "sources": [
+    "https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/T2/WebOnergeMetni/b7006396-020f-42b1-8739-c472cec6019d.pdf",
+    "https://paksoy.av.tr/2026/04/dijital-telif-ve-cevrimici-haber-icerikleri-hakkinda-kanun-teklifi/",
+    "https://www.tevetoglu.av.tr/tr/yayinlarimiz/dijital-telif-ve-cevrimici-haber-icerikleri-hakkinda-kanun-teklifi-uzerine-bir-degerlendirme-2026-02-17-111846",
+    "https://pekin.com.tr/2026/02/19/dijital-telif-ve-cevrimici-haber-icerikleri-hakkinda-kanun-teklifi-turkiye-buyuk-millet-meclisine-sunuldu/"
+   ],
+   "consequence": "Hits BULLETIN and, via the definition of economic value, MONEY. This is not a launch blocker — a Kadıköy pilot is orders of magnitude below 1M Turkish MAU — but it fixes the ceiling: the Bulletin cannot be a load-bearing growth engine, because success at scale converts it into a licensing liability with a 1%-of-Turkey-revenue floor. Build the Discover header so the world-sport strand is a swappable source behind one interface, with two fallbacks already wired: Avenza's own local items only (new venues, court prices, leagues with spots), or a licensed wire. Also note the aggregation rule \"aynı ekonomik bütünlük içindeki platformların eşiklerinin birlikte değerlendirilmesi\" — an acquisition by a larger Turkish platform pools the thresholds, so this is a diligence item, not just a scale item. Caveat: this is a bill in commission, not enacted law.",
+   "confidence": "high",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "claim": "No sports booking or match-finding utility app in the Turkish App Store runs an editorial news feed — across 139 unique apps returned by eight Turkish-language queries, every news-carrying app was a pure scores/news product or a league's own app.",
+   "evidence": "I queried the public iTunes Search API at country=tr for eight terms (padel, tenis, spor sosyal, maç bul, saha rezervasyon, basketbol maç, kort rezervasyon, spor arkadaş), deduped to 139 unique trackIds, and regex-scanned every description for haber|bülten|news|gündem|editorial|dergi|magazine|blog. 11 apps matched. Of those: Flashscore, Mackolik (42,171 TR ratings), NBA, Soloscore and Premier Padel are scores/news/league products; three \"Sosyal Medya'da <kulüp>\" apps are fan-news readers; and the two halı saha matches are false positives — Altıpas's \"çevrendeki uygun oyunculara anında haber gitsin\" means a push notification, Yenigün Tenis's \"Önceden haber alın\" means be informed. Zero booking or match-finding apps carry editorial content. Cross-checked outside Turkey via the same API: Playtomic v6.88.0 (188 TR ratings) never mentions news anywhere in its description; Spond (8,142 GB ratings) returns no news lines; Strava's only \"feed\" is the activity feed — \"your feed on Strava is filled with real efforts from real people\"; Sofascore's US listing (76,660 ratings) returns no news lines in its description. Onefootball is editorial-first (\"Stay updated on all MLS soccer scores, matches and news\"), i.e. a news product, not a utility with news bolted on. The one Turkish attempt at the hybrid runs the other way round: Soloscore (Soloscore Teknoloji A.Ş., released 13 Jun 2026, still v0.2.1, 74 ratings) is news-and-social-first — \"Live scores, match details, fixtures, and the latest football news\" plus \"Social interaction with football fans\" — with no booking or match-organising layer at all.",
+   "sources": [
+    "https://itunes.apple.com/search?term=padel&entity=software&country=tr&limit=20",
+    "https://itunes.apple.com/lookup?id=1242321076&country=tr",
+    "https://itunes.apple.com/lookup?id=6773398295&country=tr",
+    "https://itunes.apple.com/lookup?id=426826309&country=us",
+    "https://itunes.apple.com/search?term=spond%20team&entity=software&country=gb&limit=5"
+   ],
+   "consequence": "Hits BULLETIN. The pattern is genuinely unowned in this category, but that is a warning as much as an opening: Turkish sports-news attention is already consolidated in apps the target user has installed — Mackolik at 42,171 TR ratings and Sofascore at 19,119 — so a world-sport strand inside a Kadıköy match-finder competes on their turf with none of their data, while carrying the entire legal exposure of Findings 1 and 2. The half that is defensible is the local half, because it is generated by VENUES (pages derived from games played there) and CREATE (hosted games with spots), which no rival can copy without the same supply. Recommended split: keep local items as the Discover header, demote world sport to a small out-linked strip of bare fact-cards or drop it, and measure whether the header's taps come from local or world items before investing further.",
+   "confidence": "high",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "claim": "Three of the four onboarding numbers in Avenza's brief do not survive tracing to source, and the category leader has moved in the opposite direction — Playtomic now requires a verified phone number from every new account.",
+   "evidence": "(1) \"77% leave within three days\": I fetched Andrew Chen's post. Verbatim: \"the average app loses 77% of its DAUs within the first 3 days after the install.\" Source is Quettra, panel of \"over 125 million\" ANDROID devices, five months starting 1 January 2015 — Android-only, eleven years old, and about DAUs not departures; the post itself caveats that losing DAUs \"doesn't mean complete inactivity.\" (2) \"Activation averages 37.5%\": traces to Userpilot's 2024 SaaS Product Metrics Benchmark Report. Userpilot sells product-adoption software, so this is a vendor benchmark, and secondary summaries contradict each other on the sample — \"547 SaaS companies\" in some, \"first-party activation data from 62 SaaS companies\" in others. The report page returned HTTP 404 when I fetched it, so I could not confirm n at source. Either way it is B2B SaaS, not consumer mobile in Turkey. (3) \"Social sign-on converts 2-3x\": I could find no source for 2-3x. The best recoverable figure is 20-40% (attributed to a Gigya marketing manager, repeated by LoginRadius and Bread & Butter) — that is 1.2-1.4x, not 2-3x. Corbado's 2026 benchmark page explicitly refuses to supply a number: \"Social login conversion rate is not a single number you can copy from a case study.\" (4) \"Deferred signup lifts activation 10-30%\": traces only to vendor blogs (VMobify, Rownd) citing unlinked \"Localytics\" research; the Rownd URL served an unrelated page when I fetched it, so the underlying study is unverified. MEANWHILE, on competitor behaviour: Playtomic's App Store release notes for v6.88.0 (fetched from country=tr, released 31 Aug 2026) say verbatim \"New users will go through a quick phone verification to keep our community safe\" and \"We've enhanced phone verification for social features\"; Playtomic's Help Centre article \"How to create your account in Playtomic\" (updated 9 June 2026) states a mobile phone number is required to complete account setup on top of Apple/Google/Facebook/email sign-up, plus an email verification link. GoodRec goes the other way on discovery only: goodrec.com/pickup-soccer/philadelphia is fully public with no login, listing venue and date/time (\"Friends Select Saturday, February 28, 2026 at 09:00 AM Duration: 60\"), and gates only the join behind \"JOIN VIA APP\".",
+   "sources": [
+    "https://andrewchen.com/new-data-shows-why-losing-80-of-your-mobile-users-is-normal-and-that-the-best-apps-do-much-better/",
+    "https://userpilot.com/blog/product-metrics-benchmark-report/",
+    "https://www.corbado.com/blog/social-login-conversion-rate",
+    "https://playerhelp.playtomic.com/hc/en-gb/articles/19831938095633-How-to-create-your-account-in-Playtomic",
+    "https://itunes.apple.com/lookup?id=1242321076&country=tr",
+    "https://www.goodrec.com/pickup-soccer/philadelphia"
+   ],
+   "consequence": "Hits ONBOARDING and, more importantly, RELIABILITY. Deferred signup itself is still right — GoodRec proves the discovery half works with zero account — but stop citing the four numbers, because a reviewer who traces them finds one Android panel from 2015, one B2B SaaS vendor survey with a disputed n, and two figures with no primary source, and will discount the rest of the brief with them. The load-bearing point is the second one: the RELIABILITY percentage is only worth what it costs to abandon it. With Google/Apple only and no password or phone anywhere, a host who no-shows and burns a 62% score re-enters at a fresh 100% with a second Google account in under a minute, and ELIGIBILITY compounds this because a re-registered user also re-declares their LEVEL free of any rating history. Playtomic added phone verification at exactly the scale where that started to bite. Avenza does not need it at signup — put it at the first JOIN of a paid game, which is where the 10% fee already needs a payment instrument, so the friction lands on a step the user has already decided to take.",
+   "confidence": "high",
+   "_dim": "Editorial feed & onboarding norms"
+  }
+ ],
+ "competitors": [
+  {
+   "name": "HalıSaha+ (Rezervasyon, Kadro) — formerly SahaGol",
+   "whatItDoes": "BOTH books and matches. Full football ecosystem: pitch booking with iyzico online payment, \"Hızlı Maç Bul\" AI matchmaking on district + time + level, a Güven Puanı (trust/attendance score) that filters no-shows, rentable goalkeepers and kit, team/opponent \"Düello\" matching, tournaments and league automation with live scores, a \"Tribün\" social feed, and a venue-operator SaaS panel with dynamic pricing. Live: v1.1.6 shipped 2026-08-31; iOS-only, no Android package found. Rating 4.33 from only 18 ratings.",
+   "url": "https://apps.apple.com/tr/app/hal%C4%B1saha-rezervasyon-kadro/id6761794919",
+   "overlapWithAvenza": "The most dangerous overlap in the market. Directly duplicates RELIABILITY (Güven Puanı: \"Her oyuncunun katılım güvenilirliği profilinde görünür\"), LEVEL-based matching, post-match rating that feeds the profile, MONEY (per-person cost split — \"herkes kendi payını öder\" — but with real iyzico rails, the payments provider Avenza explicitly deferred), and VENUES. Does not overlap Avenza's multi-sport scope or BULLETIN.",
+   "turkeyPresence": "Yes, and specifically Kadıköy. halisahaplus.com names Kadıköy, Beşiktaş, Çankaya, Nilüfer, Karşıyaka, Selçuklu as districts, and Istanbul, Ankara, İzmir, Bursa, Antalya and 9 more cities. Turkish company: Parpali Yazilim ve Bilisim Hizmetleri Ticaret Ltd Sti. One 5-star review references live use at a tournament in Ürgüp.",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "name": "Altıpas Halı Saha Maçı Bul",
+   "whatItDoes": "MATCHES, does not book. Free social football platform: create a match in minutes, post a one-off \"eksik oyuncu\" ad by position and district, find opponent teams by level and area, community/neighbourhood group chat with polls, A/B team balancing and a formation editor, tournaments and club tryouts, and a player card that grows from post-match ratings (matches, wins, goals, assists, MVP votes, community ranking). Ships WhatsApp roster paste and install-free link joining. Bilingual TR/EN, Google/Apple/email sign-in. Live and shipping: v2.1.0 on 2026-08-27, Play updated 26 Ağu 2026. 4.08 from 26 ratings; 10,000+ Play installs.",
+   "url": "https://apps.apple.com/tr/app/alt%C4%B1pas-hal%C4%B1-saha-ma%C3%A7%C4%B1-bul/id6761342905",
+   "overlapWithAvenza": "Closest to Avenza's CREATE and Discover->Join loop, and to the ad concept. Player card overlaps the rating/games-played half of RELIABILITY but has no attendance or no-show percentage. Uses level only for opponent-team matching, never to hide games from a player. Also matches Avenza's bilingual TR/EN and Google/Apple onboarding choices exactly.",
+   "turkeyPresence": "Istanbul-first by design. altipas.app states \"İlk pilot maçların İstanbul'da sınırlı sayıda anlaşmalı sahada başlatılması planlanmaktadır.\" Districts are a first-class filter throughout the product. Turkish developer (Emre Kaan Akcay).",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "name": "Santra: Halı Saha & Kadro",
+   "whatItDoes": "MATCHES and organises; no booking or payment. Explicitly positioned against the WhatsApp group. Internal (split your own team) or external (find an opponent) matches, automatic squad balancing from player stats, score entry confirmed by the opposing team, and a 6-attribute FIFA-style rating card (pace/shot/pass/dribble/defence/physical, plus keeper-specific attributes) with a Bronze→Silver→Gold→Diamond tier and a separate fair-play score. Live: v1.8.0 on 2026-08-24. 5.0 from 13 ratings, but only 50+ Play installs.",
+   "url": "https://apps.apple.com/tr/app/santra-hal%C4%B1-saha-kadro/id6757343159",
+   "overlapWithAvenza": "Its opening sentence is Avenza's ad concept. Its skill card is the direct alternative design to Avenza's LEVEL — visible, multi-dimensional, gamified, and peer-assigned rather than a hidden matching number. Its \"fair play puanı\" is the nearest thing in the market to a behavioural score other than HalıSaha+'s Güven Puanı.",
+   "turkeyPresence": "Turkish app and developer (Furkan Dede), santra-app.com. No district-level targeting found; nothing Kadıköy-specific.",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "name": "Adam Eksik",
+   "whatItDoes": "MATCHES, but as classifieds. The oldest and one of the largest: a player-finding site plus forum (\"Halı saha oyuncularının sosyal medyası ve halı saha oyuncu bulma sitesi\"), Play listing since 2 Ara 2019, 10,000+ installs, 3.94 from 121 ratings — but last updated 12 Eki 2024, so semi-dormant. Critically, it does not own the transaction: the Play listing tells users to invite players via the phone number on their profile.",
+   "url": "https://play.google.com/store/apps/details?id=adam.eksik&hl=tr",
+   "overlapWithAvenza": "Occupies Avenza's Discover->Join intent with none of the loop closed: no LEVEL, no RELIABILITY, no ratings, no MONEY. It is the digitised manual status quo. Its 10k installs versus the 2026 cohort's ~50–1000 shows demand exists at a scale nobody new has captured.",
+   "turkeyPresence": "Yes, active Istanbul use. A Play review reads: \"İstanbul'da son 1 yılda 50 farklı maça katılma şansı yakaladım bu uygulama sayesinde\" (found 50 different matches in Istanbul in the last year through this app). Forum threads are city-organised (Adana, Kocaeli/Körfez).",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "name": "Halısahavar",
+   "whatItDoes": "DEAD but still the category's rating leader. Matching-side product: find a partner, find a match, post for a missing position (\"ADAM MI EKSİK?\"), find an opponent team, build a squad with formations, and create an \"HSV kartı\" player card with self-selected position and attributes. 4.60 from 154 ratings — more than all 17 apps launched in 2025–26 combined.",
+   "url": "https://apps.apple.com/tr/app/hal%C4%B1sahavar/id1583998724",
+   "overlapWithAvenza": "Historic proof that the missing-player and opponent-finding problems pull real Turkish demand, and a cautionary tale: it had the audience and abandoned the product. No RELIABILITY, no level-gated ELIGIBILITY, no MONEY.",
+   "turkeyPresence": "Turkish, halisahavar.com still resolves (HTTP 200) with SEO blog content, but the product is abandoned: iOS v1.2.4 last updated 2022-06-29, Android last updated 29 Ara 2021 — over 4.5 years without a release.",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "name": "Maçla - Halı Saha Maçı Bul",
+   "whatItDoes": "MATCHES only. Browse nearby match ads and join instantly, position-based search for missing players (keeper/defender/forward), a profile stating your position and playing style, and in-app messaging. Shipping fast: v2.0.3 on 2026-08-29 added iOS home-screen widgets for match-post expiry and a 60 FPS chat rewrite. 3.94 from 17 ratings.",
+   "url": "https://apps.apple.com/tr/app/ma%C3%A7la-hal%C4%B1-saha-ma%C3%A7%C4%B1-bul/id6760619531",
+   "overlapWithAvenza": "Overlaps Discover->Join and the messaging Avenza has not built. Notably has NO level and NO reliability mechanic — matching is by position and area only. One 1-star review (\"yetersiz — geliştirilmeli\", insufficient, needs development) and a 4-star asking for video in listings are the only critical signals in the TR review feed.",
+   "turkeyPresence": "Turkish developer (Taha Goktug Lengerli), Turkish-only listing. A review notes it needs awareness across all \"81 İl\" (81 provinces), implying no single-city concentration yet.",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "name": "Saha Bul / BiHalısaha / Pasona / SporPin / Hadimaça / Olleyy",
+   "whatItDoes": "BOOKING-side cluster, the other half of the map. These sell pitch discovery, live availability calendars, online payment/deposit and a venue-operator management panel; player matching is absent or vestigial. Hadimaça extends beyond football into basketball, volleyball, tennis, yoga, pilates and dance studios and adds referee booking. Saha Bul 4.54 from 26 ratings (upd 2026-06-16); BiHalısaha 4.60 from 15 (2026-04-15); Pasona 5.0 from 11 (2026-08-29); Hadimaça 5.0 from 3 (2026-07-09); Olleyy 1.0 from 1.",
+   "url": "https://apps.apple.com/tr/app/saha-bul/id6751752672",
+   "overlapWithAvenza": "Overlaps VENUES only, and inverts Avenza's approach — they hold the supply relationship and the booking, whereas Avenza derives venue pages from games played there. None has LEVEL, RELIABILITY, or player-to-player matching. Hadimaça is the only competitor whose sport list approaches Avenza's eight-sport breadth, and it does so on the booking side.",
+   "turkeyPresence": "All Turkish. Hadimaça (DEDE GROUP TEKNOLOJI LTD) and Pasona are nationwide-facing; SporPin exposes an Istanbul district-filtered venue search at sporpin.com/SahaBul/?sid=34. No Kadıköy-specific positioning found in any of them.",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "name": "The \"eksik oyuncu\" name cluster (SahaGO, Halısaha Kadrom, Halı Saha Kadro, Adam Eksik Mi, Dördüncü Eksik, Eksik Adam, Benimsaham, MaçYap, Online Halısaham)",
+   "whatItDoes": "A long tail of near-identical 2025–26 launches. Roughly split between squad/lineup utilities with no network (Halısaha Kadrom, Halı Saha Kadro, Kickoro, Lineup Coach — these are offline team-splitters, not marketplaces) and thin matching apps (SahaGO adds QR-based points and leaderboards; MaçYap covers football/volleyball/basketball but last shipped 2025-03-13; Online Halısaham has player rating and messaging but last shipped 2025-01-07). A separate iTunes TR search for \"eksik oyuncu\" returns seven apps with functionally interchangeable names, five updated within the last three months.",
+   "url": "https://itunes.apple.com/search?term=eksik%20oyuncu&entity=software&country=tr&limit=8",
+   "overlapWithAvenza": "Individually negligible; collectively they are the evidence that Avenza's football wedge is the single most contested surface in Turkish sports apps and the one where its differentiator is weakest. They validate the pivot argument: Avenza's defensible ground is the multi-sport LEVEL (padel, tennis, basketball, volleyball) where no equivalent cluster exists.",
+   "turkeyPresence": "All Turkish, all national in framing. MaçYap (macyap.com.tr) and Online Halısaham are functionally abandoned (last updates Mar 2025 and Jan 2025). None targets Kadıköy or the Anatolian shore.",
+   "_dim": "Turkish halı saha apps"
+  },
+  {
+   "name": "Playtomic",
+   "whatItDoes": "Category leader for racquet booking and social matchmaking. Padel, tennis, pickleball only. 6,879 clubs in its own sitemap, claims 16,000+ courts and 1M+ players in its App Store copy. Court booking, open (public) matches with level ranges, cost splitting, leagues/tournaments, chat, per-sport 0-7 level with a reliability % confidence score, Premium subscription that removes booking/match/cancellation fees.",
+   "url": "https://playtomic.com",
+   "overlapWithAvenza": "Near-total on LEVEL (0-7 per sport, questionnaire-seeded, match-derived, peer-review nudged), on CREATE (any user hosts a public match), on the cost-split money flow, and on VENUES (club pages). Opposite on ELIGIBILITY (shows out-of-range matches with a request-a-spot path rather than hiding them). Uses Avenza's word \"reliability\" for a different concept. Does NOT have Avenza's attendance percentage — no-shows are a manual Customer Care ticket producing a debt, and the match is voided rather than scored against the player.",
+   "turkeyPresence": "Effectively none. 188 TR App Store ratings vs 75,597 ES / 39,943 IT / 33,040 GB. No Turkish among its 13 app languages. No /tr/ locale in its sitemap (es/it/pt/fi/sv/nl/fr/de only). No Istanbul or Turkish city landing page among 52 padel/tennis city pages that do include Doha, Dubai, Singapore, Cape Town and Nicosia. 0 of 140 randomly sampled club pages were in Turkey. Türkiye absent from its 36-country service-fee schedule, implying no TRY payment processing.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "Matchabit - Padel, Tennis",
+   "whatItDoes": "Turkey-adjacent racquet booking and matchmaking app (seller birfincankafein OU). Real-time club/court discovery and booking, private and public matches, court cost sharing, and per its own listing \"an advanced leveling system that adjusts based on match outcomes\", plus win/loss and match-history stats. Tennis, padel, pickleball.",
+   "url": "https://apps.apple.com/tr/app/id6757544672",
+   "overlapWithAvenza": "Hits LEVEL (match-outcome-adjusted), CREATE (public matches), and the cost-split MONEY flow simultaneously — the closest single overlap with Avenza's racquet-side loop. English only, no Turkish localisation. No attendance or reliability mechanic advertised.",
+   "turkeyPresence": "Live in the TR App Store with 36 ratings, v1.2.2 released 2026-08-10. Surfaced as a top result for the Turkish query \"padel rezervasyon\".",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "Padeon",
+   "whatItDoes": "Turkish racquet-sports platform (PADEON TEKNOLOJI VE YAZILIM, a Turkish A.S.). Player discovery with a \"level-matching system\", match creation and joining, court reservation and payment across \"contracted facilities across Türkiye\", tournaments, performance/match history, plus a club-side management panel with revenue and occupancy reporting.",
+   "url": "https://apps.apple.com/tr/app/id6761782581",
+   "overlapWithAvenza": "Overlaps LEVEL (level-matching), CREATE (match creation/joining), VENUES (facility pages) and the payment step. Crucially it is bilingual EN+TR — the same bilingual posture Avenza claims. Racquet-only, so no overlap on football/basketball/volleyball. No attendance/reliability mechanic advertised.",
+   "turkeyPresence": "Turkish company, Turkish-language app, claims contracted facilities nationwide. 11 TR ratings, v1.1.1 released 2026-08-19 — early but explicitly national in scope.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "Raqet House",
+   "whatItDoes": "Turkish padel platform (NEXORA LABS, Turkish LLC). Turkish-language listing: discover nearby padel clubs with court and price info, book courts, \"create or join open matches; match with players at your level\", in-app messaging and match chats, an \"RQT puanı\" rating that ranks you in your city, favourite clubs with campaign notifications, plus a club admin panel.",
+   "url": "https://apps.apple.com/tr/app/id6784622699",
+   "overlapWithAvenza": "Overlaps LEVEL (seviye matching plus an RQT city ranking), CREATE (açık maç), VENUES (club pages with prices), and messaging. The RQT city leaderboard is a reputation surface Avenza does not have. Padel only. No attendance percentage advertised.",
+   "turkeyPresence": "Turkish-built, Turkish-language, positions itself as \"Türkiye'nin padel platformu\". 5 ratings, v1.4.5 released 2026-09-01 — actively shipping.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "PFM - Play for More",
+   "whatItDoes": "Turkish digital sports platform (PFM SPOR TEKNOLOJILERI A.S.) letting players of all levels challenge each other, organise matches and training, and book at partner clubs or courts in-app. Runs subscriptions. Its web arm playformore.app is the booking system for Istanbul's Ista Padel.",
+   "url": "https://www.playformore.app/en/",
+   "overlapWithAvenza": "Overlaps CREATE and the matchmaking/booking loop, and is already the incumbent booking rail at at least one Istanbul padel/tennis club. Listing mentions \"players of all levels\" but does not describe a numeric level scale; no attendance mechanic advertised.",
+   "turkeyPresence": "Strong and specifically Istanbul. Turkish company, 84 TR ratings (3.80 avg — the weakest rating of the Turkish racquet cohort), v2.6.10 released 2026-07-04. Named in Istanbul padel guides as the reservation system used by Ista Padel.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "Kort: Find Tennis Partners",
+   "whatItDoes": "Tennis partner-finding app from Turkish developer Distant Teknoloji. Profile with experience level and location, algorithmic partner matching, fast messaging, open invitations others can join at a set place and time, a \"Kort Challenge\" for recording match results, tournaments, and progress tracking. Premium adds coach/partner profiles and unlimited discovery.",
+   "url": "https://apps.apple.com/tr/app/id1524701746",
+   "overlapWithAvenza": "This is Avenza's Discover -> Join -> Play -> Rate loop for tennis, minus courts and money. Open invitations are Avenza's CREATE; experience level is a self-declared LEVEL. It monetises by subscription rather than a transaction fee, which is a direct alternative to Avenza's 10% cut. No attendance/reliability score.",
+   "turkeyPresence": "Highest-rated Turkish racquet social app found: 549 TR ratings at 4.83, the largest TR rating count in the racquet cohort including Playtomic. v3.7.6, though last released 2026-01-15 — the only one in the cohort not shipping recently.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "SiberTenis",
+   "whatItDoes": "Club-management-first platform \"used by Turkey's largest tennis and racket sports clubs\": online court reservations, tournaments and DEFI leagues, online payments, membership management, group and private lessons, a coach module with attendance/earnings tracking, a parent portal, and AI-generated parent bulletins. Also lets you \"find partners to play tennis or other racket sports\".",
+   "url": "https://apps.apple.com/tr/app/id6740435598",
+   "overlapWithAvenza": "Owns the supply side Avenza does not have — the clubs themselves. Overlaps VENUES and partner-finding, and its digital attendance tracking is the nearest thing in the Turkish market to Avenza's RELIABILITY, though it is coach-facing lesson attendance, not peer no-show reputation. No player-facing level scale advertised.",
+   "turkeyPresence": "Turkish company (TOKEN YAZILIM A.S.), 233 TR ratings, v2.1.2 (2025-10-28). Claims deployment at Turkey's largest racquet clubs — the strongest club-side foothold found.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "MATCHi",
+   "whatItDoes": "Nordic racquet-sport court booking network (MATCHi AB) covering tennis, padel, badminton and squash, with club booking systems and player matchmaking.",
+   "url": "https://www.matchi.se",
+   "overlapWithAvenza": "Booking and matchmaking overlap in principle, but it is not a competitor for Avenza's trust layer and is racquet-only.",
+   "turkeyPresence": "Negligible. 5 TR App Store ratings. 14 app languages, none of them Turkish.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "Anybuddy",
+   "whatItDoes": "Padel and tennis court booking app (French origin), aggregating club availability for instant booking.",
+   "url": "https://anybuddyapp.com",
+   "overlapWithAvenza": "Booking only; no meaningful overlap with LEVEL, RELIABILITY or CREATE.",
+   "turkeyPresence": "Negligible. 2 TR App Store ratings; app languages EN/FR/ES only. anybuddyapp.com/en/istanbul and /turkey both returned 301 redirects rather than city pages.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "Sportya",
+   "whatItDoes": "Amateur tennis competition and ranking platform, Romanian origin, organising tournament circuits with player rankings.",
+   "url": "https://sportya.net",
+   "overlapWithAvenza": "Ranking/level overlap in principle, but competition-circuit shaped rather than pick-up-game shaped.",
+   "turkeyPresence": "None found. Does not appear in the Turkish App Store at all (a TR store search for \"sportya\" returned only unrelated apps such as WhatsApp and Flashscore). sportya.net/en returned a 301 I did not follow cross-host, so its level system is unverified.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "Padel Mates",
+   "whatItDoes": "Swedish multi-racquet app (padel, pickleball, tennis, badminton, squash) with in-app booking and payment, facility map, community groups, game finder, \"smart match suggestions... based on your skill level\", cost splitting with friends, chat, and \"performance feedback\". PRO subscription at $6/month, $29/6mo, $49/year.",
+   "url": "https://padelmates.se",
+   "overlapWithAvenza": "Closest feature-for-feature clone of Avenza's racquet-side loop including skill-level suggestions, cost splitting and post-game performance feedback — but sells a subscription rather than taking a per-transaction cut, and is racquet-only.",
+   "turkeyPresence": "Negligible. 4 TR ratings. English-only listing.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "Padel Manager / PadelMix / Americano Padel Manager",
+   "whatItDoes": "Tournament-format tools for running Americano and Mexicano padel events — team pairing, scheduling, live web sharing of results. Not booking or matchmaking platforms.",
+   "url": "https://padelmix.app",
+   "overlapWithAvenza": "Minimal. Touches the Play and Rate steps only inside an organised event; no LEVEL, no RELIABILITY, no discovery, no money split.",
+   "turkeyPresence": "Padel Manager 0 TR ratings; PadelMix 12 TR ratings. Neither localised for Turkey.",
+   "_dim": "Playtomic & racquet booking"
+  },
+  {
+   "name": "HalıSaha+ (Halı Saha+, formerly SahaGol) — Parpali Yazılım",
+   "whatItDoes": "Turkish football super-app: pitch discovery and booking, AI \"Hızlı Maç Bul\" quick-match placement, per-player cost split via iyzico, team/squad management, rent-a-goalkeeper, transfer market, tournaments and league automation, an in-app social feed (\"Tribün\"), a business panel for pitch operators, and an explicit \"Güven Puanı\" trust score exposing each player's attendance reliability.",
+   "url": "https://apps.apple.com/tr/app/hal%C4%B1saha-rezervasyon-kadro/id6761794919",
+   "overlapWithAvenza": "Near-total. Overlaps RELIABILITY (Güven Puanı / katılım güvenilirliği), LEVEL (AI placement by performance score; 4-tier Başlangıç–Profesyonel selector), CREATE (host a game with level, slots, cost split), MONEY (\"Herkes Kendi Öder\", ₺3.500 ÷ 14 = ₺250, no markup, iyzico-backed — the payments step Avenza defers), VENUES (pitch pages with price/photos/reviews), BULLETIN (Tribün social feed), and the neighbourhood onboarding step (profile location chip \"İstanbul · Adalar +38\").",
+   "turkeyPresence": "Turkey-native. Ankara-flavoured seed data but district chats live in Ümraniye, Pendik, Beyoğlu, Esenyurt; site lists Istanbul plus 13 other cities. TR App Store 4.33, n=18, released 2026-05-08, updated 2026-08-31.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Playtomic",
+   "whatItDoes": "Global padel/tennis booking and open-match platform, 1M+ players and 16,000+ courts. Open matches with player levels, court-fee splitting, leagues and tournaments, Premium subscription for advanced stats. Enforces attendance with a No-Show Policy that charges the absentee the court fees as an in-app debt blocking further use.",
+   "url": "https://playerhelp.playtomic.com/hc/en-gb/articles/43240624037393-What-happens-if-a-player-doesn-t-show-up",
+   "overlapWithAvenza": "MONEY (splits court fees among players), LEVEL (player level shown on open matches), and the no-show problem — but solved financially rather than reputationally, and deliberately kept out of the rating system (\"The match result will be marked as void so it doesn't affect any player's level\"). No attendance percentage or reliability badge on the profile.",
+   "turkeyPresence": "Live in Turkey. TR App Store listing \"Playtomic - Play padel\", 4.88, n=188, v6.88.0 updated 2026-08-31.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Sporsepeti (Sporsepeti Teknoloji A.Ş.)",
+   "whatItDoes": "Turkish tennis and padel opponent-matching app: level assessment questionnaire at signup, ELO updated from submitted match scores, opponent profiles with match history/win rate/badges, court discovery, coaching, tournaments, social feed. Freemium — two match requests per week free, Premium for unlimited requests, featured profile, direct messaging and full history.",
+   "url": "https://apps.apple.com/tr/app/sporsepeti-tennis-padel/id1628877345",
+   "overlapWithAvenza": "LEVEL (outcome-derived ELO, stronger signal than Avenza's self-declared 1.0–7.0), RATE (score submission after each match), CREATE (create a match with date/time/court), and it is the proof that subscription monetisation works in Turkish sports-social without taking a cut of the court split.",
+   "turkeyPresence": "Turkish company, TR App Store since 2022-07-27, 4.25, n=271, v2.16.0 — the longest-running and best-rated-by-volume Turkish level-matching app found.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Smashmate (Kaplans Bilgi Teknolojileri Tic. Ltd. Şti.)",
+   "whatItDoes": "Padel player-finding app. Browse matches and courts without signing up, ELO on every player, opponent feed showing ELO/win rate/stats, create a match with date, court, skill range and slot count, in-app messaging, court price comparison. Booking and payment handed off to the club's own system. Entirely free — no IAP, no subscription.",
+   "url": "https://apps.apple.com/tr/app/find-padel-players-smashmate/id6760764730",
+   "overlapWithAvenza": "ELIGIBILITY (\"Set the skill range\" on match creation — Avenza's mechanic verbatim), LEVEL (ELO), CREATE, VENUES (court discovery with real hourly prices). Its browse-before-signup default is a direct counter to Avenza's deferred-signup-plus-hidden-games combination.",
+   "turkeyPresence": "Turkish company, TR App Store, 4.76, n=17, released 2026-08-05. Site at smashmate.app with Turkish-language legal pages.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Altıpas",
+   "whatItDoes": "Free bilingual TR/EN social football platform: create a halı saha match in minutes, paste a WhatsApp squad list to auto-build the lineup, post single-match ads for missing players by position and district, find opposing teams by level and region, community chat with polls, tournaments and club trials, and a player card that evolves from post-match evaluations (matches, wins, goals, assists, MVP votes).",
+   "url": "https://apps.apple.com/tr/app/alt%C4%B1pas-hal%C4%B1-saha-ma%C3%A7%C4%B1-bul/id6761342905",
+   "overlapWithAvenza": "CREATE, RATE (post-match evaluations feeding a player card), LEVEL (level+region matching for opponents), VENUES, and — notably — Avenza's exact onboarding spec: \"Google, Apple veya e-posta ile saniyeler içinde katılabilir, uygulamayı Türkçe veya İngilizce kullanabilirsin.\"",
+   "turkeyPresence": "Turkey-native, district-level (ilçe) targeting. TR App Store 4.08, n=26, released 2026-04-09, updated 2026-08-27.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Plei",
+   "whatItDoes": "US operator-run pickup soccer: Plei itself hosts and organises the games, users browse a feed and join. Groups, guest invites, facility info, direct line to Plei customer service. Enforces attendance through Terms — a $5 no-show fee, forfeited payment inside 3 hours, bans from free events, and account deactivation for repeat offences.",
+   "url": "https://www.plei.com/terms/terms-conditions",
+   "overlapWithAvenza": "Discover→Join→Play loop and paid-slot economics. No reliability score, no attendance percentage, no two-way post-game rating — the entire no-show apparatus is contractual and financial, buried in Terms rather than surfaced as a profile signal.",
+   "turkeyPresence": "None found — US-focused.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "GoodRec",
+   "whatItDoes": "Pickup games in 70+ cities across US, Canada and Europe. Pick sport and city, choose a game, show up. Chat with photos, casual/competitive tiers. Leagues announced as forthcoming in release notes.",
+   "url": "https://apps.apple.com/us/app/goodrec/id1510554246",
+   "overlapWithAvenza": "Direct on Discover→Join and on the casual/competitive level split. Despite being one of the two largest apps in the category (4.86, n=13,693), its current description and release notes contain no reliability, attendance or no-show mechanic at all — the only trust surface is \"Safety tools — Block and report players.\"",
+   "turkeyPresence": "None found — \"70+ cities across the US, Canada and Europe\"; no Turkish listing surfaced.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "OpenSports",
+   "whatItDoes": "Organiser-side tooling for real-world pickup groups: events, payments in 13 currencies with direct bank deposits, waitlists, automatic refunds, waivers, RSVP limits, attendee check-in, invite lists, discount codes, group leaderboards and reviews. Players get a playing-history \"player card\" and can leave organiser reviews.",
+   "url": "https://apps.apple.com/us/app/opensports-meetup-for-sports/id1056940981",
+   "overlapWithAvenza": "CREATE (the deepest hosting toolset found), MONEY (payments and payouts to organisers — the piece Avenza defers), and gender/sport/availability/level filters. Has attendance check-in and organiser reviews but no player reliability score, so it collects the raw attendance data without turning it into a trust signal.",
+   "turkeyPresence": "None found.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "LinkedUp",
+   "whatItDoes": "Pre-launch pickup-activity app positioning entirely on trust: \"Reliability Score based on real-world attendance, so you can see who follows through before you tap in.\" Score is earned for checking in, with a bonus for showing up in bad weather, and lost for no-shows; reliable hosts unlock feed-visibility perks.",
+   "url": "https://getlinkedup.app/",
+   "overlapWithAvenza": "The single closest match to Avenza's RELIABILITY mechanic anywhere outside Turkey — an attendance-derived score that gates matching and boosts feed ranking. Confirms the positioning is not novel, though it is not yet in market.",
+   "turkeyPresence": "None found. No App Store listing surfaced in a targeted iTunes search; site is an email-capture waitlist, so launch is unconfirmed.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Pickup: Connect & Play Sports (Pickup LLC)",
+   "whatItDoes": "Multi-sport US pickup app — basketball, soccer, tennis, pickleball — pitching itself on \"Find real players at your skill level, eliminate no-shows\". Ships \"Built-in reputation system ensures reliable attendance\", player profiles with skill ratings, selfie verification, private games and in-app messaging.",
+   "url": "https://apps.apple.com/us/app/pickup-connect-play-sports/id6741133608",
+   "overlapWithAvenza": "Explicitly combines Avenza's two claimed differentiators — reliability-based reputation plus skill-level matching — in one shipped product, and even adds identity verification. Scale is negligible (4.67, n=12, released 2025-04-18), so it is proof the idea is not novel rather than a live threat.",
+   "turkeyPresence": "None found.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Halısahavar",
+   "whatItDoes": "Longest-standing Turkish halı saha social app: find players/matches/opponents, post ads for a missing player by position (\"ADAM MI EKSİK?\"), build teams and lineups, join tournaments, and create an \"HSV kartı\" FIFA-style player card with self-declared position and attributes.",
+   "url": "https://apps.apple.com/tr/app/hal%C4%B1sahavar/id1583998724",
+   "overlapWithAvenza": "CREATE, Discover→Join, player-card profile. Notably has NO reliability or attendance mechanic and NO post-match rating — and has not shipped an update since 2022-06-29 despite being the highest-rating-count Turkish halı saha social app (4.60, n=154), which is the clearest available signal that a matching-only product without a trust loop stalls.",
+   "turkeyPresence": "Turkey-native, site at halisahavar.com with active TR social accounts; app itself dormant since mid-2022.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Halı Saha Rakip Bul",
+   "whatItDoes": "Pre-launch Turkish platform (\"ÇOK YAKINDA\", \"2026 İtibarıyla sizlerle\") explicitly built on a mutual post-match rating system: \"Maç sonrası karşılıklı değerlendirme sistemi ile güvenilir ve uyumlu oyuncularla oynayın\" and \"Puanla, yorum yap ve rozet kazan!\", with three-tier level matching (amatör / yarı profesyonel / profesyonel).",
+   "url": "https://www.halisaharakipbul.com/",
+   "overlapWithAvenza": "RATE and RELIABILITY — a two-way post-game rating explicitly framed as producing \"güvenilir oyuncular\" (trustworthy players) — plus level-band matching. A second Turkish entrant staking the trust position in the same launch window as Avenza.",
+   "turkeyPresence": "Turkey-native, Turkish-language, pre-launch.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "Adam Eksik",
+   "whatItDoes": "Single-purpose Turkish app for filling the last slot in a halı saha squad: post an ad or declare yourself available, filtered by il/ilçe/mahalle, FIFA-style player card with optional AI card photo, teams and challenges, chat on acceptance. Explicitly takes no money: \"Ödeme/komisyon yok — anlaşmalar ve ödemeler kullanıcılar arasında, elden.\"",
+   "url": "https://apps.apple.com/tr/app/adam-eksik/id6776723968",
+   "overlapWithAvenza": "Discover→Join at neighbourhood granularity (finer than Avenza's neighbourhood+radius), and a direct counterpoint to Avenza's MONEY mechanic by refusing commission entirely. Its existence — alongside \"Eksik Adam\", \"Adam Eksik Mi\" and \"Dördüncü Eksik\" in the same TR search results — shows the missing-player problem is named in Turkish app titles.",
+   "turkeyPresence": "Turkey-native, TR App Store, released 2026-06-08, n=1. Runs a Turkish blog at adameksik.com on halı saha culture.",
+   "_dim": "The reliability/no-show layer"
+  },
+  {
+   "name": "HalıSaha+ (Rezervasyon, Kadro) — formerly SahaGol",
+   "whatItDoes": "Turkish football super-app already shipping, in production, almost the entire Avenza stack: AI matching on position/level/district ('Yapay zekâ seni performans puanına ve oyun sertliğine göre en dengeli maça yerleştirir'), a named trust score — 'GÜVEN PUANI — MAÇ İPTALİ DERDİ BİTSİN... Halı Saha+ Güven Puanı, maçı satıp ekibi yarı yolda bırakanları filtreler. Her oyuncunun katılım güvenilirliği profilinde görünür' — per-person split payment through a licensed PSP ('iyzico ile kredi kartı veya havale/EFT — herkes kendi payını öder'), post-match player rating, waitlist squad completion, rentable goalkeepers/players, venue-side booking automation with dynamic pricing, tournaments and leagues with online fee collection. v1.1.6, first released 8 May 2026, last updated 31 Aug 2026, 18 ratings at 4.33.",
+   "url": "https://apps.apple.com/tr/app/hal%C4%B1saha-rezervasyon-kadro/id6761794919",
+   "overlapWithAvenza": "Near-total, and specifically on the two things Avenza calls its differentiator and its unsolved problem. It contradicts the brief's stated bet ('Nobody else knows whether the stranger you matched with will actually turn up, or is really the level they claim') — Güven Puanı is exactly a RELIABILITY attendance score and the AI matcher is exactly LEVEL matching. It also proves out the MONEY architecture from finding 1: an app on the Turkish App Store is doing per-player split collection via iyzico today, so the 'probably a licence' worry is answerable by copying a live production pattern. What it does NOT have is Avenza's ELIGIBILITY hard-filter (games outside your band hidden entirely), the multi-sport spread beyond football, or the BULLETIN feed.",
+   "turkeyPresence": "Turkish-only, Turkey-first. Seller: Parpali Yazilim ve Bilisim Hizmetleri Ticaret Limited Sirketi. Site halisahaplus.com. Verified via itunes.apple.com/lookup?id=6761794919&country=tr.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "Playtomic",
+   "whatItDoes": "Padel/racket-sports booking and open-match matchmaking with >1m claimed players. Published per-country service fees (images in its help centre): Greece 10.0% open match / 3.0% booking; US 20.0% open match capped at $0.99 / bookings free; Albania 20% / 4% with caps. Runs split payments via a pre-authorisation hold on the booker released two hours after the match once all players have paid, with the booker covering non-payers.",
+   "url": "https://playerhelp.playtomic.com/hc/en-gb/articles/19831779272337-Service-Fee",
+   "overlapWithAvenza": "Direct on MONEY (the 10% player-share fee is Playtomic's exact Greek open-match rate) and on the trust problem — its card-hold mechanism is a commercial substitute for Avenza's RELIABILITY score that works from a user's first game. Also overlaps padel and tennis in Avenza's sport list.",
+   "turkeyPresence": "Live on the Turkish App Store (188 ratings, v6.88.0, updated 31 Aug 2026) but Türkiye is absent from the 36-country published fee schedule, so its Turkish monetisation could not be established.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "Altıpas Halı Saha Maçı Bul",
+   "whatItDoes": "Free social football platform: create a match in minutes, paste a WhatsApp squad list to auto-build the lineup, post single-match ads for missing players by position and district, find opponent teams matched on level and area, A/B team balancing with a formation editor, and an evolving player card built from post-match ratings (matches, wins, goals, assists, MVP votes) with a community leaderboard. Explicitly 'ücretsiz'.",
+   "url": "https://apps.apple.com/tr/app/alt%C4%B1pas-hal%C4%B1-saha-ma%C3%A7%C4%B1-bul/id6761342905",
+   "overlapWithAvenza": "Hits Avenza's Discover->Join->Play->Rate->Reputation loop for football and matches on level, but takes no money at all — it is a free organiser tool. That is the price floor Avenza's 10% has to argue against in the CREATE flow.",
+   "turkeyPresence": "Turkish-only, individual seller Emre Kaan Akcay, 26 ratings, v2.1.0 updated 27 Aug 2026.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "Maçla - Halı Saha Maçı Bul",
+   "whatItDoes": "Match listings, position-based search for missing players (Kaleci, Defans, Forvet), profile with position and play style, and in-app messaging to organise match details. No payment, no rating, no level score.",
+   "url": "https://apps.apple.com/tr/app/ma%C3%A7la-hal%C4%B1-saha-ma%C3%A7%C4%B1-bul/id6760619531",
+   "overlapWithAvenza": "Discover and Join only. Its in-app messaging is a feature Avenza's demo does not yet have. No overlap with MONEY.",
+   "turkeyPresence": "Turkish-only, individual seller Taha Goktug LENGERLI, 17 ratings, v2.0.3 updated 29 Aug 2026.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "SahaGO Halı Saha Oyuncusu Bul",
+   "whatItDoes": "Social football platform: find missing players, create or join matches, form teams, and a QR-based points system ('QR ile puan kazan ve sıralamada yüksel') with cups and leagues.",
+   "url": "https://apps.apple.com/tr/app/sahago-hal%C4%B1-saha-oyuncusu-bul/id6757938115",
+   "overlapWithAvenza": "Discover/Join plus a gamified reputation ladder. The QR check-in is a cheap attendance-verification primitive Avenza's RELIABILITY percentage would need something equivalent to. No payments.",
+   "turkeyPresence": "Turkish-only, individual seller Fatih Un, 14 ratings, v1.1.3 updated 11 Aug 2026.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "Kort: Find Tennis Partners",
+   "whatItDoes": "Tennis partner matching with experience level and location on the profile, 'advanced algorithms to create personalized matches', fast in-app messaging, and open invitations others can join at a given place and time.",
+   "url": "https://apps.apple.com/tr/app/kort-find-tennis-partners/id1524701746",
+   "overlapWithAvenza": "Level-based matching plus an open-invite join flow, i.e. Avenza's LEVEL and Discover mechanics for tennis. The largest by rating count of the Turkish-built apps found (549), so it is the best available proxy for how big this category gets in Turkey. No fee mechanic found.",
+   "turkeyPresence": "Turkish company: Distant Teknoloji Limited Sirketi. 549 ratings, v3.7.6 updated 15 Jan 2026.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "PFM - Play for More",
+   "whatItDoes": "Digital sports platform for challenge-based matching, match and training scheduling at partner clubs or courts. Explicitly monetised via auto-renewing subscriptions billed through Apple ID rather than a per-game take rate.",
+   "url": "https://apps.apple.com/tr/app/pfm-play-for-more/id1659862462",
+   "overlapWithAvenza": "Join/schedule at partner venues. Relevant to the MONEY dimension as the counter-model: a subscription avoids the per-transaction PSP drag identified in finding 2 entirely, since Apple handles collection.",
+   "turkeyPresence": "Turkish company: PFM SPOR TEKNOLOJILERI ORGANIZASYON VE GIDA TICARET ANONIM SIRKETI. 84 ratings, v2.6.10 updated 4 Jul 2026.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "GoodRec",
+   "whatItDoes": "Pickup-game marketplace, operator-hosted rather than peer-hosted: 'Pick your sport and city / Choose your game / Show up and play'. Live in '70+ cities across the US, Canada and Europe'. 13,693 ratings at 4.86 on the US App Store.",
+   "url": "https://apps.apple.com/us/app/goodrec/id1510554246",
+   "overlapWithAvenza": "Same Discover->Join loop but centrally organised, so there is no peer host to pay out and the licence problem in finding 1 never arises. Per-game price is not published in the listing or on goodrec.com and could not be verified.",
+   "turkeyPresence": "None found. Does not surface in the Turkish App Store search results for the relevant Turkish-language terms.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "Plei | Pick Up Soccer",
+   "whatItDoes": "Operator-run pickup soccer: 'We host soccer games across the US and ensure each game is well-organized with a combination of automation and a personal touch.' Game feed, guest invites, groups, facility finder, direct human support. 12,427 ratings at 4.84.",
+   "url": "https://apps.apple.com/us/app/plei-pick-up-soccer/id1225575821",
+   "overlapWithAvenza": "Closest Western analogue to Avenza's football use case, but it is the merchant itself rather than a peer-to-peer split — it buys the pitch and resells seats, which sidesteps both the host-payout licence question and the per-player PSP drag. Per-player price not disclosed publicly.",
+   "turkeyPresence": "None found. US-only per its own description.",
+   "_dim": "Fees, take rates & Turkish payments law"
+  },
+  {
+   "name": "GoodRec (Just Play Apps, Inc.)",
+   "whatItDoes": "Own-inventory pickup games. Books slots at partner facilities, posts them, sells prepaid seats, assigns a host to run teams. Sports: soccer, basketball, pickleball, open-play volleyball; leagues \"coming soon\" per 2026-08-05 release notes. Claims 70+ cities across US, Canada and Europe; site cites NYC, LA, Ottawa, Chicago, Toronto, Miami, Boston, Dallas, Detroit, New Jersey, Bay Area, Buffalo, Dublin. Rebranded from Just Play. 13,693 US ratings at 4.86.",
+   "url": "https://www.goodrec.com/",
+   "overlapWithAvenza": "Head-on with Discover/Join and with the RELIABILITY trust layer — but solves no-shows with prepayment instead of a score, and refuses to gate on level. No user-hosted CREATE at all.",
+   "turkeyPresence": "Listed in the TR App Store (id 1510554246) with only 8 ratings; no Turkish city on its own city list. Effectively absent.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Plei | Pick Up Soccer",
+   "whatItDoes": "Own-inventory pickup soccer only. Its own App Store text: \"We host soccer games across the US.\" Users browse a game feed, join, invite friends or groups; no create-a-game. Site references Miami, Houston, New York, LA and the DMV, plus free games with adidas Fútbol Society. First released 2017; 12,427 US ratings at 4.84.",
+   "url": "https://www.plei.com/",
+   "overlapWithAvenza": "Discover/Join for football. Directly contradicts Avenza's user-hosted CREATE — Plei's supply is company-booked.",
+   "turkeyPresence": "Not available in the Turkish App Store (lookup with country=tr returns 0 results).",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "OpenSports Inc.",
+   "whatItDoes": "The aggregator/organiser platform: groups create public or private events, waitlists, refunds, waivers, check-ins, chat, player cards, organiser reviews, gender/sport/availability/level filters. Charges organisers 3% on events, leagues, tournaments and memberships, plus $30 / $70 / $750+ per month tiers. 2,323 US ratings at 4.91 — roughly one-sixth GoodRec's scale.",
+   "url": "https://opensports.net/pricing",
+   "overlapWithAvenza": "The closest structural analogue to Avenza's CREATE + cost-split + MONEY mechanics, and the clearest pricing benchmark: 3% to the organiser versus Avenza's 10% to the player.",
+   "turkeyPresence": "In the TR App Store (id 1056940981) with 1 rating. Negligible.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Volo Sports (Volo Inc.)",
+   "whatItDoes": "Owns the experience end-to-end: adult social leagues plus drop-in pickup at booked venues, \"We handle the teams and gear\", \"13 Cities to play\". App listing names Baltimore, Boston, Charleston, Denver, DC, New Jersey, New York, San Diego, San Francisco, Seattle. Notably its app is poorly rated: 181 ratings at 2.60.",
+   "url": "https://www.volosports.com/",
+   "overlapWithAvenza": "Own-inventory proof point, and a warning that operating leagues well does not mean shipping a good app.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Playtomic S.L.",
+   "whatItDoes": "Padel/tennis/pickleball court booking plus public 'open matches' with a level range, a 0-7 numeric level driven by match results and a reliability (level-confidence) score, court-fee splitting among players, leagues and tournaments, Premium subscription. Claims 1M+ players and 16,000+ courts worldwide. Also sells Playtomic Manager club software.",
+   "url": "https://playtomic.com/",
+   "overlapWithAvenza": "The single biggest overlap: it already owns Avenza's LEVEL scale, the public-match-with-level-range ELIGIBILITY idea, and the per-player cost split.",
+   "turkeyPresence": "Live in the Turkish App Store (id 1242321076) with 188 ratings at 4.88, updated 2026-08-31 — but no Turkish localisation, and I could not verify any Istanbul club bookable on playtomic.com.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "SmashMate (KAPLANS BILGI TEKNOLOJILERI TICARET LTD)",
+   "whatItDoes": "Turkish padel player-finder, first released 2026-08-05. Browse matches and courts without signing up, join or create a match, set date/court/skill range/player count, in-app chat, ELO rating with win rate and match history, block/report. Explicitly free with no IAP, and explicitly does not take payments: \"Booking and payment happen through the club's own system.\"",
+   "url": "https://www.smashmate.app/",
+   "overlapWithAvenza": "Avenza's CREATE + LEVEL + Discover loop for padel, in Turkey, three weeks old, free, and sidestepping the payments licence problem Avenza also flagged.",
+   "turkeyPresence": "Turkish company, Turkish App Store, publishes an Istanbul padel-court guide at smashmate.tr. 17 TR ratings at 4.76.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Maçla - Halı Saha Maçı Bul",
+   "whatItDoes": "Turkish 5-a-side match finder, first released 2026-04-19. Browse local match listings and join instantly, find missing players by position (Kaleci / Defans / Forvet), profile with position and playing style, in-app messaging. No payments mentioned.",
+   "url": "https://apps.apple.com/tr/app/id6760619531",
+   "overlapWithAvenza": "Avenza's halı saha Discover/Join and CREATE, in Turkish, already shipped. Its position-based search is a mechanic Avenza's LEVEL model does not have.",
+   "turkeyPresence": "Turkish developer, TR App Store, 17 ratings at 3.94.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Playo (TechMash Solutions, India)",
+   "whatItDoes": "Started as a user-hosted 'find players' community and has since added inventory: venue booking for 50+ sports, skill-level matching, and \"GameTime — Join Playo-hosted, community-hosted, and public hosted sports activities at top venues.\" Claims 5M+ players. Has a Karma Points behaviour/reward score.",
+   "url": "https://apps.apple.com/us/app/playo-sports-community-app/id1018786950",
+   "overlapWithAvenza": "The clearest precedent for Avenza's whole thesis in an emerging market — and it converged on adding own-hosted games plus a reputation currency rather than relying on user hosting alone.",
+   "turkeyPresence": "None found; India/UAE focus.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Footy Addicts Ltd",
+   "whatItDoes": "UK casual football, 5- to 10-a-side, browse and join local games, player profiles, venue details, location search. London origin, listed by London FA; press coverage of expansion into Manchester and the rest of the UK. Mostly organiser-hosted rather than company-hosted.",
+   "url": "https://footyaddicts.com/",
+   "overlapWithAvenza": "The closest European analogue to Avenza's halı saha Discover/Join, and a survivor of the user-hosted model — but small (23 US ratings; UK-store share not measured).",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Pezo: Pickup Soccer",
+   "whatItDoes": "Single-city operator: \"the only app exclusively for pickup soccer players in Los Angeles.\" Sign up for a game, show up, no team needed. \"Our games are open to all adults, any age, any level.\" 960 US ratings.",
+   "url": "https://apps.apple.com/us/app/pezo-pickup-soccer/id1637899004",
+   "overlapWithAvenza": "Proof that a one-city, one-sport, company-run pickup app is a viable shape — the shape Avenza could take in Kadıköy. Also a second data point against level-gating.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "LeagueApps (formerly Sportsvite)",
+   "whatItDoes": "B2B league/club management SaaS: registration, payments, scheduling, comms, reporting. Was Sportsvite (2006), a consumer pickup-sports social network, until a 2009 pivot. Now 7M+ registrations, 70+ employees, VC-backed. Ships 'LeagueApps Play' under the Sportsvite LLC publisher account.",
+   "url": "https://leagueapps.com/",
+   "overlapWithAvenza": "The graveyard exit. Its founder's stated reason for abandoning the consumer social product is the most useful single document in this report.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Sportyfriends ApS (Denmark)",
+   "whatItDoes": "Pivoted from a social sports app to club membership/booking/payments software; the same App Store publisher now ships white-label venue apps (Padel Center Middelfart, Padel iQ). The social app itself has not shipped since 2025-10-30 and has 1 US rating. sportyfriends.com/en/feature/app now 302-redirects to a customer club's 404 page.",
+   "url": "https://sportyfriends.com/",
+   "overlapWithAvenza": "Graveyard/pivot: social discovery abandoned in favour of selling software to venues.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Sportaneous",
+   "whatItDoes": "DEAD. 2011 NYC app to find and propose pickup games; NYC BigApps winner. Shifted to a fitness-class discovery and booking platform, then acqui-hired by Greatist in early 2013 and folded.",
+   "url": "https://entrepreneurship.columbia.edu/startup/sportaneous/",
+   "overlapWithAvenza": "Graveyard: the original user-proposed-games model, which moved to booking inventory before it exited.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Reclub PBC",
+   "whatItDoes": "'Social Sports Nearby' — discover sports and players by city and sport, make an activity, run round robins/leagues/social drop-ins, club management, tournaments with brackets and registration, chat. Aggregator/organiser model. 724 US ratings, actively shipping (2026-08-26).",
+   "url": "https://reclub.co/",
+   "overlapWithAvenza": "Avenza's Discover + CREATE + venue-page loop, US-side, and further evidence that user-hosted platforms plateau in the low hundreds-to-thousands of ratings.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Rovo Pte. Ltd. (Singapore)",
+   "whatItDoes": "Multi-sport: host in-person activities and find people to play with, book badminton/tennis/futsal facilities, 30+ sports, workouts, leaderboards, badges and points. Monetises via Rovo Premium at USD 9.99/month rather than a per-game take.",
+   "url": "https://apps.apple.com/us/app/rovo-sports-fitness-app/id1044009295",
+   "overlapWithAvenza": "Closest multi-sport analogue to Avenza's sport list, and an alternative monetisation answer (subscription, not a 10% player fee). Only 31 US ratings.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Spond AS (Norway)",
+   "whatItDoes": "Free team and club organisation — attendance, scheduling, messaging, payments — for existing teams, not stranger discovery. 3,355 US ratings, ships constantly.",
+   "url": "https://spond.com/",
+   "overlapWithAvenza": "Overlaps Avenza's attendance/RSVP plumbing, not its Discover loop. Relevant as the free incumbent any Turkish halı saha crew could already use.",
+   "turkeyPresence": "Not available in the Turkish App Store (lookup with country=tr returns 0 results).",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "ENDALGO, Inc.",
+   "whatItDoes": "Organiser-side tooling for sports and activity groups: RSVPs, waitlists, payments, memberships, experiences. 356 ratings but no release since 2024-04-08 — stale, likely abandoned.",
+   "url": "https://apps.apple.com/us/app/endalgo-sports-activities/id1052988468",
+   "overlapWithAvenza": "Graveyard candidate on the aggregator side; last-shipped date is the evidence, not a shutdown notice.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Meetup LLC",
+   "whatItDoes": "General-purpose group/event discovery, 272,647 US ratings, actively shipped 2026-08-31. Sports groups are one vertical among many; organiser-hosted, subscription charged to organisers.",
+   "url": "https://www.meetup.com/",
+   "overlapWithAvenza": "The generic substitute for Discover/Join. No level, no reliability, no cost split.",
+   "turkeyPresence": "Active in Turkey but not measured in this run.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Fanteams",
+   "whatItDoes": "Could not find any pickup-sports app by this name. The only match is FanTeam, a fantasy-sports and sportsbook operator — a different category entirely.",
+   "url": "https://apps.apple.com/gb/app/fanteam/id1510984625",
+   "overlapWithAvenza": "None identified.",
+   "turkeyPresence": "Not investigated — wrong category.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Playpass Inc",
+   "whatItDoes": "'Playpass Player' (id 6761633948), first shipped 2026-08-08, 5 ratings at 1.0 average. Too new and too small to characterise; no evidence found that it is the pickup-sports Playpass implied by the brief.",
+   "url": "https://apps.apple.com/us/app/playpass-player/id6761633948",
+   "overlapWithAvenza": "Unknown; not enough surface to assess.",
+   "turkeyPresence": "None found.",
+   "_dim": "Global pickup-sports social apps"
+  },
+  {
+   "name": "Playtomic",
+   "whatItDoes": "Padel/racket-sport court booking plus public and private match creation, level-based matching, cost splitting between players, leagues and tournaments, and a Premium tier that removes booking fees and adds 'Gold Match' promotion. Claims 'over 1 million players' and 'over 16,000 courts worldwide' in its own App Store copy.",
+   "url": "https://apps.apple.com/tr/app/id1242321076",
+   "overlapWithAvenza": "Near-total on the core loop: DISCOVER/JOIN (public matches you can join), CREATE (host a match, set it public or private), MONEY (split the court fee between players), and LEVEL (level-based player recommendations). The one place it does NOT overlap is BULLETIN — no editorial feed anywhere in its listing. On ONBOARDING it is the direct counter-example: Playtomic demands a verified phone number on top of Apple/Google/Facebook/email sign-in, where Avenza has no phone or password field at all.",
+   "turkeyPresence": "Live in the Turkish App Store: 188 TR ratings, 4.88 average, v6.88.0 released 31 Aug 2026. Localised presence confirmed via the country=tr iTunes lookup; TR court inventory not verified.",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "name": "Kort (Kort: Find Tennis Partners)",
+   "whatItDoes": "Tennis partner finder built by a Turkish company. Profile carries experience level and location; 'advanced algorithms' produce personalised matches; open invitations at a specific location and time that others can join; in-app messaging; Kort Challenge for recording results and tracking progress; Premium unlocks a coach/partner profile, location changing, notification broadcast of your open invites, and unlimited member discovery.",
+   "url": "https://apps.apple.com/tr/app/id1524701746",
+   "overlapWithAvenza": "Direct on LEVEL (self-declared experience level driving matching), DISCOVER/JOIN (open invitations at a venue and time), and CREATE. Notably it monetises discovery limits via Premium rather than taking a cut of court cost, which is a different answer to MONEY than Avenza's 10% player-share fee. It has recorded results and progress tracking but no attendance/RELIABILITY score — the trust gap Avenza claims is real here. No editorial feed.",
+   "turkeyPresence": "Turkish company (Distant Teknoloji Limited Şirketi, kortsports.com). Highest-rated direct competitor found in the TR store: 549 ratings at 4.83, v3.7.6 released 15 Jan 2026.",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "name": "Maçla - Halı Saha Maçı Bul",
+   "whatItDoes": "Turkish 5-a-side match finder. Description promises: see available matches in your area and join instantly ('Bölgendeki mevcut maçları gör ve anında katıl'); find missing players by position — keeper, defence, forward ('Eksik Oyuncu Bul ... Mevki bazlı arama'); build a profile with your position and playing style; in-app messaging to organise match details. Latest update added a home-screen widget for match schedules.",
+   "url": "https://apps.apple.com/tr/app/id6760619531",
+   "overlapWithAvenza": "Head-on with DISCOVER, JOIN and CREATE for football specifically, and it solves the same 'kadro tamamlama' problem. Its matching axis is POSITION, not LEVEL — no skill number, no level range, and therefore no ELIGIBILITY filtering, and no reliability or attendance score. No editorial feed and no payment layer.",
+   "turkeyPresence": "Turkish, Istanbul-relevant, actively maintained: 17 ratings at 3.94, updated 29 Aug 2026.",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "name": "Soloscore: Social Live Scores",
+   "whatItDoes": "Turkish live-scores app that explicitly bundles editorial and social: 'Live scores, match details, fixtures, and the latest football news, all in one place ... connect with fellow football fans', plus 'Exclusive content on the football agenda' and 'Social interaction with football fans'.",
+   "url": "https://apps.apple.com/tr/app/id6773398295",
+   "overlapWithAvenza": "The closest thing found to Avenza's BULLETIN thesis, but built from the opposite end — news and fan community first, with no booking, no CREATE, no venues and no money layer. It is the natural test case for whether Turkish users want sport news and social in one app; still at v0.2.1 with 74 ratings after two and a half months, so no verdict yet.",
+   "turkeyPresence": "Turkish company (Soloscore Teknoloji Anonim Şirketi), released 13 Jun 2026, 74 TR ratings at 4.61, updated 31 Aug 2026.",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "name": "GoodRec",
+   "whatItDoes": "On-demand pickup games (soccer, volleyball, basketball) in US cities — you pick a city and sport, join a game near you, see who is playing, invite friends, meet the host. Public per-city, per-sport web pages list upcoming games.",
+   "url": "https://www.goodrec.com/pickup-soccer/philadelphia",
+   "overlapWithAvenza": "Same core loop and the closest match to Avenza's ONBOARDING bet. Its city pages are fully public — venue, date, time and duration render with no account — and the account wall sits on the JOIN action ('JOIN VIA APP'), which is exactly Avenza's deferred-signup pattern executed on the web as an SEO surface as well. Prices, spots left, skill level and host name are NOT shown publicly, so it gates the trust and money details, not the discovery.",
+   "turkeyPresence": "None found — US city pages only (Philadelphia, etc.).",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "name": "Spond",
+   "whatItDoes": "Team and club organisation — scheduling, availability, attendance and group payments for amateur clubs.",
+   "url": "https://apps.apple.com/gb/app/id755596884",
+   "overlapWithAvenza": "Overlaps on attendance tracking, which is the raw material for Avenza's RELIABILITY score, but inside a closed known team rather than between strangers — so it produces no portable, cross-team reputation. Checked specifically for the Bulletin question: its App Store description contains zero news or editorial lines.",
+   "turkeyPresence": "None found — did not surface in the country=tr iTunes search at all; 8,142 ratings in the GB store.",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "name": "Mackolik (M Scores)",
+   "whatItDoes": "Turkey's dominant live-score and sports-news app: live scores, pre-match/kick-off/half-time/full-time push alerts, and a dedicated 'TRANSFER MARKET NEWS & RUMOURS' section — 'Follow all football transfer market updates, news, rumours and confirmations.'",
+   "url": "https://apps.apple.com/tr/app/id398157427",
+   "overlapWithAvenza": "Zero overlap on the core loop — no booking, no matching, no venues. Total overlap on BULLETIN's world-sport strand, and it owns that attention: 42,171 TR ratings against Avenza's zero. Any world-sport item in Avenza's Discover header is competing with an app the user already has open.",
+   "turkeyPresence": "Turkish company (Mackolik İnternet Hizmetleri Ticaret A.Ş.), 42,171 TR ratings, updated 28 Aug 2026.",
+   "_dim": "Editorial feed & onboarding norms"
+  },
+  {
+   "name": "HalıSaha+ Rezervasyon, Kadro",
+   "whatItDoes": "Turkish pitch booking plus squad assembly ('Rezervasyon, Kadro') — the booking-side counterpart to the match-finder apps.",
+   "url": "https://apps.apple.com/tr/app/id6761794919",
+   "overlapWithAvenza": "Overlaps VENUES and the booking half of the loop that Avenza deliberately does not build (Avenza splits cost but explicitly does not do host payouts). Very early — 18 ratings — but updated 31 Aug 2026, so actively worked on. No level system, no reliability score, no editorial feed.",
+   "turkeyPresence": "Turkish company (Parpali Yazılım ve Bilişim Hizmetleri Ticaret Ltd. Şti.), 18 TR ratings at 4.33, updated 31 Aug 2026.",
+   "_dim": "Editorial feed & onboarding norms"
+  }
+ ]
+}

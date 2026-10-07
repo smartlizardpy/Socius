@@ -1,0 +1,11 @@
+<!--
+Photo credits — voluntary courtesy, NOT a license requirement.
+All images below are CC0 / Public Domain / attribution-free; none of this
+needs to appear on the rendered page. Keep it here in the source as a
+thank-you to the creators. Do not surface it as visible on-site attribution.
+
+tennis-player-portrait-man-1.jpg: "Two Men Uniform Aug Becker" by thegetty (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/14306735/two-men-uniform-aug-becker
+tennis-player-portrait-man-2.jpg: "Football player illustration" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/9069587/image-face-person-cartoon
+tennis-player-portrait-man-3.jpg: "Football player illustration vector" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/9069560/vector-person-cartoon-football
+tennis-player-portrait-man-4.jpg: "Football player illustration vector" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/9069547/vector-person-cartoon-football
+-->

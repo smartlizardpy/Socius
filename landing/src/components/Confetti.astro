@@ -1,0 +1,106 @@
+---
+// Decorative only — never informational, never interactive.
+// Palette note: the lock keeps #f7c23b (yellow) inside illustrations only, so the
+// confetti draws from blue / sky / tints, with orange rationed to one shape.
+---
+
+<div class="confetti" aria-hidden="true">
+	<span class="c c1"></span>
+	<span class="c c2"></span>
+	<span class="c c3"></span>
+	<span class="c c4"></span>
+	<span class="c c5"></span>
+	<span class="c c6"></span>
+</div>
+
+<style>
+	.confetti {
+		position: absolute;
+		inset: 0;
+		overflow: hidden;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	.c {
+		position: absolute;
+		display: block;
+	}
+
+	/* Oversized, some deliberately spilling off-canvas. */
+	.c1 {
+		top: 8%;
+		left: -70px;
+		width: 210px;
+		height: 210px;
+		border-radius: 50%;
+		background: var(--primary-tint);
+	}
+
+	.c2 {
+		top: 4%;
+		right: -50px;
+		width: 240px;
+		height: 240px;
+		border-radius: 40px;
+		background: var(--accent-tint);
+		rotate: -12deg;
+	}
+
+	.c3 {
+		top: 46%;
+		left: 3%;
+		width: 92px;
+		height: 220px;
+		border-radius: var(--r-pill);
+		background: var(--primary);
+		opacity: 0.14;
+		rotate: 18deg;
+	}
+
+	.c4 {
+		top: 30%;
+		right: 6%;
+		width: 118px;
+		height: 118px;
+		border-radius: 30px;
+		background: #7fa6f0; /* sky */
+		opacity: 0.4;
+		rotate: 14deg;
+	}
+
+	/* The single orange shape — the accent budget is ≲5% of the surface. */
+	.c5 {
+		top: 68%;
+		right: 14%;
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
+		background: var(--accent);
+	}
+
+	.c6 {
+		top: 74%;
+		left: 16%;
+		width: 76px;
+		height: 76px;
+		border-radius: 22px;
+		background: var(--primary-tint);
+		rotate: -20deg;
+	}
+
+	@media (max-width: 48rem) {
+		.c3,
+		.c4,
+		.c5,
+		.c6 {
+			display: none;
+		}
+
+		.c1,
+		.c2 {
+			opacity: 0.7;
+		}
+	}
+
+</style>

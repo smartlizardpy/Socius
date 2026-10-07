@@ -1,0 +1,160 @@
+---
+// F1 · Alternating band, first pass — the dark full-bleed band.
+// Deep blue stands in for fastht.ml's aubergine; ink is unreadable here (2.84),
+// so every text colour on this band is white or blue-tint.
+import { Image } from 'astro:assets';
+import Phone from './Phone.astro';
+import levelArt from '../assets/illo/land-level.png';
+import levelShot from '../assets/shots/Level.png';
+
+const star = (fill: string) =>
+	`<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="${fill}" d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4 6.2 20.5l1.1-6.5L2.6 9.4l6.5-.9z"/></svg>`;
+---
+
+<section class="band band--lg band--deep" id="seviye">
+	<div class="wrap">
+		<div class="art" data-reveal>
+			<Image
+				src={levelArt}
+				alt="Filenin iki yanında, aynı anda vuruş yapan iki oyuncu"
+				widths={[720, 1200]}
+				sizes="(max-width: 1200px) 92vw, 1120px"
+				loading="lazy"
+			/>
+		</div>
+
+		<div class="split">
+			<div class="copy" data-reveal>
+				<p class="eyebrow">Seviye</p>
+				<h2>Karşındaki de senin kadar oynuyor.</h2>
+
+				<p class="lede">
+					Her spor için ayrı seviye tutulur. Padelde 4, teniste 3 olabilirsin — ikisi
+					birbirine karışmaz, ayrı ayrı eşleşir.
+				</p>
+
+				<ul class="points">
+					<li>
+						<strong>Katılamayacağın oyun sana gösterilmez.</strong> Seviyene kapalı bir maç
+						listede yer almaz — ev sahibi herkese açtıysa ayrı.
+					</li>
+					<li>
+						<strong>Emin değilsen dört soru var.</strong> Cevapladıkça seviyen yerine
+						oturur; sonra oynadıkların düzeltir.
+					</li>
+				</ul>
+
+				<div class="legend">
+					<div>
+						<span class="stars" set:html={star('#7fa6f0').repeat(4) + star('rgba(255,255,255,.28)')} />
+						<p>Mavi yıldız: <strong>ne kadar iyi oynuyorsun</strong></p>
+					</div>
+					<div>
+						<span class="stars" set:html={star('#ffb27a').repeat(5)} />
+						<p>Turuncu yıldız: <strong>birlikte oynayanlar ne demiş</strong></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="shot" data-reveal style="--reveal-delay:90ms">
+				<Phone src={levelShot} alt="Padel seviyesi seçme ekranı" width={300} />
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.art {
+		border-radius: var(--r-card);
+		overflow: hidden;
+		background: var(--paper);
+		margin-bottom: clamp(40px, 5vw, 72px);
+	}
+
+	.art :global(img) {
+		width: 100%;
+		height: auto;
+	}
+
+	.split {
+		display: grid;
+		grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+		gap: clamp(32px, 5vw, 72px);
+		align-items: center;
+	}
+
+	h2 {
+		max-width: 16ch;
+	}
+
+	.copy .lede {
+		margin-top: var(--s16);
+	}
+
+	.points {
+		margin: var(--s26) 0 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: var(--s16);
+		max-width: 52ch;
+	}
+
+	.points li {
+		padding-left: var(--s20);
+		border-left: 2px solid var(--deep-hairline);
+		color: var(--on-deep-muted);
+		font-size: var(--step-meta);
+		line-height: 1.5;
+	}
+
+	.points strong {
+		color: var(--on-deep);
+		font-weight: 600;
+	}
+
+	.legend {
+		display: grid;
+		gap: var(--s14);
+		margin-top: var(--s32);
+		padding-top: var(--s20);
+		border-top: 1px solid var(--deep-hairline);
+	}
+
+	.legend div {
+		display: flex;
+		align-items: center;
+		gap: var(--s12);
+		flex-wrap: wrap;
+	}
+
+	.stars {
+		display: inline-flex;
+		gap: 2px;
+	}
+
+	.legend p {
+		font-size: var(--step-meta);
+		color: var(--on-deep-muted);
+	}
+
+	.legend strong {
+		color: var(--on-deep);
+		font-weight: 600;
+	}
+
+	.shot {
+		display: flex;
+		justify-content: center;
+	}
+
+	@media (max-width: 56rem) {
+		.split {
+			grid-template-columns: 1fr;
+		}
+
+		.shot {
+			order: -1;
+		}
+	}
+</style>

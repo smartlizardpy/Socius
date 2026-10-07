@@ -1,0 +1,284 @@
+---
+// The beta signup form. Used twice — once in the hero, once in the closing band — so
+// every id is prefixed and the submit handler below binds to all instances at once.
+// Posts to /api/beta and works with JavaScript off: the endpoint answers a plain form
+// post with a 303 to /tesekkurler.
+
+interface Props {
+	/** Prefix for the field ids, so two copies on one page stay unique. */
+	id: string;
+	/** `deep` sits on the blue band, `paper` on the cream hero. */
+	tone?: 'deep' | 'paper';
+	/** One row with hidden labels (hero) vs. stacked labels (closing band). */
+	compact?: boolean;
+	label?: string;
+}
+
+const { id, tone = 'paper', compact = false, label = 'Hemen başla' } = Astro.props;
+
+const semtler = [
+	{ value: 'kadikoy', label: 'Kadıköy' },
+	{ value: 'moda', label: 'Moda' },
+	{ value: 'caddebostan', label: 'Caddebostan' },
+	{ value: 'diger', label: 'Başka bir semt' },
+];
+---
+
+<form
+	class:list={['signup', `t-${tone}`, compact && 'is-compact']}
+	action="/api/beta"
+	method="post"
+	data-signup
+>
+	<div class="fields">
+		<div class="field field--email">
+			<label class:list={[compact && 'visually-hidden']} for={`${id}-eposta`}>E-posta</label>
+			<input
+				id={`${id}-eposta`}
+				type="email"
+				name="email"
+				inputmode="email"
+				autocomplete="email"
+				placeholder="ad@ornek.com"
+				required
+			/>
+		</div>
+
+		<div class="field field--semt">
+			<label class:list={[compact && 'visually-hidden']} for={`${id}-semt`}>Semtin</label>
+			<select id={`${id}-semt`} name="semt">
+				<option value="">Semtin</option>
+				{semtler.map((s) => <option value={s.value}>{s.label}</option>)}
+			</select>
+		</div>
+
+		<button class:list={['btn', tone === 'deep' && 'btn--on-deep']} type="submit">{label}</button>
+	</div>
+
+	{/* Honeypot. Hidden from people and from screen readers; bots fill it. */}
+	<div class="trap" aria-hidden="true">
+		<label for={`${id}-website`}>Bu alanı boş bırak</label>
+		<input id={`${id}-website`} type="text" name="website" tabindex="-1" autocomplete="off" />
+	</div>
+
+	<p class="status" data-status role="status" aria-live="polite"></p>
+</form>
+
+<script>
+	// Astro hoists this once however many times the component is used, so bind them all.
+	for (const form of document.querySelectorAll<HTMLFormElement>('[data-signup]')) {
+		const status = form.querySelector<HTMLElement>('[data-status]');
+		const fields = form.querySelector<HTMLElement>('.fields');
+
+		const say = (text: string, tone: 'ok' | 'err') => {
+			if (!status) return;
+			status.textContent = text;
+			status.dataset.tone = tone;
+		};
+
+		form.addEventListener('submit', async (event) => {
+			if (!form.reportValidity()) return;
+			event.preventDefault();
+
+			const button = form.querySelector('button[type=submit]');
+			button?.setAttribute('disabled', '');
+			say('Gönderiliyor…', 'ok');
+
+			try {
+				const res = await fetch(form.action, {
+					method: 'POST',
+					headers: { accept: 'application/json' },
+					body: new FormData(form),
+				});
+				const data = await res.json().catch(() => ({}));
+
+				if (res.ok && data.ok) {
+					fields?.setAttribute('hidden', '');
+					say('Listedesin. Açıldığı gün haber vereceğiz.', 'ok');
+					return;
+				}
+
+				say(
+					data.error === 'gecersiz-eposta'
+						? 'Bu adres doğru görünmüyor, bir daha bakar mısın?'
+						: 'Kaydedemedik. Birazdan tekrar dener misin?',
+					'err',
+				);
+			} catch {
+				say('Bağlanamadık. Bağlantını kontrol edip tekrar dene.', 'err');
+			} finally {
+				button?.removeAttribute('disabled');
+			}
+		});
+	}
+</script>
+
+<style>
+	.signup {
+		margin-top: var(--s32);
+	}
+
+	.fields {
+		display: grid;
+		gap: var(--s16);
+	}
+
+	.field {
+		display: grid;
+		gap: var(--s6);
+		min-width: 0;
+	}
+
+	.field label {
+		font-size: var(--step-micro);
+		font-weight: 700;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+	}
+
+	.field input,
+	.field select {
+		width: 100%;
+		min-height: 52px;
+		padding: 0 var(--s16);
+		border: 1px solid transparent;
+		border-radius: var(--r-inner);
+		font: inherit;
+		/* iOS zooms the page when a focused field is under 16px. */
+		font-size: max(16px, var(--step-body));
+	}
+
+	/* The native arrow is unreliable across themes; draw our own. */
+	.field select {
+		appearance: none;
+		padding-right: var(--s32);
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5 6 6.5l5-5' stroke='%235A6172' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: right var(--s16) center;
+		background-size: 12px 8px;
+	}
+
+	.btn {
+		white-space: nowrap;
+	}
+
+	/* --- on the blue band: solid white fields, because a translucent fill on this much
+	   blue reads as decoration rather than as something you can type into --- */
+
+	.t-deep .field label {
+		color: var(--on-deep);
+	}
+
+	.t-deep .field input,
+	.t-deep .field select {
+		background-color: var(--surface);
+		color: var(--ink);
+	}
+
+	.t-deep .field input::placeholder {
+		color: var(--ink-muted);
+	}
+
+	.t-deep .field input:focus-visible,
+	.t-deep .field select:focus-visible {
+		outline: 3px solid var(--on-deep);
+		outline-offset: 2px;
+	}
+
+	.t-deep .status[data-tone='ok'] {
+		color: var(--on-deep);
+	}
+
+	/* #ffb27a on #0b2e7a is 7.06:1 — text-safe. */
+	.t-deep .status[data-tone='err'] {
+		color: #ffb27a;
+	}
+
+	/* --- on cream: a hairline field, so it reads as an input without a heavy fill --- */
+
+	.t-paper .field label {
+		color: var(--ink-muted);
+	}
+
+	.t-paper .field input,
+	.t-paper .field select {
+		background-color: var(--surface);
+		border-color: var(--border-paper);
+		color: var(--ink);
+	}
+
+	.t-paper .field input::placeholder {
+		color: var(--ink-muted);
+	}
+
+	.t-paper .field input:focus-visible,
+	.t-paper .field select:focus-visible {
+		outline: 3px solid var(--primary);
+		outline-offset: 2px;
+	}
+
+	.t-paper .status[data-tone='ok'] {
+		color: var(--ink);
+	}
+
+	/* #b8430c on paper is 5.15:1 — the palette's accent-as-text. */
+	.t-paper .status[data-tone='err'] {
+		color: var(--accent-deep);
+	}
+
+	/* --- compact: one row, above the fold --- */
+
+	.is-compact .fields {
+		grid-template-columns: minmax(0, 1.7fr) minmax(0, 0.95fr) auto;
+		align-items: end;
+		gap: var(--s10);
+		text-align: left;
+	}
+
+	/* --- stacked: the closing band --- */
+
+	.signup:not(.is-compact) .fields {
+		grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+	}
+
+	.signup:not(.is-compact) .btn {
+		grid-column: 1 / -1;
+		justify-self: start;
+	}
+
+	.trap {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+
+	.status:empty {
+		display: none;
+	}
+
+	.status {
+		margin-top: var(--s16);
+		font-size: var(--step-meta);
+		font-weight: 600;
+	}
+
+	@media (max-width: 40rem) {
+		.is-compact .fields {
+			grid-template-columns: 1fr;
+			gap: var(--s12);
+		}
+
+		.is-compact .btn {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 30rem) {
+		.signup:not(.is-compact) .fields {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

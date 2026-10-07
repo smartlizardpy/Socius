@@ -1,0 +1,303 @@
+{
+  "pages": [
+    {
+      "id": "page-1",
+      "name": "Cover"
+    },
+    {
+      "id": "page-2",
+      "name": "1 · Onboarding"
+    },
+    {
+      "id": "page-3",
+      "name": "2 · The loop"
+    },
+    {
+      "id": "page-7",
+      "name": "3 · The bulletin"
+    },
+    {
+      "id": "page-4",
+      "name": "4 · Supply & money"
+    },
+    {
+      "id": "page-6",
+      "name": "5 · Design decisions"
+    },
+    {
+      "id": "page-5",
+      "name": "6 · System"
+    }
+  ],
+  "artboards": [
+    {
+      "file": "Cover.dc.html",
+      "page": "page-1",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "Avenza"
+    },
+    {
+      "file": "Welcome.dc.html",
+      "page": "page-2",
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "1 · Welcome"
+    },
+    {
+      "file": "How.dc.html",
+      "page": "page-2",
+      "x": 510,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "2 · What it does"
+    },
+    {
+      "file": "Account.dc.html",
+      "page": "page-2",
+      "x": 1020,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "3 · Sign in"
+    },
+    {
+      "file": "Sports.dc.html",
+      "page": "page-2",
+      "x": 1530,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "4 · Your sports"
+    },
+    {
+      "file": "Level.dc.html",
+      "page": "page-2",
+      "x": 2040,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "5 · Your level"
+    },
+    {
+      "file": "Place.dc.html",
+      "page": "page-2",
+      "x": 2550,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "6 · Where you play"
+    },
+    {
+      "file": "Ready.dc.html",
+      "page": "page-2",
+      "x": 3060,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "7 · You're in"
+    },
+    {
+      "file": "Main.dc.html",
+      "page": "page-3",
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Discover"
+    },
+    {
+      "file": "Activity.dc.html",
+      "page": "page-3",
+      "x": 510,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Join"
+    },
+    {
+      "file": "Games.dc.html",
+      "page": "page-3",
+      "x": 1020,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Play"
+    },
+    {
+      "file": "Rate.dc.html",
+      "page": "page-3",
+      "x": 1530,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Rate"
+    },
+    {
+      "file": "Profile.dc.html",
+      "page": "page-3",
+      "x": 2040,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Reputation"
+    },
+    {
+      "file": "Bulletin.dc.html",
+      "page": "page-7",
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "The feed"
+    },
+    {
+      "file": "Story.dc.html",
+      "page": "page-7",
+      "x": 510,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "A world story"
+    },
+    {
+      "file": "StoryLocal.dc.html",
+      "page": "page-7",
+      "x": 1020,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "A local story"
+    },
+    {
+      "file": "Create.dc.html",
+      "page": "page-4",
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Create an activity"
+    },
+    {
+      "file": "Course.dc.html",
+      "page": "page-4",
+      "x": 510,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Course · coaches & clubs"
+    },
+    {
+      "file": "Venue.dc.html",
+      "page": "page-4",
+      "x": 1020,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Venue"
+    },
+    {
+      "file": "Search.dc.html",
+      "page": "page-4",
+      "x": 1530,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Search & filters"
+    },
+    {
+      "file": "Pay.dc.html",
+      "page": "page-4",
+      "x": 2040,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Payment · the 10%"
+    },
+    {
+      "file": "Decisions.dc.html",
+      "page": "page-6",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "Why it looks like this"
+    },
+    {
+      "file": "System.dc.html",
+      "page": "page-5",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "Design system"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "n-cover",
+      "page": "page-1",
+      "x": 0,
+      "y": -190,
+      "w": 700,
+      "text": "Open here.\nThe question every one of these screens exists to answer, and the loop that makes each turn better than the last."
+    },
+    {
+      "id": "n-onb",
+      "page": "page-2",
+      "x": 0,
+      "y": -230,
+      "w": 1100,
+      "text": "ONBOARDING — explain, then ask, then collect.\nThe welcome leads with people rather than a form. Four explainer panels make the case before a single question is asked, and only then does sign-in come up — deferred signup is the largest lift available in this funnel, and by that point you know what you would be signing into. Not now is a first-class path, and there is no password field anywhere.\nThen three questions. Sports, then a level for each sport you picked — five stars you tap, with the tier and the description following the count — then where you play, which is also where the location permission is primed rather than fired cold. The last screen counts the games that actually match what you set.\nLanguage: every screen carries an English / Türkçe switch."
+    },
+    {
+      "id": "n-loop",
+      "page": "page-3",
+      "x": 0,
+      "y": -210,
+      "w": 1000,
+      "text": "THE CORE LOOP — discover, join, play, rate, build reputation.\nThis is the product. Discover ranks by level and distance and says why; a game whose level range excludes you is not shown at all, and level is judged per sport. Joining shows the host's record before you commit. After the game both sides rate, and that feeds the level and the reliability score on the profile — which is what makes the next recommendation better.\nThe rating screen is the one competitors do not have."
+    },
+    {
+      "id": "n-bul",
+      "page": "page-7",
+      "x": 0,
+      "y": -210,
+      "w": 1000,
+      "text": "THE BULLETIN — one ranked feed, near-you and world sport mixed.\nLocal items come from Avenza's own data — new courts, court prices, a league with spots — and end in a place you can play. World stories are summarised, credited and linked out, never reproduced: the summary is labelled as machine-written, the publisher's photograph is credited on screen, and the out-link is the only way to the article. The publisher name in the kicker is the only thing separating the two, and it does the attribution a feed deal requires without importing a single logo into the palette.\nThe lead slot stays local. Ranked on interest alone a Süper Lig headline beats a new court in Kadıköy every day, and the one thing only Avenza can do gets buried.\nEvery story carries one card at the foot, chosen by what the story is about — a game, a venue, a course, or a sponsor. Ours are tinted blue and act; anything sold is plain and says SPONSORED on the title line, because an ad wearing the product's clothes is what this surface must never do."
+    },
+    {
+      "id": "n-supply",
+      "page": "page-4",
+      "x": 0,
+      "y": -230,
+      "w": 1050,
+      "text": "SUPPLY AND MONEY — where activities come from, and where revenue comes from.\nAnyone can create an activity in under a minute. The host is asked once, in WHO CAN JOIN, whether players outside the level band may ask anyway — off by default, and it is what gives the activity screen three honest states rather than a button that lies. Coaches, academies and clubs list paid courses. Venues are derived from the games played at them, never asserted separately.\nAvenza takes 10%. One constant, disclosed on the price line and broken out on Pay: court total ₺720 → your share ₺180 → fee ₺18 → total ₺198.\nThe second line is the bulletin: one sponsor slot per story, sold against the sport it is about and labelled inside the card.\nPrices shown are sample values for a pitch, not a pricing decision."
+    },
+    {
+      "id": "n-dec",
+      "page": "page-6",
+      "x": 0,
+      "y": -190,
+      "w": 760,
+      "text": "THE DESIGN ARGUMENT — what each colour means, why the mark was recut rather than redrawn, and the three calls behind the look.\nThis page is bilingual too: flip the Language tweak to Türkçe and the whole rationale switches."
+    },
+    {
+      "id": "n-sys",
+      "page": "page-5",
+      "x": 0,
+      "y": -210,
+      "w": 850,
+      "text": "THE SYSTEM — what a developer would build against.\nEvery colour pairing here was contrast-checked before it shipped. One icon set, one type pairing, one elevation, a 44px minimum hit target throughout.\nTwo star scales, never confused: blue is the level you play at, orange is what people thought of playing with you."
+    }
+  ],
+  "launch": {
+    "view": "canvas",
+    "page": "page-1"
+  }
+}

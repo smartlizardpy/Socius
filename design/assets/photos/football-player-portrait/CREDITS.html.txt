@@ -1,0 +1,11 @@
+<!--
+Photo credits — voluntary courtesy, NOT a license requirement.
+All images below are CC0 / Public Domain / attribution-free; none of this
+needs to appear on the rendered page. Keep it here in the source as a
+thank-you to the creators. Do not surface it as visible on-site attribution.
+
+football-player-portrait-1.jpg: "Football player illustration" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/9069587/image-face-person-cartoon
+football-player-portrait-2.jpg: "Football player illustration vector" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/9069560/vector-person-cartoon-football
+football-player-portrait-3.jpg: "Football player illustration vector" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/9069540/vector-person-cartoon-football
+football-player-portrait-4.jpg: "Football player illustration" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/9069570/image-person-cartoon-football
+-->

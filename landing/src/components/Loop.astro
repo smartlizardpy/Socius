@@ -1,0 +1,141 @@
+---
+// F4 · Numbered step sequence. Each step shows a state — the app's own onboarding
+// illustrations, in the order a stranger meets the product.
+import { Image } from 'astro:assets';
+import find from '../assets/illo/onb-how-find.png';
+import join from '../assets/illo/onb-how-join.png';
+import play from '../assets/illo/onb-how-play.png';
+import rate from '../assets/illo/onb-how-match.png';
+
+const steps = [
+	{
+		art: find,
+		title: 'Bul',
+		body: 'Yakınındaki oyunlar, senin seviyende. Katılamayacağın bir oyun sana hiç gösterilmez.',
+		alt: 'Mahallesinde oynayacak insan arayan biri',
+	},
+	{
+		art: join,
+		title: 'Katıl',
+		body: 'Yerini alırken ödersin. Kadro o anda netleşir, kimse boşta beklemez.',
+		alt: 'Sahada bir oyuncuya raket uzatan iki kişi',
+	},
+	{
+		art: play,
+		title: 'Oyna',
+		body: 'Sahada tanışırsın. Gerisi oyun.',
+		alt: 'Birlikte oynayan oyuncular',
+	},
+	{
+		art: rate,
+		title: 'Puanla',
+		body: 'Maçtan sonra birbirinizi puanlarsınız. O puan, bir sonraki eşleşmeyi kurar.',
+		alt: 'Maç sonunda filenin üstünden çak yapan iki oyuncu',
+	},
+];
+---
+
+<section class="band band--lg band--paper" id="nasil">
+	<div class="wrap">
+		<header class="head" data-reveal>
+			<h2>Dört adım, sonra baştan.</h2>
+			<p class="lede">
+				Puanlama bir ek özellik değil — bir sonraki oyunu kuran şey o. Döngü buradan
+				kapanıyor.
+			</p>
+		</header>
+
+		<ol class="steps">
+			{
+				steps.map((s, i) => (
+					<li data-reveal style={`--reveal-delay:${i * 70}ms`}>
+						<div class="art">
+							<Image
+								src={s.art}
+								alt={s.alt}
+								widths={[280, 560]}
+								sizes="(max-width: 60rem) 45vw, 260px"
+								loading="lazy"
+							/>
+						</div>
+						<p class="num">{String(i + 1).padStart(2, '0')}</p>
+						<h3>{s.title}</h3>
+						<p class="body">{s.body}</p>
+					</li>
+				))
+			}
+		</ol>
+	</div>
+</section>
+
+<style>
+	.head {
+		max-width: 46ch;
+		margin-bottom: clamp(40px, 5vw, 64px);
+	}
+
+	.head .lede {
+		margin-top: var(--s16);
+	}
+
+	.steps {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: clamp(20px, 2.6vw, 34px);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: step;
+	}
+
+	.steps li {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.art {
+		border-radius: var(--r-media);
+		overflow: hidden;
+		background: var(--surface);
+		margin-bottom: var(--s20);
+	}
+
+	.art :global(img) {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+	}
+
+	.num {
+		font-family: var(--font-display);
+		font-size: var(--step-meta);
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		color: var(--accent-deep);
+		margin-bottom: var(--s6);
+	}
+
+	h3 {
+		margin-bottom: var(--s8);
+	}
+
+	.body {
+		color: var(--ink-muted);
+		font-size: var(--step-meta);
+		line-height: 1.5;
+	}
+
+	@media (max-width: 60rem) {
+		.steps {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: clamp(28px, 5vw, 40px);
+		}
+	}
+
+	@media (max-width: 34rem) {
+		.steps {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

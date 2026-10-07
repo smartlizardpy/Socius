@@ -1,0 +1,82 @@
+---
+// C2 statement + C1 inline form, on the second dark band (mirrors the Level band).
+// The form is a real HTML POST to /api/beta and works with JavaScript off — the endpoint
+// redirects a plain form post to /tesekkurler. With JS on it submits in place instead.
+import { Image } from 'astro:assets';
+import SignupForm from './SignupForm.astro';
+import trustArt from '../assets/illo/land-trust.png';
+---
+
+<section class="band band--lg band--deep close" id="basla">
+	<div class="wrap inner">
+		<div class="art" data-reveal>
+			<Image
+				src={trustArt}
+				alt="Kort girişinde buluşup çak yapan üç oyuncu"
+				widths={[420, 780]}
+				sizes="(max-width: 56rem) 70vw, 420px"
+				loading="lazy"
+			/>
+		</div>
+
+		<div class="copy" data-reveal style="--reveal-delay:80ms">
+			<h2>Bu akşam bir maç var, bir kişi eksik.</h2>
+			<p class="lede">
+				Socius İstanbul'da açılıyor. E-postanı bırak — açıldığı gün ilk sen gir.
+			</p>
+
+			<SignupForm id="close" tone="deep" label="Beni haberdar et" />
+
+			<p class="small">
+				Sadece açılış haberi. Başka bir şey göndermiyoruz, adresini kimseyle paylaşmıyoruz.
+			</p>
+		</div>
+	</div>
+</section>
+
+<style>
+	.inner {
+		display: grid;
+		grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
+		gap: clamp(32px, 5vw, 72px);
+		align-items: center;
+	}
+
+	.art {
+		border-radius: var(--r-card);
+		overflow: hidden;
+		background: var(--paper);
+	}
+
+	.art :global(img) {
+		width: 100%;
+		height: auto;
+	}
+
+	h2 {
+		max-width: 15ch;
+	}
+
+	.copy .lede {
+		margin-top: var(--s16);
+		max-width: 40ch;
+	}
+
+	.small {
+		margin-top: var(--s16);
+		max-width: 42ch;
+		font-size: var(--step-meta);
+		color: var(--on-deep-muted);
+	}
+
+	@media (max-width: 56rem) {
+		.inner {
+			grid-template-columns: 1fr;
+		}
+
+		.art {
+			max-width: 380px;
+		}
+	}
+
+</style>

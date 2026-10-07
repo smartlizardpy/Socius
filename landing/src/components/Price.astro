@@ -1,0 +1,183 @@
+---
+// Composed without a phone on purpose — three bands in a row already carry one, and a
+// fourth would read as a template. The breakdown is real web content, and every figure
+// here is the one the app's own Pay screen shows.
+const promises = [
+	'Maç yeterli oyuncuya ulaşana kadar hesabından hiçbir şey çıkmaz.',
+	'6 saatten önce iptal edersen paran tamamen iade edilir.',
+	'Pro paket yok. Filtreler herkeste açık.',
+];
+---
+
+<section class="band band--paper" id="fiyat">
+	<div class="wrap">
+		<div class="head" data-reveal>
+			<p class="eyebrow">Fiyat</p>
+			<h2>Ne ödeyeceğini baştan görürsün.</h2>
+			<p class="lede">
+				Socius %10 alır ve bunu ayrı bir satır olarak yazar. Kasada çıkan sürpriz yok.
+			</p>
+		</div>
+
+		<div class="cols">
+			<div class="receipt card" data-reveal>
+				<p class="receipt-head">Ne ödüyorsun</p>
+
+				<dl>
+					<div class="row">
+						<dt>
+							Kort payın
+							<span>₺720, dört oyuncuya bölünür</span>
+						</dt>
+						<dd>₺180</dd>
+					</div>
+					<div class="row muted">
+						<dt>Socius komisyonu · %10</dt>
+						<dd>₺18</dd>
+					</div>
+					<div class="row total">
+						<dt>Toplam</dt>
+						<dd>₺198</dd>
+					</div>
+				</dl>
+
+				<p class="receipt-note">
+					Caddebostan'da bir padel maçının gerçek dökümü — uygulamadaki ödeme ekranının
+					aynısı.
+				</p>
+			</div>
+
+			<ul class="promises" data-reveal style="--reveal-delay:90ms">
+				{promises.map((p) => <li>{p}</li>)}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<style>
+	.head {
+		max-width: 40ch;
+		margin-bottom: clamp(32px, 4vw, 48px);
+	}
+
+	.head h2 {
+		max-width: 18ch;
+	}
+
+	.head .lede {
+		margin-top: var(--s16);
+	}
+
+	.cols {
+		display: grid;
+		grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+		gap: clamp(28px, 4vw, 56px);
+		align-items: center;
+	}
+
+	.receipt {
+		padding: var(--s32);
+		box-shadow: var(--lift);
+	}
+
+	.receipt-head {
+		font-size: var(--step-micro);
+		font-weight: 700;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+		color: var(--ink-muted);
+		margin-bottom: var(--s20);
+	}
+
+	dl {
+		margin: 0;
+	}
+
+	.row {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: var(--s20);
+		padding-block: var(--s12);
+	}
+
+	.row dt {
+		display: grid;
+		gap: 2px;
+		font-weight: 600;
+	}
+
+	.row dt span {
+		font-size: var(--step-meta);
+		font-weight: 400;
+		color: var(--ink-muted);
+	}
+
+	.row dd {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: 1.25rem;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		white-space: nowrap;
+	}
+
+	.row.muted dt,
+	.row.muted dd {
+		color: var(--ink-muted);
+		font-weight: 500;
+	}
+
+	.row.total {
+		margin-top: var(--s8);
+		padding-top: var(--s20);
+		border-top: 1px solid var(--border);
+	}
+
+	.row.total dd {
+		font-size: 2rem;
+	}
+
+	.receipt-note {
+		margin-top: var(--s20);
+		font-size: var(--step-meta);
+		color: var(--ink-muted);
+	}
+
+	.promises {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: var(--s20);
+	}
+
+	.promises li {
+		position: relative;
+		padding-left: var(--s32);
+		font-size: var(--step-lede);
+		line-height: 1.4;
+	}
+
+	.promises li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.34em;
+		width: 16px;
+		height: 9px;
+		border-left: 2.5px solid var(--primary);
+		border-bottom: 2.5px solid var(--primary);
+		transform: rotate(-45deg);
+	}
+
+	@media (max-width: 56rem) {
+		.cols {
+			grid-template-columns: 1fr;
+		}
+
+		.head {
+			max-width: 24ch;
+		}
+	}
+</style>

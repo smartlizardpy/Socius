@@ -1,0 +1,129 @@
+---
+// Third feature band, composed differently again: art and copy stack in one column
+// beside a single tall screen, rather than repeating the split of the two above.
+import { Image } from 'astro:assets';
+import Phone from './Phone.astro';
+import mapArt from '../assets/illo/land-map.png';
+import bulletin from '../assets/shots/Bulletin.png';
+---
+
+<section class="band band--lg band--surface" id="mahalle">
+	<div class="wrap">
+		<header class="head" data-reveal>
+			<h2>Semtini bilen bir uygulama.</h2>
+			<p class="lede">
+				Moda'da oturana Kadıköy demez. Konumu telefon verir, ismi uygulamanın kendi semt
+				listesi koyar — anahtar yok, ağ yok, her cihazda aynı cevap.
+			</p>
+		</header>
+
+		<div class="split">
+			<div class="stack">
+				<div class="art" data-reveal>
+					<Image
+						src={mapArt}
+						alt="Aralarında futbol sahası, tenis kortu ve koşu yolu olan bir mahalle"
+						widths={[640, 1040]}
+						sizes="(max-width: 56rem) 92vw, 640px"
+						loading="lazy"
+					/>
+				</div>
+
+				<ul class="points" data-reveal>
+					<li>
+						<strong>Mesafe gerçek mesafe.</strong> Oyunlar sana kaç kilometre uzakta
+						olduklarıyla listelenir, "yakınında" diye değil.
+					</li>
+					<li>
+						<strong>Olmayan oyunu saymayız.</strong> Socius'un maçı olmayan bir semt
+						için sayı vermez — uydurmak yerine söylemez.
+					</li>
+				</ul>
+			</div>
+
+			<div class="shot" data-reveal style="--reveal-delay:90ms">
+				<Phone src={bulletin} alt="Yerel ve dünya sporunu tek akışta veren Bülten ekranı" width={296} />
+				<div class="shot-note">
+					<p class="eyebrow">Bülten</p>
+					<p>
+						Yeni sahalar, kort fiyatları, kadro arayan ligler — ve dünya sporu, aynı
+						akışta. Kaynağın adı künyede yazar, haber özetlenir ve kaynağına bağlanır.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.head {
+		max-width: 52ch;
+		margin-bottom: clamp(36px, 4.5vw, 60px);
+	}
+
+	.head .lede {
+		margin-top: var(--s16);
+	}
+
+	.split {
+		display: grid;
+		grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+		gap: clamp(32px, 5vw, 64px);
+		align-items: start;
+	}
+
+	.art {
+		border-radius: var(--r-card);
+		overflow: hidden;
+		background: var(--paper);
+	}
+
+	.art :global(img) {
+		width: 100%;
+		height: auto;
+	}
+
+	.points {
+		margin: var(--s26) 0 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: var(--s16);
+	}
+
+	.points li {
+		padding-left: var(--s20);
+		border-left: 2px solid var(--rail);
+		color: var(--ink-muted);
+		font-size: var(--step-meta);
+		line-height: 1.5;
+	}
+
+	.points strong {
+		color: var(--ink);
+		font-weight: 600;
+	}
+
+	.shot {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--s20);
+	}
+
+	.shot-note {
+		max-width: 34ch;
+	}
+
+	.shot-note p:last-child {
+		font-size: var(--step-meta);
+		color: var(--ink-muted);
+		line-height: 1.5;
+	}
+
+	@media (max-width: 56rem) {
+		.split {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

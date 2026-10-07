@@ -1,0 +1,11 @@
+<!--
+Photo credits — voluntary courtesy, NOT a license requirement.
+All images below are CC0 / Public Domain / attribution-free; none of this
+needs to appear on the rendered page. Keep it here in the source as a
+thank-you to the creators. Do not surface it as visible on-site attribution.
+
+man-jogging-park-portrait-1.jpg: "Romantic Park" by Dana Tentis (stocksnap, cc0 1.0) — https://stocksnap.io/photo/romantic-park-FIGLTLWW8E
+man-jogging-park-portrait-2.jpg: "Family Portrait" by Family Moments (stocksnap, cc0 1.0) — https://stocksnap.io/photo/family-portrait-OIUD9DEKPG
+man-jogging-park-portrait-3.jpg: "Father Son" by Family Moments (stocksnap, cc0 1.0) — https://stocksnap.io/photo/father-son-HBKFP7NCLL
+man-jogging-park-portrait-4.jpg: "Analog Camera" by Luk%E1%u0161%20Rychvalsk%FD (stocksnap, cc0 1.0) — https://stocksnap.io/photo/analog-camera-YCK0SQKB21
+-->

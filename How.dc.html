@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" />
+  <style>
+    body { margin: 0; background: #FBF8F3; }
+    * { box-sizing: border-box; }
+    a { color: #1350C8; text-decoration: none; }
+    a:hover { color: #0B2E7A; }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FBF8F3; font-family: 'Instrument Sans', system-ui, -apple-system, sans-serif; color: #101A2B; -webkit-font-smoothing: antialiased;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; height: 48px; padding: 44px 20px 0 20px; box-sizing: content-box;">
+    <div style="width: 44px; height: 44px; border-radius: 999px; background: #FFFFFF; border: 1px solid #EDE7DC; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="20" height="20" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M165.66 202.34a8 8 0 0 1-11.32 11.32l-80-80a8 8 0 0 1 0-11.32l80-80a8 8 0 0 1 11.32 11.32L91.31 128Z"></path></svg></div>
+    <div style="font-size: 14px; font-weight: 600; color: #5A6172;">{{t.k0}}</div>
+  </div>
+
+  <div style="height: 260px; margin-top: 106px; overflow: hidden;">
+    <img src="onb-how-find.png" alt="Three players walking towards each other from a few streets away" width="780" height="520" style="width: 390px; height: 260px; display: block;" />
+  </div>
+
+  <div style="padding: 18px 20px 0 20px;">
+    <h1 style="margin: 0; font-family: 'Bricolage Grotesque', 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-size: 30px; line-height: 1.06; font-weight: 700; letter-spacing: -0.035em; text-wrap: pretty;">{{t.k1}}</h1>
+    <p style="margin: 10px 0 0 0; font-size: 15px; line-height: 1.45; font-weight: 500; color: #5A6172;">{{t.k2}}</p>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 16px 20px 26px 20px; background: #FBF8F3;">
+    <div style="display: flex; justify-content: center; gap: 6px; margin-bottom: 16px;">
+      <div style="width: 22px; height: 7px; border-radius: 999px; background: #101A2B;"></div>
+      <div style="width: 7px; height: 7px; border-radius: 999px; background: #E6E0D5;"></div>
+      <div style="width: 7px; height: 7px; border-radius: 999px; background: #E6E0D5;"></div>
+      <div style="width: 7px; height: 7px; border-radius: 999px; background: #E6E0D5;"></div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 56px; border-radius: 999px; background: #1350C8; color: #FFFFFF; font-size: 16.5px; font-weight: 600; letter-spacing: -0.01em;"><span>{{t.k3}}</span><svg width="19" height="19" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32"></path></svg>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"lang":{"editor":"enum","options":["English","T\u00fcrk\u00e7e"],"default":"T\u00fcrk\u00e7e","section":"Language"},"$preview":{"width":390,"height":844}}'>
+const S = {
+  English: {"k0": "Skip", "k1": "Someone nearby wants to play", "k2": "Avenza shows you the games happening a few streets away — tonight, this week, at the times you are actually free.", "k3": "Continue", "flagEn": "display: flex;", "flagTr": "display: none;", "menuEn": "background: #FBF8F3;", "menuTr": "background: transparent;", "checkEn": "display: flex;", "checkTr": "display: none;", "enPill": "background: #101A2B; color: #FFFFFF;", "trPill": "background: transparent; color: #5A6172;"},
+  "Türkçe": {"k0": "Geç", "k1": "Yakınında biri oynamak istiyor", "k2": "Avenza birkaç sokak ötede oynanan maçları gösterir — bu akşam, bu hafta, gerçekten müsait olduğun saatlerde.", "k3": "Devam et", "flagEn": "display: none;", "flagTr": "display: flex;", "menuEn": "background: transparent;", "menuTr": "background: #FBF8F3;", "checkEn": "display: none;", "checkTr": "display: flex;", "enPill": "background: transparent; color: #5A6172;", "trPill": "background: #101A2B; color: #FFFFFF;"}
+};
+class Component extends DCLogic {
+  renderVals() {
+    return { t: S[this.props.lang] || S["T\u00fcrk\u00e7e"] };
+  }
+}
+</script>
+</body>
+</html>

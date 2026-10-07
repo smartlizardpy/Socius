@@ -1,0 +1,11 @@
+<!--
+Photo credits — voluntary courtesy, NOT a license requirement.
+All images below are CC0 / Public Domain / attribution-free; none of this
+needs to appear on the rendered page. Keep it here in the source as a
+thank-you to the creators. Do not surface it as visible on-site attribution.
+
+basketball-player-portrait-1.jpg: "Berta Bonet" by libraryofcongress (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/6938481/berta-bonet
+basketball-player-portrait-2.jpg: "Purnell of Ind" by libraryofcongress (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/6991704/purnell-ind
+basketball-player-portrait-3.jpg: "Wilt Chamberlain, full-length portrait, wearing" by libraryofcongress (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/6747669/photo-image-basketball-people-sports
+basketball-player-portrait-4.jpg: "Wilt Chamberlain, three-quarter length portrait" by libraryofcongress (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/6747604/photo-image-basketball-people-sports
+-->

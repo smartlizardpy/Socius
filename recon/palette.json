@@ -1,0 +1,170 @@
+{
+  "altipas": {
+    "accent": "#0030A0",
+    "hue": 222.0,
+    "luminance": 184.2435988449634,
+    "band": "blue"
+  },
+  "bihalisaha": {
+    "accent": "#009050",
+    "hue": 153.33333333333331,
+    "luminance": 159.79479240969067,
+    "band": "green"
+  },
+  "celebreak": {
+    "accent": "#203060",
+    "hue": 225.0,
+    "luminance": 33.36345987501794,
+    "band": "blue"
+  },
+  "footyaddicts": {
+    "accent": "#3040F0",
+    "hue": 235.0,
+    "luminance": 142.2599037673596,
+    "band": "blue"
+  },
+  "glasspadel": {
+    "accent": "#C0F060",
+    "hue": 80.0,
+    "luminance": 61.753613793950684,
+    "band": "green"
+  },
+  "halisahaplus": {
+    "accent": "#30B000",
+    "hue": 103.63636363636364,
+    "luminance": 93.83513280094675,
+    "band": "green"
+  },
+  "halisahavar": {
+    "accent": "#108020",
+    "hue": 128.57142857142858,
+    "luminance": 138.89230098147104,
+    "band": "green"
+  },
+  "joindo": {
+    "accent": "#4020E0",
+    "hue": 250.00000000000003,
+    "luminance": 49.325932655084856,
+    "band": "blue"
+  },
+  "kadroda": {
+    "accent": "#00A000",
+    "hue": 120.0,
+    "luminance": 131.85230948479096,
+    "band": "green"
+  },
+  "kort": {
+    "accent": "#90C040",
+    "hue": 82.5,
+    "luminance": 185.3774862615228,
+    "band": "green"
+  },
+  "macla": {
+    "accent": "#108030",
+    "hue": 137.14285714285714,
+    "luminance": 191.80577701235984,
+    "band": "green"
+  },
+  "matchabit": {
+    "accent": "#7070E0",
+    "hue": 240.0,
+    "luminance": 165.66300783336033,
+    "band": "blue"
+  },
+  "onlinehalisaham": {
+    "accent": "#00A060",
+    "hue": 156.0,
+    "luminance": 194.18348012505362,
+    "band": "green"
+  },
+  "padeon": {
+    "accent": "#103070",
+    "hue": 220.00000000000003,
+    "luminance": 101.3943540347312,
+    "band": "blue"
+  },
+  "pasor": {
+    "accent": "#40B050",
+    "hue": 128.57142857142858,
+    "luminance": 235.4453172407329,
+    "band": "green"
+  },
+  "pfm": {
+    "accent": "#3080F0",
+    "hue": 215.0,
+    "luminance": 178.11390824309657,
+    "band": "blue"
+  },
+  "playtomic": {
+    "accent": "#3050F0",
+    "hue": 229.99999999999997,
+    "luminance": 136.57823085753617,
+    "band": "blue"
+  },
+  "sahabul": {
+    "accent": "#308030",
+    "hue": 120.0,
+    "luminance": 218.48596899647265,
+    "band": "green"
+  },
+  "sahadas": {
+    "accent": "#105020",
+    "hue": 135.0,
+    "luminance": 182.8071475139076,
+    "band": "green"
+  },
+  "sahago": {
+    "accent": "#406000",
+    "hue": 80.0,
+    "luminance": 36.630741834722734,
+    "band": "green"
+  },
+  "santra": {
+    "accent": "#305010",
+    "hue": 90.0,
+    "luminance": 151.82415096407001,
+    "band": "green"
+  },
+  "sibertenis": {
+    "accent": "#30F010",
+    "hue": 111.42857142857143,
+    "luminance": 37.17183495477417,
+    "band": "green"
+  },
+  "smashmate": {
+    "accent": "#500090",
+    "hue": 273.3333333333333,
+    "luminance": 116.00793440854882,
+    "band": "violet"
+  },
+  "spordium": {
+    "accent": "#C0F020",
+    "hue": 73.84615384615385,
+    "luminance": 71.01242133098593,
+    "band": "green"
+  },
+  "sporsepeti": {
+    "accent": "#6030D0",
+    "hue": 258.0,
+    "luminance": 152.58032307406438,
+    "band": "violet"
+  },
+  "sportfrie": {
+    "accent": "#90F060",
+    "hue": 99.99999999999999,
+    "luminance": 59.97050170022198,
+    "band": "green"
+  },
+  "tamkadro": {
+    "accent": "#20A050",
+    "hue": 142.5,
+    "luminance": 238.73615720500345,
+    "band": "green"
+  },
+  "timpik": {
+    "accent": "#F0C070",
+    "hue": 37.5,
+    "luminance": 119.48186660892763,
+    "band": "orange"
+  }
+}

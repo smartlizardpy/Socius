@@ -1,0 +1,9 @@
+# The database password lives here. Vercel gets DATABASE_URL from project env vars,
+# never from an uploaded file.
+.env
+.env.*
+!.env.example
+
+node_modules
+dist
+.astro

@@ -1,0 +1,105 @@
+---
+// Ft4 · Statement close — the wordmark and a short line carry it, not a sitemap.
+import { Image } from 'astro:assets';
+import mark from '../assets/mark.png';
+
+const year = new Date().getFullYear();
+const links = [
+	{ href: '#nasil', label: 'Nasıl çalışır' },
+	{ href: '#fiyat', label: 'Fiyat' },
+	{ href: '#sss', label: 'SSS' },
+	{ href: '/gizlilik', label: 'Gizlilik' },
+	{ href: '/kosullar', label: 'Kullanım koşulları' },
+];
+---
+
+<footer class="foot">
+	<div class="wrap">
+		<p class="statement">Oynayacak birini bulmak bu kadar zor olmamalı.</p>
+
+		<div class="rule"></div>
+
+		<div class="meta">
+			<a class="brand" href="/">
+				<Image src={mark} alt="" width={26} height={26} densities={[1, 2]} />
+				<span>socius</span>
+			</a>
+
+			<nav aria-label="Alt menü">
+				<ul>
+					{
+						links.map((l) => (
+							<li>
+								<a href={l.href}>{l.label}</a>
+							</li>
+						))
+					}
+				</ul>
+			</nav>
+
+			<p class="copy">© {year} Socius · İstanbul</p>
+		</div>
+	</div>
+</footer>
+
+<style>
+	.foot {
+		background: var(--ink);
+		color: #ffffff;
+		padding-block: clamp(56px, 7vw, 88px);
+	}
+
+	.statement {
+		font-family: var(--font-display);
+		font-size: clamp(1.75rem, 1rem + 3vw, 3rem);
+		font-weight: 700;
+		line-height: 1.08;
+		letter-spacing: -0.03em;
+		max-width: 18ch;
+	}
+
+	.rule {
+		height: 1px;
+		background: rgba(255, 255, 255, 0.14);
+		margin-block: clamp(40px, 5vw, 64px) var(--s26);
+	}
+
+	.meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--s20);
+	}
+
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: var(--s8);
+		font-family: var(--font-display);
+		font-size: 1.125rem;
+		font-weight: 700;
+		letter-spacing: -0.03em;
+		color: #ffffff;
+	}
+
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--s8) var(--s20);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	/* #a9b4c6 on #101a2b is 8.33:1 — text-safe. */
+	nav a,
+	.copy {
+		color: #a9b4c6;
+		font-size: var(--step-meta);
+	}
+
+	nav a:hover {
+		color: #ffffff;
+	}
+</style>

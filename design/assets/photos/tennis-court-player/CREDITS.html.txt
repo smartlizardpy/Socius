@@ -1,0 +1,10 @@
+<!--
+Photo credits — voluntary courtesy, NOT a license requirement.
+All images below are CC0 / Public Domain / attribution-free; none of this
+needs to appear on the rendered page. Keep it here in the source as a
+thank-you to the creators. Do not surface it as visible on-site attribution.
+
+tennis-court-player-1.jpg: "Tennis Player" by Oliver%20Sj%F6str%F6m (stocksnap, cc0 1.0) — https://stocksnap.io/photo/tennis-player-QYIGLB4JE9
+tennis-court-player-2.jpg: "tennis player tennis court" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/3303116/free-photo-image-tennis-sport-court
+tennis-court-player-3.jpg: "Tennis player png sticker, sport" by Unknown (rawpixel, cc0 1.0) — https://www.rawpixel.com/image/6449428/png-sticker-public-domain
+-->

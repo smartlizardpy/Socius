@@ -1,0 +1,622 @@
+Ödemeler Alanında Sunulan İş Modellerinin
+Ödeme Hizmeti Türleri ile İlişkilendirilmesine
+İlişkin Rehber
+                                                                                                  Eylül 2022
+
+
+
+Amaç
+    Bu Rehber ile ödemeler alanında sıklıkla karşılaşılmakta olan iş modellerinin 6493 sayılı "Ödeme ve
+Menkul Kıymet Mutabakat Sistemleri, Ödeme Hizmetleri ve Elektronik Para Kuruluşları Hakkında Kanun"da
+(6493 sayılı Kanun) sayılan ödeme hizmetleri ile ilişkilendirilmesi ve bu kapsamda uygulamada
+düzenlemelere uyum ve yetki ile ilgili hususlarda yeknesaklık sağlanması amaçlanmıştır.
+      Bu kapsamda, Kuruluşlarca ödeme hizmetleri alanında sunulan hizmetler, mevcut düzenlemeler ve
+Kuruluşların iş modelleri çerçevesinde incelenmiş, sektörde uygulaması bulunan faaliyetler/iş modelleri 6493
+sayılı Kanun’un 12 nci maddesi ve 18 inci maddesinin ikinci fıkrası kapsamında değerlendirilmiştir. Faaliyet
+alanı/iş modeli detayında ödemeler alanında sunulmakta olan başlıca faaliyetlerin Kanunda yer alan ödeme
+hizmetleri ile ne şekilde ilişkilendirildiği ekte yer alan Tablo 1’de özetlenmiş bulunmaktadır.
+     Rehberde aynı zamanda faaliyet izni başvurularında veya Kuruluşların faaliyet izni genişletme
+başvurularında yer verdikleri iş modellerinin/faaliyet alanlarının Kanun kapsamında hangi ödeme hizmeti
+türlerini kapsadığının anlaşılmasına yönelik olarak başvurularda yol gösterici olacağı düşünülen bilgilere de
+yer verilmiştir. Böylelikle, Bankamıza yapılacak başvurularda faaliyette bulunulmak istenilen alanların Kanun
+kapsamında en doğru şekilde değerlendirilmesi ve başvuruların daha sağlıklı şekilde sonuçlandırılması
+sağlanabilecektir.
+     6493 sayılı Kanun’da 7192 sayılı "Ödeme ve Menkul Kıymet Mutabakat Sistemleri, Ödeme Hizmetleri
+ve Elektronik Para Kuruluşları Hakkında Kanun ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun" ile
+değişiklik yapılarak Bankacılık Düzenleme ve Denetleme Kurumunun (BDDK) ödeme ve elektronik para
+kuruluşlarının düzenleme ve denetimine ilişkin yetkilerinin Bankamıza devredilmesi sonrasında 6493 sayılı
+Kanun kapsamında Bankamızca hazırlanan Ödeme Hizmetleri ve Elektronik Para İhracı ile Ödeme Hizmeti
+Sağlayıcıları Hakkında Yönetmelik (Yönetmelik) 1/12/2021 tarihli ve 31676 sayılı Resmi Gazete'de
+yayımlanmış ve 27/6/2014 tarihli ve 29043 sayılı Resmi Gazete'de yayımlanan Ödeme Hizmetleri ve
+Elektronik Para İhracı ile Ödeme Kuruluşları ve Elektronik Para Kuruluşları Hakkında Yönetmelik (Mülga
+Yönetmelik) yürürlükten kaldırılmıştır.
+
+      Mülga Yönetmeliğin 10 uncu maddesinin 2018 yılında değişen birinci fıkrasında “Kuruluş, Kanunun 12
+nci maddesinin birinci fıkrasında yer alan ödeme hizmetlerinden faaliyet izni başvurularında belirtilenler ile
+sınırlı olmak üzere faaliyette bulunur. Kanunun 12 nci maddesinin birinci fıkrasında düzenlenen, ancak
+faaliyet izni başvurusunda belirtilmeyen ödeme hizmetlerinin sunulabilmesi için gerçekleştirilmesi planlanan
+faaliyete ilişkin olarak Kuruldan izin alınması zorunludur.” hükmü yer almaktaydı.
+      Yönetmeliğin 15 inci maddesinin birinci fıkrasında da “Kuruluş, 4 üncü maddenin birinci fıkrasında yer
+alan ödeme hizmetlerinden faaliyet izni başvurularında belirtilenlerden Bankaca uygun görülenler ile sınırlı
+olmak üzere faaliyette bulunur. 4 üncü maddenin birinci fıkrasında düzenlenen, ancak faaliyet izni
+başvurusunda belirtilmeyen ödeme hizmetlerinin sunulabilmesi için gerçekleştirilmesi planlanan faaliyete
+ilişkin olarak Bankadan izin alınması zorunludur.” hükmü bulunmaktadır.
+      Bu kapsamda, 2018 yılından itibaren ödeme hizmetleri alanında lisansa tabi olarak hizmet sunan
+kuruluşların 6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrası kapsamında sunabilecekleri hizmetler,
+verilen izinlere ilişkin resmi belgelerde açıkça yer almakta, ayrıca Resmi Gazete’de yayımlanmaktadır ve
+kuruluşlar sadece verilen lisans kapsamındaki hizmetleri sunabilmektedirler.
+    Diğer taraftan, ödeme hizmetlerinin açıklandığı ve faaliyet alanlarının ve iş modellerinin temel seviyede
+de olsa ödeme hizmetleri ile bağlantılı olarak ele alındığı rehber bir dokümana ihtiyaç duyulduğu
+değerlendirilmiş ve bu kapsamda işbu Rehber hazırlanmıştır.
+     Rehberde yer alan değerlendirmeler genel hususlar açısından bir çerçeve çizmek amaçlı oluşturulmuş
+olup iş modellerinin özelliklerine göre Bankamız tarafından yapılacak değerlendirmeler çerçevesinde
+Kuruluşların 6493 sayılı Kanun kapsamında yetkilendirilme ihtiyaçlarının farklı şekilde yorumlanması
+mümkün bulunmaktadır. Ayrıca, Rehberde yer verilenlerden farklı bir iş modeli kurgulanması, iş modellerinin
+birleştirilmesi ve değiştirilmesi gibi durumlarda mutlak suretle ihtiyaç duyulan yetkilerin kurgulanan yeni
+modele göre değerlendirilmesi gerekecektir.
+
+    1. Kanun Kapsamında Ödeme Hizmetleri ve Ödeme Hizmeti
+       Sağlayıcılar
+    6493 Sayılı Kanun’un 12 nci maddesinin birinci fıkrasında ödeme hizmetleri;
+    •   Ödeme hesabına para yatırılması ve ödeme hesabından para çekilmesine imkân veren hizmetler de
+        dâhil olmak üzere ödeme hesabının işletilmesi için gerekli tüm işlemler,
+    •   Ödeme hizmeti kullanıcısının ödeme hizmeti sağlayıcısı nezdinde bulunan ödeme hesabındaki
+        fonun aktarımını içeren, bir defaya mahsus olanlar da dâhil doğrudan borçlandırma işlemi, ödeme
+        kartı ya da benzer bir araçla yapılan ödeme işlemi ile düzenli ödeme emri dâhil para transferi,
+    •   Ödeme aracının ihraç veya kabulü,
+    •   Para havalesi,
+    •   Gönderen tarafından ödeme işleminin yapılmasına ilişkin onayın bir bilişim veya elektronik
+        haberleşme cihazı aracılığıyla verildiği ve ödemenin ödeme hizmeti kullanıcısı ile mal veya hizmet
+        sağlayan arasında sadece aracı olarak faaliyet gösteren bir bilişim veya elektronik haberleşme
+        işletmecisine yapıldığı ödeme işlemi,
+    •   Fatura ödemelerine aracılık edilmesine yönelik hizmetler,
+    •   Ödeme hizmeti kullanıcısının isteği üzerine başka bir ödeme hizmeti sağlayıcısında bulunan ödeme
+        hesabıyla ilgili sunulan ödeme emri başlatma hizmeti,
+    •   Ödeme hizmeti kullanıcısının onayının alınması koşuluyla, ödeme hizmeti kullanıcısının ödeme
+        hizmeti sağlayıcıları nezdinde bulunan bir veya daha fazla ödeme hesabına ilişkin konsolide edilmiş
+        bilgilerin çevrim içi platformlarda sunulması hizmeti,
+    •   Ödemeler alanında toplam büyüklük veya etki alanı açısından Bankaca belirlenecek seviyeye ulaşan
+        diğer işlem ve hizmetler
+    olarak sınıflandırılmıştır.
+    Bununla birlikte, 6493 sayılı Kanun’un 12 nci maddesinin ikinci fıkrasında;
+    •   Ödeme işleminin aracı kullanılmaksızın doğrudan alıcıya nakit olarak yapılması,
+    •   Ödeme işleminin, gönderen ya da alıcı namına mal veya hizmet pazarlığına ya da alım satımına
+        yetkili olan ticari temsilci aracılığıyla yapılması,
+    •   Kâr amacı gütmeyen veya yardım amacıyla yapılan faaliyetler çerçevesinde paranın nakit olarak
+        toplanması ve teslimi suretiyle yapılan ödeme işlemleri,
+    •   Mal veya hizmet alımından kaynaklanan ödeme işleminin gerçekleştirilmesinden hemen önce
+        ödeme hizmeti kullanıcısının açık talebi üzerine, işlemin bir parçası olarak nakit paranın alıcıdan
+        gönderene verildiği hizmetler,
+    •   Ödeme hesabına bağlı olmaksızın nakit olarak gerçekleşen döviz alım ve satım işlemleri,
+
+
+                                                                                                           2
+   •   6102 sayılı Kanun kapsamındaki kıymetli evrak, yabancı banka çekleri, seyahat çekleri ve kâğıt posta
+       havalelerinden herhangi biriyle gerçekleşen ödeme işlemleri,
+   •   Sistemlerde; Banka, mutabakat kuruluşu, merkezî karşı taraf, takas odaları, ödeme hizmeti
+       sağlayıcıları ve sistemin diğer katılımcılarının aralarında kendi nam ve hesaplarına gerçekleştirdikleri
+       ödeme işlemleri,
+   •   Bu fıkranın (f) bendi kapsamında belirtilen tüzel kişiler ve sermaye piyasası kurumlarının 6/12/2012
+       tarihli ve 6362 sayılı Sermaye Piyasası Kanunu kapsamındaki sermaye piyasası faaliyetleri ile ilgili
+       ödeme işlemleri,
+   •   Teknik hizmet sağlayanların sunduğu, ödeme hizmetlerinde provizyon işlemlerinin yapılmasını
+       destekleyen, verinin işlenmesi, saklanması, güvenliğinin sağlanması, gizliliğinin korunması ve
+       doğrulanması ile bilgi teknolojisi, iletişim ağı ve ödeme hizmetleri için kullanılan araçların tedarik ve
+       bakımını kapsayan, teknik hizmet sağlayanların işlemin herhangi bir anında transfer edilen fonun
+       sahibi olmadığı hizmetler,
+   •   Sadece ödeme aracını çıkaranın iş yerinde, sınırlı bir hizmet sağlayıcı ağında ya da sınırlı bir mal veya
+       hizmet çeşidi için ödeme aracını ihraç eden ile yapılan ticari bir anlaşma çerçevesinde
+       gerçekleştirilen mal veya hizmet alımında kullanılabilen araçlara ilişkin işlemler,
+   •   Bir bilişim veya elektronik haberleşme cihazı aracılığıyla gerçekleşen, bilişim veya elektronik
+       haberleşme işletmecisinin ödeme hizmeti kullanıcısı ile mal veya hizmet sağlayıcısı arasında sadece
+       aracı olarak faaliyet göstermediği durumlarda, satın alınan mal veya hizmetlerin bilişim veya
+       elektronik haberleşme cihazına aktarıldığı ve söz konusu cihaz aracılığıyla kullanıldığı ödeme
+       işlemleri,
+   •   Ödeme hizmeti sağlayıcıları ile bunların temsilcileri veya şubeleri arasında kendi nam ve hesaplarına
+       yapılan ödeme işlemleri,
+   •   Ana şirket ile bağlı ortaklıkları veya bağlı ortaklıkların kendi aralarında gerçekleşen ve aynı gruba ait
+       bir şirket dışında hiçbir ödeme hizmeti sağlayıcısının aracılık etmediği ödeme hizmetleri,
+   •   Ödeme hizmetlerinden herhangi birini sunmayan ve ödeme hesabından para çeken müşteri ile
+       yapılmış çerçeve sözleşmenin tarafı olmayan bir hizmet sağlayıcı tarafından işletilen ve kart çıkaran
+       bir veya daha fazla kuruluş adına çalışan ATM’ler aracılığıyla nakit çekimi hizmetleri,
+   •   Bankaca belirlenecek diğer işlem ve hizmetler
+       6493 sayılı Kanun kapsamında ödeme hizmeti olarak değerlendirilmemektedir.
+   Ayrıca, 6493 sayılı Kanun’un 13 üncü maddesinin birinci fıkrasında;
+   •   5411 sayılı Kanun kapsamındaki bankalar,
+   •   Elektronik para kuruluşları,
+   •   Ödeme kuruluşları,
+   •   Posta ve Telgraf Teşkilatı Anonim Şirketi
+       ödeme hizmeti sağlayıcısı olarak kabul edilmektedir.
+    Bu kapsamda, Bankamız ve yukarıda sayılan ödeme hizmeti sağlayıcıları dışındaki kişilerin ödeme
+hizmeti sunması yasaktır.
+
+
+
+
+                                                                                                              3
+    2. Ödeme Hizmetleri ve Elektronik Para İhracı Faaliyetlerinin
+       Kapsamı
+2.1 Ödeme Hesabına Para Yatırılması ve Ödeme Hesabından Para Çekilmesine İmkan Veren
+Hizmetler de Dâhil Olmak Üzere Ödeme Hesabının İşletilmesi İçin Gerekli Tüm İşlemler:
+     6493 sayılı Kanun’un 3 üncü maddesinin birinci fıkrasının (r) bendinde ödeme hesabı “Ödeme hizmeti
+kullanıcısı adına açılan ve ödeme işleminin yürütülmesinde kullanılan hesap” olarak tanımlanmaktadır. Ayrıca,
+mezkur maddenin (u) bendinde ödeme işlemi “Gönderen veya alıcının talimatı üzerine gerçekleştirilen fon
+yatırma, aktarma veya çekme faaliyeti” olarak tanımlanmıştır.
+    6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (a) bendinde yer alan söz konusu ödeme
+hizmeti, ödeme kuruluşu tarafından ödeme hesabı açılması, ödeme hesabına para yatırılması ve ödeme
+hesabından para çekilmesi gibi hizmetleri kapsamaktadır.
+
+2.2 Ödeme Hizmeti Kullanıcısının Ödeme Hizmeti Sağlayıcısı Nezdinde Bulunan Ödeme
+Hesabındaki Fonun Aktarımını İçeren, Bir Defaya Mahsus Olanlar da Dâhil Doğrudan
+Borçlandırma İşlemi, Ödeme Kartı ya da Benzer Bir Araçla Yapılan Ödeme İşlemi ile Düzenli
+Ödeme Emri Dâhil Para Transferi
+    6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (b) bendinde yer alan bu ödeme hizmeti,
+“Ödeme Hizmeti Kullanıcısının Ödeme Hizmeti Sağlayıcısı Nezdinde Bulunan Ödeme Hesabındaki Fonun
+Aktarımını İçeren Ödeme Kartı ya da Benzer Bir Araçla Yapılan Ödeme İşlemi” ve “Düzenli Ödeme Emri Dâhil
+Para Transferi” olarak değerlendirebilir. Bu kapsamda, ödeme hesabındaki fonun aktarımını içeren ödeme
+işlemleri ve para transferleri söz konusu ödeme hizmeti kapsamına girmektedir.
+    Sektöre bakıldığında, 6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (b) bendinde yer alan bu
+ödeme hizmeti, temel olarak ödeme hizmeti kullanıcısının ödeme hesabındaki fonunun herhangi bir ödeme
+hizmeti sağlayıcısı nezdindeki başka bir ödeme hizmeti kullanıcısının hesabına transferi işlemlerini
+tanımlamaktadır.
+
+2.3 Ödeme aracının ihraç veya kabulü
+     6493 sayılı Kanun’un 3 üncü maddesinin birinci fıkrasının (ö) bendinde ödeme aracı “Ödeme hizmeti
+sağlayıcısı ile kullanıcısı arasında belirlenen ve ödeme hizmeti kullanıcısı tarafından ödeme emrini vermek
+için kullanılan kart, cep telefonu, şifre ve benzeri kişiye özel araç” olarak tanımlanmaktadır.
+    Mezkur maddenin (p) bendinde ise ödeme emri “Ödeme hizmeti kullanıcısı tarafından ödeme işleminin
+gerçekleşmesi amacıyla ödeme hizmeti sağlayıcısına verilen talimat” olarak tanımlanmaktadır.
+     Bu kapsamda, ödeme işleminin gerçekleştirilmesi amacıyla ödeme hizmeti sağlayıcısına talimat vermek
+için kullanılan kişiye özel araçlar ödeme aracı olarak kabul edilmektedir. Günümüzde ödeme araçları genel
+olarak kart, cep telefonu ve dijital cüzdan olarak karşımıza çıkmaktadır.
+     Ödeme aracının ihracı, ödeme hizmeti sağlayıcısı tarafından, ödeme işlemlerini başlatmak ve işlemek
+için gönderene ödeme aracı sağlanmasına ilişkin bir ödeme hizmetidir. Diğer bir ifadeyle, ödeme hizmeti
+kullanıcısı ile imzaladığı sözleşme kapsamında ödeme aracına ilişkin hukuki sorumluluğun üstlenilmesi
+suretiyle, ödeme hizmeti sağlayıcısı tarafından ödeme aracının ödeme işlemleri başlatmak ve işlemek için
+ödeme hizmeti kullanıcısının kullanımına hazır hale getirilmesi sürecini ifade etmektedir.
+     Ödeme aracının kabulü ise, ödeme aracı kullanılarak ilgili ödeme işleminin gerçekleşmesi için ödeme
+hizmeti sağlayıcısı tarafından işyerine fon transferi yapılmasıyla sonuçlanacak şekilde sunulan ve işyeri ile
+anlaşılmasını da içeren hizmet olarak tanımlanabilecektir. Başka bir deyişle, ödeme hizmeti sağlayıcısının
+ödeme hizmeti kullanıcısı ile imzaladığı sözleşme kapsamında bir ödeme aracının işyerinde
+kullanılabilmesine dair ödeme işlemlerinin kabul edilmesi ve işlenmesi suretiyle işyerine fon aktarımı
+gerçekleştirilmesine ilişkin hizmet sunulması sürecini içermektedir.
+
+
+                                                                                                           4
+2.4 Para Havalesi
+      6493 sayılı Kanun’un 3 üncü maddesinin birinci fıkrasının (y) bendinde para havalesi “Gönderen veya
+alıcı adına herhangi bir hesap açılmaksızın gönderenin, alıcıya veya alıcı adına hareket eden ödeme hizmeti
+sağlayıcısına fon aktarımı gerçekleştirdiği ödeme hizmeti” olarak tanımlanmaktadır.
+     Bu kapsamda, söz konusu ödeme hizmeti türünde öncelikle gönderen veya alıcıdan en az biri adına
+hesap açılmamış olması gerekmektedir. Sonrasında ise fonun gönderen tarafından alıcı veya alıcı adına
+hareket eden ödeme hizmeti sağlayıcısına aktarılması gerekmektedir. Bu çerçevede, gönderen ve alıcı adına
+açılmış ödeme hesapları arası fon aktarımları 6493 sayılı Kanun kapsamında para havalesi olarak
+nitelendirilmemekte olup bu şekilde gerçekleştirilen fon aktarımları 6493 sayılı Kanun’un 12 nci maddesinin
+birinci fıkrasının (b) bendi çerçevesinde para transferi olarak görülmektedir.
+
+2.5 Gönderen Tarafından Ödeme İşleminin Yapılmasına İlişkin Onayın Bir Bilişim veya
+Elektronik Haberleşme Cihazı Aracılığıyla Verildiği ve Ödemenin Ödeme Hizmeti Kullanıcısı
+ile Mal Veya Hizmet Sağlayan Arasında Sadece Aracı Olarak Faaliyet Gösteren Bir Bilişim
+veya Elektronik Haberleşme İşletmecisine Yapıldığı Ödeme İşlemi
+     Söz konusu ödeme hizmeti sektörde “mobil ödeme” işlemi olarak nitelendirilmektedir. Mobil ödeme,
+kullanıcıların satın aldıkları mal ve hizmetin ödemesinin, faturalı hatlarda kullanılan cep telefonu faturasına
+yansıtılması, ön ödemeli hatlarda ise yüklenen bakiyeden düşülmesi suretiyle gerçekleştirildiği ödeme
+modelidir.
+    Herhangi bir ödeme işleminin söz konusu ödeme hizmeti kapsamına girmesi için öncelikle işleme ilişkin
+onayın bilişim veya elektronik haberleşme cihazı aracılığıyla verilmesi gerekmektedir. Sonrasında ise
+ödemenin alıcı ile mal/hizmet sağlayan satıcı arasında sadece aracı olarak faaliyet gösteren bir bilişim veya
+elektronik haberleşme işletmecisine yapılması gerekmektedir.
+    6493 sayılı Kanun’un 3 üncü maddesinin birinci fıkrasının (c) bendinde elektronik haberleşme işletmecisi
+“5/11/2008 tarihli ve 5809 sayılı Elektronik Haberleşme Kanunu çerçevesinde tanımlanan işletmeci” olarak
+tanımlanmaktadır. 5809 sayılı Elektronik Haberleşme Kanunu’nun 3 üncü maddesinin birinci fıkrasının (z)
+bendinde ise işletmeci “Yetkilendirme çerçevesinde elektronik haberleşme hizmeti sunan ve/veya elektronik
+haberleşme şebekesi sağlayan ve alt yapısını işleten şirket” olarak tanımlanmaktadır.
+     Diğer yandan, Yönetmelik kapsamında bu hizmetlerin, aracı olarak faaliyet gösteren bilişim veya
+elektronik haberleşme işletmecisinin kontrolünü elinde bulundurduğu ve temsilcisi olduğu kuruluş
+tarafından yerine getirileceği, düzenlenmiş, ayrıca elektronik haberleşme hizmeti sunmak üzere
+yetkilendirilmiş işletmecilerin ön ödemeli aboneleri tarafından elektronik haberleşme hizmeti için ödenen
+tutarların elektronik haberleşme hizmeti dışında mal veya hizmet alımı için kullanılması 6493 sayılı Kanunun
+12 nci maddesinin birinci fıkrasının (d) bendi kapsamında ödeme hizmeti olarak kabul edileceği hüküm
+altına alınmıştır.
+   Mobil ödeme hizmetinde mal/hizmet alan kişi telefon faturasını işlem tarihinden sonraki bir tarihte
+ödeyebilmektedir. Müşterinin mal/hizmeti alıp bedelini sonraki bir tarihte ödemesi, Kuruluş tarafından
+müşteriye avans/kredi sağlandığı izlenimini doğurabilmektedir.
+    Konuyla ilgili olarak, Yönetmeliğin 16 ncı maddesinin ikinci fıkrasında bu şekilde ödenmesine aracılık
+edilen tutarın aracı olarak faaliyet gösteren bilişim veya elektronik haberleşme işletmecisinin düzenlediği
+faturaya yansıtılması suretiyle, faturanın son ödeme tarihine kadar tahsil edilmesinin kredi sayılmayacağı ve
+bu çerçevede gerçekleştirilen ödeme hizmetlerinde kuruluşun, mal veya hizmet tutarını tahsil edilmediği
+sürece alıcıya ödeme yapamayacağı veya yapılacak ödemeler için garanti veremeyeceği hüküm altına
+alınmıştır.
+     Söz konusu hükümler, mal/hizmet bedelinin faturanın son ödeme tarihine kadar tahsil edilmesinin kredi
+sayılmayacağını belirtmekle birlikte söz konusu fatura ödenmeden üye işyerine ödeme yapılamayacağını
+veya ödeme için garanti verilemeyeceğini belirtmektedir. Sektöre bakıldığında, bazı kuruluşların üye
+işyerlerinin söz konusu riskini azaltmak için üçüncü taraf bir Şirket ile “Halefiyet Sözleşmesi” yapma yoluna
+
+                                                                                                             5
+başvurduğu görülmekte olup bu şekilde yapılandırılan uygulamaların tasarımına ilişkin olarak ilgili mevzuat
+hükümleri çerçevesinde tedbirli bir yaklaşım izlenerek azami dikkat gösterilmesinin faydalı olacağı
+düşünülmektedir.
+    Diğer yandan 6493 sayılı Kanun’un 12 nci maddesinin ikinci fıkrasının (ı) bendi kapsamında “Bir bilişim
+veya elektronik haberleşme cihazı aracılığıyla gerçekleşen, bilişim veya elektronik haberleşme işletmecisinin
+ödeme hizmeti kullanıcısı ile mal veya hizmet sağlayıcısı arasında sadece aracı olarak faaliyet göstermediği
+durumlarda, satın alınan mal veya hizmetlerin bilişim veya elektronik haberleşme cihazına aktarıldığı ve söz
+konusu cihaz aracılığıyla kullanıldığı ödeme işlemleri” Kanun kapsamında ödeme hizmeti olarak
+değerlendirilmemektedir.
+
+2.6 Fatura Ödemelerine Aracılık Edilmesine Yönelik Hizmet
+     6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (e) bendi kapsamında “Fatura Ödemelerine
+Aracılık” hizmeti sunan Kuruluşlar, elektrik, su, doğalgaz, internet, dijital yayın, GSM vb. gibi faturaların
+ödenmesine aracılık etmek için fatura üreten kurumlarla anlaşma yapmaktadırlar. Yapılan anlaşmalar
+kapsamında Kuruluşlar, ister mobil uygulama/web isterse de temsilci/şube üzerinden fatura tahsilat hizmeti
+sunabilmektedirler.
+    Mobil uygulama veya web üzerinden fatura ödemek isteyen Kuruluş müşterisi uygulama üzerinden
+abone numarası ile fatura sorgulaması yapıp hesabındaki bakiye veya kredi kartı ile ödeme
+gerçekleştirebilmektedir. Aynı şekilde, temsilci/veya şube üzerinden de fatura ödemesi
+gerçekleştirilebilmektedir.
+     Konuyla ilgili olarak, “fatura ödemelerine aracılık” hizmetinin kapsamının belirlenmesi önem arz
+etmektedir. Kanun koyucunun "fatura ödemelerine aracılık edilmesine yönelik hizmetleri" diğer ödeme
+hizmetlerinden ayırarak münhasıran düzenlediği hususunun dikkate alınması gerekmektedir. Bu yönde bir
+düzenleme ile Kanun koyucunun, bir abonelik sözleşmesine dayanan ve süreklilik arz eden iş ilişkilerinden
+doğan ödemelere aracılık edilmesini "özgün", "özellikli", "ayrı" bir ödeme hizmeti olarak değerlendirdiği
+anlaşılmaktadır.
+      Bu doğrultuda, Yönetmelikte fatura ödemesi, "elektrik, iletişim, su, doğalgaz, gibi ihtiyaçların
+karşılanmasına yönelik sunulan hizmetlerin karşılığı olarak yapılan ödemeler ile Bankaca uygun görülen
+diğer ödemeler" olarak tanımlanmıştır.
+
+2.7 Ödeme Hizmeti Kullanıcısının İsteği Üzerine Başka Bir Ödeme Hizmeti Sağlayıcısında
+Bulunan Ödeme Hesabıyla İlgili Sunulan Ödeme Emri Başlatma Hizmeti
+     Söz konusu ödeme hizmeti kapsamında lisanslı olan Ödeme Emri Başlatma Hizmeti Sağlayıcısı (ÖBHS),
+ödeme hizmeti kullanıcılarının ödeme hesabı bulunduran ödeme hizmeti sağlayıcısı nezdindeki ödeme
+hesaplarına ulaşarak ödeme emri başlatma hizmetlerinden faydalanmasına aracılık etmektedir. ÖBHS, talebi
+üzerine ödeme hizmeti kullanıcısının ödeme hesabının bulunduğu ödeme hizmeti sağlayıcısı nezdindeki
+ödeme hesabından ödeme işlemi başlatmaktadır.
+     Nezdinde ödeme hesabı bulunan ödeme hizmeti sağlayıcıları hesap hizmeti sağlayıcıları (HHS) olarak
+kabul edilmektedir. ÖBHS ise 6493 sayılı Kanunun 12 nci maddesinin birinci fıkrasının (f) bendinde
+tanımlanan ödeme hizmetini (ödeme emri başlatma hizmetini) sunan tüzel kişi olarak tanımlanmaktadır.
+Ödeme emri başlatma hizmetinin tarafları; ödeme hizmeti kullanıcısı, HHS ve ÖBHS’dir.
+     Ülkemiz koşulları ve ihtiyaçları da göz önünde bulundurularak, paydaşların hızlı entegrasyonu, verimli
+ve etkin bir ödeme hizmetleri veri paylaşım servisleri deneyimi için teknik hizmet sağlayıcı odaklı bir
+uygulama mimarisinin tesis edilmesinin faydalı olacağı değerlendirilmiş, HHS’lerin ilgili mevzuat uyarınca
+oluşturulan BKM API Geçidi’ne bağlanarak nezdinde bulunan ödeme hesaplarına ilişkin 6493 sayılı Kanunun
+12 nci maddesinin birinci fıkrasının (f) veya (g) bentlerinde yer alan ödeme hizmetlerinin sunulması için
+talepte bulunan tüm diğer yetkili ödeme hizmeti sağlayıcılarına gerekli altyapıyı sağlamaları hükme
+bağlanmıştır.
+
+
+                                                                                                           6
+     BKM’nin teknik hizmet sağlayıcı olarak işlev göreceği bu sistemde HHS’ler ÖHVPS (Ödeme Hizmetleri
+Veri Paylaşım Servisleri) API Standardına uygun olarak geliştirecekleri servisleri BKM API Geçidi üzerinden
+ÖBHS’lere kullandırmaktadır. Böylelikle, bankalara nazaran yalın bir bilgi kaynağı ve iletişim altyapısına sahip
+olan ve genellikle inovatif iş modellerine sahip, “start-up” olarak nitelendirilebilecek kuruluşlar güvenli bir
+tek platform üzerinden HHS’lerle etkili bir şekilde iletişim kurabileceklerdir.
+
+Şema-1: Ödeme Emri Başlatma Hizmeti Temel İş Akışı
+
+
+
+
+2.8 Ödeme Hizmeti Kullanıcısının Onayının Alınması Koşuluyla, Ödeme Hizmeti
+Kullanıcısının Ödeme Hizmeti Sağlayıcıları Nezdinde Bulunan Bir veya Daha Fazla Ödeme
+Hesabına İlişkin Konsolide Edilmiş Bilgilerin Çevrim İçi Platformlarda Sunulması Hizmeti
+     Söz konusu ödeme hizmeti kapsamında lisanslı olan Hesap Bilgisi Hizmeti Sağlayıcıları (HBHS) ödeme
+hizmeti kullanıcısının farklı HHS nezdindeki hesaplarına ait bilgileri derleyerek çevrim içi platformlarda toplu
+şekilde sunmaktadır.
+     HHS, ödeme hizmetleri veri paylaşım servislerini BKM API Geçidi aracılığıyla HBHS ve ÖBHS’ye
+sunmakla yükümlüdür. HHS ile ÖBHS ve HBHS arasında bağlantı uçtan uca güvenli bir şekilde
+sağlanmaktadır. Bilindiği üzere, HHS’lerin ilgili mevzuat uyarınca oluşturulan BKM API Geçidi’ne bağlanarak
+nezdinde bulunan ödeme hesaplarına ilişkin 6493 sayılı Kanunun 12 nci maddesinin birinci fıkrasının (f) veya
+(g) bentlerinde yer alan ödeme hizmetlerinin sunulması için talepte bulunan tüm diğer yetkili ödeme hizmeti
+sağlayıcılarına gerekli altyapıyı sağlamaları hükme bağlanmıştır.
+    BKM’nin teknik hizmet sağlayıcı olarak işlev göreceği bu sistemde HHS’ler, ÖHVPS API Standardına
+uygun olarak geliştirecekleri servisleri BKM API Geçidi üzerinden HBHS’lere kullandırmaktadır.
+
+
+
+
+                                                                                                              7
+Şema-2: Hesap Bilgisi Hizmeti İş Akışı
+
+
+
+
+2.9 Kanun’un 18 inci Maddesinin İkinci Fıkrası Çerçevesinde Elektronik Para İhraç Edilmesi
+     6493 sayılı Kanun’un 3 üncü maddesinin birinci fıkrasında elektronik para, “Elektronik para ihraç eden
+kuruluş tarafından kabul edilen fon karşılığı ihraç edilen, elektronik olarak saklanan, bu Kanunda tanımlanan
+ödeme işlemlerini gerçekleştirmek için kullanılan ve elektronik para ihraç eden kuruluş dışındaki gerçek ve
+tüzel kişiler tarafından da ödeme aracı olarak kabul edilen parasal değeri” olarak tanımlanmaktadır.
+     Tanımdan hareketle elektronik para ihracında öne çıkan unsurlar olarak;
+     •   İhraç yetkisine sahip bir kuruluş tarafından kabul edilen fon karşılığı ihraç edilmesi,
+     •   Elektronik olarak saklanması,
+     •   Kanun’da tanımlanan ödeme işlemlerini gerçekleştirmek üzere kullanılması,
+
+     •   Elektronik para ihraç eden kuruluş dışındaki gerçek ve tüzel kişiler tarafından da ödeme aracı olarak
+         kabul edilmesi
+     hususları yer almaktadır. Kanun’un elektronik parayı tanımlamasından da anlaşılacağı üzere, elektronik
+para ihracı bir ödeme hizmeti olmayıp, ödeme hizmetlerinde kullanılan bir parasal değerdir.
+    Elektronik para ile ilgili olarak en çok tartışılan hususlar ise ihraç edilen elektronik paranın saklandığı
+hesap ile ödeme hizmeti sunumunda kullanılan ve fon saklanan ödeme hesabının ayrıştırılması ile elektronik
+paranın ihraç edilebileceği araçların çalışma modellerine ilişkindir.
+     Çalışma modellerine ilişkin kısımda bu duruma ilişkin açıklamalar getirilmiş olmakla birlikte, temel
+olarak bir işyeri nezdinde ödeme aracı olarak kullanılacak şekilde tasarlanan iş modellerinin elektronik para
+olarak değerlendirilme ihtimali kuvvetle muhtemeldir ancak yine de genel kaideler ışığında olay bazında
+hem teknik hem hukuki inceleme yapılması faydalı olabilmektedir.
+
+
+
+
+                                                                                                             8
+    3. Ödeme Hizmetleri Alanındaki İş Modelleri
+
+     3.1. Ödeme Hesabı İşletimi (Ödeme Hesabı Açma, Para Yatırma, Para Çekme)
+     Kuruluşlar, fiziki kanal, web veya mobil uygulama üzerinden müşterilerine ödeme hesabı
+açabilmektedirler. Ödeme hesabı açmak isteyen müşteriler (Gerçek/Tüzel Kişi) ödeme hesabı açmak için
+gerekli bilgileri sunduktan sonra Kuruluş tarafından ilgili mevzuat kapsamında kimlik tespiti/doğrulama
+işlemleri gerçekleştirilmektedir.
+     Genel olarak sektördeki uygulamalar incelendiğinde ilk aşamada müşteriler adına anonim hesaplar
+açılmakta, sonrasında onaysız olarak açılan hesaplar Kuruluş tarafından belirlenen kimlik tespit/doğrulama
+yöntemleri işletilerek onaylı hesaba çevrilebilmektedir.
+     Ödeme hesabı açma, ödeme hesabına para yükleme, ödeme hesabından para çekme gibi
+işlemlere ilişkin hizmetlerin sunulabilmesi için Kuruluşun mutlaka 6493 sayılı Kanunun 12 nci
+maddesinin birinci fıkrasının (a) bendi kapsamında yetkisinin bulunması gerekmektedir.
+     Bu noktada, ödeme hizmeti kullanıcısının kendi adına kayıtlı başka ödeme hesaplarından bir ödeme
+veya elektronik para kuruluşu nezdindeki ödeme hesabına fon yüklemesi ve/veya bu hesaptan kendi adına
+kayıtlı başka ödeme hesaplarına fon çekmesi işlemleri, ödeme hesabına para yatırılması ve ödeme
+hesabından para çekilmesi işlemi olarak kabul edilmektedir.
+
+     3.2. Para Transferi
+     Kuruluşlar, kendi nezdinde hesap sahibi olan müşterilerin birbirlerine para göndermesine imkân
+tanıyabilmektedir. Müşteri, kuruluş uygulaması üzerinden fon transfer etmek isteği diğer müşterinin cüzdan
+numarası (hesap numarası) veya müşteri numarası gibi kişiye özel bilgisini girerek transfer işlemini
+gerçekleştirebilmektedir. Söz konusu işlem 6493 sayılı Kanunun 12 nci maddesinin birinci fıkrasının (b)
+bendinde bahsedilen ödeme hesabındaki fonun aktarımını içeren para transferi kapsamına girmektedir.
+      Ayrıca, özellikle ödeme ve elektronik para kuruluşlarının Bankamızca işletilmekte olan FAST sisteminde
+katılımcı olarak yer almaya başlamaları ile birlikte kuruluşların birbirleri nezdindeki müşteri hesapları
+arasında da fon transferi yapılabilmesinin daha yaygın ve kullanılabilir hale gelmesi beklenmekte olup bu
+tür işlemler de 6493 sayılı Kanunun 12 nci maddesinin birinci fıkrasının (b) bendinde bahsedilen ödeme
+hesabındaki fonun aktarımını içeren para transferi kapsamına girmektedir.
+    Ayrıca Kuruluşlar, hesap sahibi kullanıcılarının hesaplarındaki fonun üçüncü kişilerin banka/diğer
+ödeme hizmeti sağlayıcılarının hesaplarına transfer edilmesine imkân tanıyabilmektedirler.
+    Bu kapsamda gerçekleşen işlemler için de ödeme ve elektronik para kuruluşlarının 6493 sayılı
+Kanun’un 12 nci maddesinin birinci fıkrasının (a) ve (b) bentleri kapsamında yetki almış olması
+gerekmektedir.
+
+     3.3. Sanal POS
+      Sanal POS’a ilişkin çeşitli tanımlar bulunmakla birlikte en basit haliyle Sanal POS’u çevrim içi ürün ya
+da hizmet satışı gerçekleştirenler başta olmak üzere iş yerlerinde kredi kartı, banka kartı ve 6493 sayılı Kanun
+uyarınca çıkarılan ön ödemeli kartlar ile kartın kendisi fiziki olarak kullanılmadan ödeme yapılmasını sağlayan
+yazılım şeklinde tanımlamak mümkün bulunmaktadır.
+      Sanal POS, fiziki mağazalarda kartların fiziki olarak kullanılması yöntemiyle ödeme yapılmasını sağlayan
+Fiziki POS cihazlarının online ortamdaki hali olarak düşünülmekle birlikte, Sanal POS adı altında sunulacak
+iş modeline göre gerçekleştirilen bazı işlemlerin klasik bir ödeme aracının kabulü iş modelinden farklılaşması
+da mümkün bulunmaktadır.
+    İşyerleri, Sanal POS hizmeti sunan bankalar ve lisanslı ödeme ve elektronik para kuruluşlarından Sanal
+POS hizmeti alabilmektedir. Mevcut durum itibarıyla bankalar işyerlerine genellikle kendilerine ait Sanal POS
+ürününü sunmaktadırlar. Kuruluşlar ise farklı bankalar ile POS anlaşmaları yaparak, bankaların altyapılarına
+
+                                                                                                              9
+API’ler aracılığıyla bağlanarak farklı bankaların pos hizmetlerinin tek bir yazılım altında işyerlerine
+sunulmasını sağlamaktadır.
+     Söz konusu iş modelinde fon aktarımları genellikle, ödeme aracını ihraç etmiş olan ödeme hizmeti
+sağlayıcılarının kendi altyapıları üzerinden gerçekleşen ödemelere ilişkin toplam tutarı, Sanal POS hizmetini
+sunan Kuruluşa, ilgili komisyon tutarlarını düştükten sonra iletmesi şeklinde gerçekleşmekte olup bu
+kapsamda yapılan işlemler uygulamada temel olarak bir tür para transferi işlemi şeklinde
+nitelendirilmektedir.
+      1/12/2021 tarih ve 31676 sayılı Resmî Gazete’de yayımlanarak yürürlüğe giren "Ödeme Hizmetleri ve
+Elektronik Para İhracı ile Ödeme Hizmeti Sağlayıcıları Hakkında Yönetmeliğin “Tanımlar” başlıklı 3 üncü
+maddesinde ödeme aracının kabulü “Ödeme aracı kullanılarak ilgili ödeme işleminin gerçekleşmesi için
+ödeme hizmeti sağlayıcısı tarafından işyerine fon transferi yapılmasıyla sonuçlanacak şekilde sunulan ve işyeri
+ile anlaşılmasını da içeren hizmetler” olarak tanımlanmaktadır.
+      Bu kapsamda, söz konusu iş modelinde bir ödeme aracının işyerlerinde kullanılmasına imkân
+sağlanması sebebiyle 6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (c) bendi kapsamında ödeme
+aracının kabulü açısından da yetki alınmış olmasının gerektiği değerlendirilmektedir.
+     Bu kapsamda, Sanal POS hizmetinin sunulabilmesi için 6493 sayılı Kanunun 12 nci maddesinin
+birinci fıkrasının (a) ve (b) bentleri ile (c) bendinin sadece ödeme aracı kabul kısmı ile sınırlı olacak
+şekilde izin alınması gerekmektedir.
+
+     3.4. Fiziki POS
+     Fiziki POS ile ödeme hizmeti, kart kullanıcılarının işlem tutarının sahip oldukları kredi kartı, banka kartı
+ve 6493 sayılı Kanun kapsamındaki ön ödemeli kartlarına yansıtılacak şekilde fiziki POS’un fiziken işyerlerinde
+bulunduğu durumda ödeme yapmalarını sağlayan hizmettir.
+     Bu kapsamda, Fiziki POS hizmetinin sunulabilmesi için de 6493 sayılı Kanunun 12 nci maddesinin
+birinci fıkrasının (a) ve (b) bentleri ile (c) bendinin sadece ödeme aracı kabul kısmı ile sınırlı olacak
+şekilde izin alınması gerekmektedir.
+     Ancak gerek Fiziki POS gerekse Sanal POS ile ilgili iş modellerine ilişkin olarak 5464 sayılı Banka
+Kartları ve Kredi Kartları Kanunu çerçevesinde BDDK tarafından yapılacak değerlendirmelerin saklı
+olduğunu belirtmekte fayda görülmektedir.
+
+     3.5. Elektronik Para (Ön Ödemeli Kart) İhraç ve Kabulü
+     Bilindiği üzere, 6493 sayılı Kanun’un 3 üncü maddesinin birinci fıkrasının (ç) bendindeki elektronik para
+tanım ve dolayısıyla işbu Rehberin 2.9. maddesinde sayılan koşulları sağlayan kuruluş tarafından oluşturulan
+parasal değerin örneğin bir hesaba bağlı ön ödemeli kart aracılığıyla Kuruluş dışında ödeme aracı kabul
+edilmesi durumunda hesaptaki fonlar elektronik para olarak değerlendirilmektedir.
+     Bu çerçevede, ödeme hizmeti kullanıcısının Kuruluş tarafından ihraç edilmiş bir ön ödemeli aracı
+kullanarak bir işyerinde mal veya hizmet alımı yapabilmesi için, Kuruluşun öncelikle 6493 sayılı Kanun’un 18
+inci maddesinin ikinci fıkrası kapsamında elektronik para ihracına yetkili bir elektronik para kuruluşu olması
+gerekmektedir.
+     Diğer bir ifadeyle Kuruluşun, işlemler sonucunda ödeme işlemine ilişkin tutarı, ödeme aracını ihraç eden
+kuruluş olarak kendisi üzerinden aktarılacak şekilde ve aynı zamanda işyerlerinde ödeme yöntemi olarak da
+kullanılacak bir ödeme aracı çıkarabilmesi için elektronik para ihraç yetkisine sahip olması gerekmektedir.
+     Elektronik paranın gerek doğası gereği gerekse Kanun’daki tanımı gereği bir ödeme aracı olduğu
+düşünüldüğünde, bahse konu iş modelleri için Kuruluşun 6493 sayılı Kanun’un 12 nci maddesinin (c) bendi
+uyarınca da yetkiye sahip olması gerekmektedir. Bu kapsamda, elektronik para kuruluşunun elektronik para
+ihracı yetkisinin yanı sıra ödeme aracı ihracı yetkisine de sahip olması gerekmektedir.
+
+
+
+                                                                                                              10
+     Elektronik para hesapları Bankamız tarafından “ödeme hesabı” olarak kabul edildiğinden (anonim
+özellikli ön ödemeli araçlar hariç olmak üzere), elektronik para ihracına ilişkin iş modellerinin sunulabilmesi
+için ilgili Kuruluşun 6493 sayılı Kanun’un 12 nci maddesinin (a) bendi uyarınca yetkilendirilmesi de
+gerekmektedir.
+    Bu kapsamda, anonim özellikli ön ödemeli araçlar haricinde elektronik para ihracı için 6493 sayılı
+Kanun’un 12 nci maddesinin birinci fıkrasının (a) ve (c) bentleri ile 18 inci maddesinin ikinci fıkrası
+kapsamında yetki alınması gerekmektedir.
+     Diğer yandan, yukarıda bahsedilen yetkilere ilave olarak, kurgulanan iş modeli çerçevesinde
+gerçekleştirilmesi planlanan ödeme işlemlerinin türlerine göre ilave yetkilerin alınması da gündeme
+gelebilecektir. Örneğin ön ödemeli araç (elektronik para) kullanılarak fon transferi yapılmasının mümkün
+kılınması durumunda 6493 sayılı Kanun’un 12 nci maddesinin (b) ve/veya (ç) bendi uyarınca, fatura
+ödenmesine imkan tanınması durumunda ise (e) bendi uyarınca da gerekli yetkilendirmenin yapılmış olması
+gerekmektedir.
+      Diğer yandan ödeme kuruluşları, ödeme hesabına para yatırma, para çekme, para transferi ve fatura
+tahsilatı işlemlerinin sunulması ile ilgili olarak, işyerlerinde mal veya hizmet alımlarında kullanılamaması
+şartıyla, elektronik para ihraç yetkisi olmadan da 6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (c)
+bendi kapsamında sahip olduğu yetkiye istinaden ödeme aracı ihraç edebileceklerdir.
+     Ek olarak, mobil ödemelere aracılık, mobil ödeme ve sanal pos iş modelini sunan kuruluşların ödeme
+aracı kabul etmesi sebebi ile 6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (c) bendinin sadece
+ödeme aracı kabul kısmı ile sınırlı olacak şekilde yetki almalarının gerekli olduğu değerlendirilmektedir.
+
+     3.6. Dijital Cüzdan
+      Dijital cüzdan hizmeti, “ödeme hizmeti kullanıcısının tanımladığı ödeme hesabına veya ödeme aracına
+ilişkin bilgilerin saklandığı, bir elektronik cihaz, çevrim içi hizmet veya uygulama olarak sunulan ve müşteriye
+tanımladığı ödeme hesabı veya ödeme aracına ilişkin bilgileri kullanarak ödeme işlemi gerçekleştirme imkânı
+sağlayan ödeme aracı” şeklinde tanımlanabilecektir.
+    Bu kapsamda, Dijital cüzdan hizmeti sunan kuruluşun her hâlükârda 6493 sayılı Kanun’un 12 nci
+maddesinin birinci fıkrasının (c) bendi kapsamında faaliyet göstermek için yetkilendirilmiş olması
+gerekmektedir.
+      Diğer taraftan, elektronik para (ön ödemeli araç) örneğinde olduğu gibi, dijital cüzdan hizmetinde de
+farklı iş modelleri benimsenerek diğer ödeme hizmeti türlerinin kapsamına giren işlemlerin yapılmasına
+imkân sağlanması da mümkün bulunmaktadır.
+    Örneğin, dijital cüzdan kullanılarak cüzdana fon yüklemesi yapılabileceği gibi dijital cüzdan kullanılarak
+para transferi, fatura ödemesi veya ödeme emri başlatma hizmetlerinin de sunulması mümkün
+bulunmaktadır. Bu kapsamda, Dijital cüzdan kullanılarak kullanıcıya sunulan hizmetlere göre, Kuruluşun
+6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (c) bendine ilave olarak diğer ilgili bentler
+kapsamında da faaliyet göstermek için yetkilendirilmiş olması gerekecektir.
+     Diğer taraftan, Dijital cüzdanın, işyerlerinde ödeme aracı olarak kullanılabilmesi ve bu tür işlemlerde
+ödeme işlemine ilişkin tutarın dijital cüzdan hizmeti sunan kuruluş üzerinden aktarılması durumunda,
+kuruluşun 6493 sayılı Kanun’un 18 inci maddesinin ikinci fıkrası uyarınca elektronik para ihraç etmek için
+yetkilendirilmiş olması gerekmektedir.
+
+     3.7. Mobil Ödeme
+     Mobil ödeme, kullanıcıların satın aldıkları mal ve hizmetin ödemesinin, faturalı hatlarda kullanılan cep
+telefonu faturasına yansıtılması, ön ödemeli hatlarda ise yüklenen bakiyeden düşülmesi suretiyle
+gerçekleştirildiği ödeme modelidir.
+     Mobil ödemeye ilişkin iş akışı şu adımlardan oluşmaktadır;
+
+                                                                                                             11
+    1.   GSM hat sahibi üye işyerinden mal veya hizmet satın alma işlemini gerçekleştirir ve üye işyeri hat
+         sahibi müşteriye mal veya hizmetin faturasını keser.
+    2.   Müşteri ürün veya hizmet bedelini fatura veya ön ödemeli TL bakiyesi ile öder.
+    3.   GSM operatörü tarafından tahsil edilen tutar üye işyerine ödenir.
+      İşleyişte, GSM operatörlerinin kontrolünü elinde bulundurduğu Kuruluşlar “Gönderenin Ödeme
+Hizmet Sağlayıcısı” olarak hizmet vermekte iken “Alıcının Ödeme Hizmeti Sağlayıcısı” diğer ödeme hizmet
+sağlayıcıları olabilmektedir. Ancak her durumda mobil ödemelerde gönderenin ödeme hizmet sağlayıcısı
+olarak hizmet veren kuruluşun 6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (d) bendi ve iş
+modelinin gereklerine göre ilave olarak (a) ve (b) ve (c) bentleri kapsamında izin alması gerekmektedir.
+Yönetmeliğin 18 inci maddesinin altıncı fıkrası kapsamında ödeme ve elektronik para kuruluşlarının
+birbirlerinin temsilcisi olarak sunacakları hizmetlerle ilgili olarak sunulacak hizmetin kendi faaliyet izinleri
+kapsamında bulunması şartı getirilmiş olup, temsilci olacak Kuruluşun da ilgili ödeme hizmeti türünden
+mutlak suretle gerekli yetkiye sahip olması gerekmektedir.
+    Diğer taraftan, Yönetmeliğin 4 üncü maddesinin onbeşinci fıkrası çerçevesinde Kuruluşun, fatura
+ödemeleri kapsamında sunduğu hizmetlerle ilgili olarak yurt dışında yerleşik olanlar dâhil işbirliği yapılan
+ödeme hizmeti sağlayıcıları ile temsilcilerin sahip oldukları fonlara ilişkin tutulan takip hesapları, bu
+hesapların sadece fatura ödemesi çerçevesinde gerçekleşecek işlemlerin yapılması amacıyla kullanılması
+kaydıyla ödeme hesabı olarak değerlendirilmeyecektir.
+    Bu kapsamda, fatura ödemelerine aracılık hizmetinin temsilci/veya şube üzerinden fiziki olarak
+sunulduğu durumda fatura ödemeleri kapsamındaki fonların ödeme hesaplarında değil de takip
+hesaplarında tutulduğu durumlarda ödeme hesabının işletilmesine ilişkin olarak 6493 sayılı Kanun’un 12 nci
+maddesinin birinci fıkrasının (a) bendi kapsamında yetki alınması gerekmemektedir. Ancak, Kuruluşun
+ödeme hizmeti kullanıcısı adına açtığı hesaplar vasıtasıyla fatura ödenmesine aracılık etmesi durumunda
+6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının (a) bendi uyarınca yetkilendirilmiş olması
+gerekecektir.
+     Ödeme hizmeti kullanıcısı adına açılan ödeme hesapları aracılığıyla fatura ödemelerine aracılık edilmesi
+durumunda söz konusu ödeme hesaplarının elektronik para özelliği arz etmesi durumunda buna ilaveten
+ödeme aracı ihraç yetkisi ile 6493 sayılı Kanun’un 18 inci maddesinin ikinci fıkrası uyarınca elektronik para
+ihraç yetkisinin de bulunması bir zorunluluk olacaktır.
+
+     3.8. Mobil Ödemelere Aracılık
+     Mobil ödeme iş akışında gönderenin ödeme işlemine konu tutarının alıcı olan üye işyerine aktarılmasına
+aracılık eden kuruluş “alıcının ödeme hizmeti sağlayıcısı” olarak adlandırılmaktadır.
+     “Alıcının Ödeme Hizmeti Sağlayıcısı”, mobil ödemeye ilişkin olarak “Gönderenin Ödeme Hizmeti
+Sağlayıcısı” tarafından gönderilen fonları üye işyerine aktarana kadar ilgili koruma hesaplarında muhafaza
+etmekte olup belirli vadelerle üye işyerlerinin hesaplarına aktarmaktadır. Bu açıdan bakıldığında, “Alıcının
+Ödeme Hizmeti Sağlayıcısı” para transferi/ödeme aracının kabulü kapsamında değerlendirilebilecek
+hizmetler sunmaktadır.
+     Söz konusu iş modelinde müşteriler ürün veya hizmet bedelini hat faturasıyla veya ön ödemeli hat
+sahibi ise hesabındaki TL bakiyesi ile ödedikten sonra GSM operatörünün kontrolünü elinde bulundurduğu
+ve temsilcisi olduğu kuruluş, hizmet bedellerini alıcının ödeme hizmeti sağlayıcısının korumalı hesabına
+aktarmaktadır. Alıcının ödeme hizmeti sağlayıcısı ise üye işyeriyle yapılan sözleşmede belirtilen periyotlara
+göre korumalı hesaptan üye işyerine hakedişleri göndermektedir.
+     Bu kapsamda, mobil ödemelere aracılık hizmetine ilişkin olarak alıcının ödeme hizmeti
+sağlayıcısı olarak hizmet verilebilmesi için 6493 sayılı Kanun’un 12 nci maddesinin birinci fıkrasının
+(a) ve (b) bentleri ile (c) bendinin sadece ödeme aracı kabul kısmı ile sınırlı olacak şekilde izin alınması
+gerekmektedir.
+
+
+
+                                                                                                             12
+      Ek – Tablo 1*
+                                                                                                                             18/2
+                                                                          KANUN'UN 12. MADDESİNİN BİRİNCİ FIKRASININ       (E-Para
+                 Faaliyet alanları/İş Modelleri                                                                             İhracı)
+                                                                      A       B     C      Ç      D       E     F      G
+                                 Ödeme Hesabı Açma
+ ÖDEME HESABI                        Para Yatırma
+   İŞLETİMİ
+                                      Para Çekme
+
+                     Kullanıcılar Arası Para Transferi
+PARA TRANSFERİ
+                     Banka Hesabına Para Transferi (3. Kişi)
+
+                                       Sanal POS
+ POS İŞLEMLERİ
+                                       Fiziki POS
+
+                     Ödeme Hizmetlerinin Sunulması ile İlgili
+                     Olarak (Mal veya Hizmet Alımlarında
+                     Kullanılmaması Şartıyla)
+ÖN ÖDEMELİ KART
+                     Herhangi Bir Yerde Mal veya Hizmet Alımı
+    İHRACI
+                     Yapabilmesi İle İlgili Olarak (Elektronik Para
+                     Özelliği Taşıyan Kart)
+
+                     Anonim Özellikli Ön Ödemeli Kart
+
+     ELEKTRONİK PARA İHRACI (Elektronik Para Kuruluşu)
+                       DİJİTAL CÜZDAN
+
+                        MOBİL ÖDEME
+
+                     Herhangi bir hesabı bulunmayan
+                     göndericinin para havalesi hizmeti sunan
+                     Kuruluş nezdinde hesabı bulunan alıcıya
+                     temsilci/şube üzerinden para göndermesi
+
+
+                     Para havalesi hizmeti sunan Kuruluş
+                     nezdinde hesabı bulunan göndericinin,
+                     herhangi bir hesabı bulunmayan alıcı adına
+                     temsilci/şube üzerinden nakit olarak
+                     çekilmek üzere para göndermesi”
+                     hizmetinin sunulabilmesi
+
+ PARA HAVALESİ       Herhangi bir hesabı bulunmayan
+                     göndericinin para havalesi hizmeti sunan
+                     Kuruluş temsilci/şubesi üzerinden alıcının
+                     banka hesabına para göndermesi
+
+                     Banka hesabı bulunan göndericinin, alıcı
+                     tarafından temsilci/şube üzerinden nakit
+                     olarak çekilmek üzere Kuruluşun banka
+                     hesabına para göndermesi
+                     Gönderici adına herhangi bir hesap
+                     bulunmaksızın temsilci/şube üzerinden, alıcı
+                     tarafından yine temsilci/şube üzerinden
+                     nakit olarak çekilmek üzere para
+                     göndermesi
+   FATURA
+                     Temsilci/Şube üzerinden fatura tahsilat
+ ÖDEMELERİNE
+                     hizmeti
+   ARACILIK
+                  ÖDEME EMRİ BAŞLATMA
+                   HESAP BİLGİSİ SAĞLAMA
+                 MOBİL ÖDEMELERE ARACILIK
+
+      * Yeşil renk, sunulması planlanan iş modeli kapsamında asgari olarak izin alınması gereken bentleri göstermektedir.
+
+
+
+                                                                                                                                  13
+

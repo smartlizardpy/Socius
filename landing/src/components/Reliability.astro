@@ -1,0 +1,112 @@
+---
+// F1 · Alternating band, second pass — mirrored against the Level band so the two
+// don't read as one repeated composition. The proof here is the real screen, not a
+// claimed statistic: the figures belong to a seeded example profile and are labelled
+// as one, per the lock's rule against invented numbers.
+import Phone from './Phone.astro';
+import profile from '../assets/shots/Profile.png';
+---
+
+<section class="band band--lg band--paper" id="guvenilirlik">
+	<div class="wrap split">
+		<div class="shot" data-reveal>
+			<Phone src={profile} alt="Bir oyuncunun güvenilirlik kaydını gösteren profil ekranı" width={310} />
+			<p class="caption">Örnek profil</p>
+		</div>
+
+		<div class="copy" data-reveal style="--reveal-delay:90ms">
+			<p class="eyebrow">Güvenilirlik</p>
+			<h2>Kimin geldiği kayıtlı.</h2>
+
+			<p class="lede">
+				Her profilde tek bir kayıt var: kaç maça yazıldı, kaçına geldi. Yorum değil, sayım.
+			</p>
+
+			<ul class="points">
+				<li>
+					<strong>Bir çizgi, bir maç.</strong> Turuncu olan, gelinmemiş olan. Altındaki tarih aralığı da hangi süreyi saydığını söylüyor.
+				</li>
+				<li>
+					<strong>Yüzde ve üst üste sayısı aynı kayıttan çıkar.</strong> Ayrı ayrı tutulmadıkları için birbiriyle çelişemezler.
+				</li>
+				<li>
+					<strong>Puan bundan ayrı.</strong> O, birlikte oynayanların yorumu. Yıldızın rengi hangisine baktığını söyler.
+				</li>
+			</ul>
+
+			<p class="aside">
+				Bu kayıt kimseyi elemek için değil — bir akşamı kimin boşa çıkardığını, ev sahibi de
+				sen de baştan görebilesin diye.
+			</p>
+		</div>
+	</div>
+</section>
+
+<style>
+	.split {
+		display: grid;
+		grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+		gap: clamp(32px, 5vw, 72px);
+		align-items: center;
+	}
+
+	.shot {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--s12);
+	}
+
+	.caption {
+		font-size: var(--step-micro);
+		font-weight: 700;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+		color: var(--ink-muted);
+	}
+
+	h2 {
+		max-width: 14ch;
+	}
+
+	.copy .lede {
+		margin-top: var(--s16);
+	}
+
+	.points {
+		margin: var(--s26) 0 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: var(--s16);
+		max-width: 54ch;
+	}
+
+	.points li {
+		padding-left: var(--s20);
+		border-left: 2px solid var(--rail);
+		color: var(--ink-muted);
+		font-size: var(--step-meta);
+		line-height: 1.5;
+	}
+
+	.points strong {
+		color: var(--ink);
+		font-weight: 600;
+	}
+
+	.aside {
+		margin-top: var(--s26);
+		padding-top: var(--s20);
+		border-top: 1px solid var(--border-paper);
+		max-width: 54ch;
+		font-size: var(--step-meta);
+		color: var(--ink-muted);
+	}
+
+	@media (max-width: 56rem) {
+		.split {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

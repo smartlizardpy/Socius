@@ -1,0 +1,56 @@
+{
+  "builds": [
+    {
+      "id": "avenza-mobile-2026-08-27",
+      "surface": "app shell (mobile screens)",
+      "mood": "playful/consumer, re-cut athletic",
+      "palette": "hand-picked orange/blue, matrix-verified",
+      "structure": "phone artboards: feed / detail / profile / onboarding step",
+      "archetypes": {
+        "feed": "app-bar + question headline + filter rail + featured photo card + people rail + list peek + tab bar",
+        "detail": "photo header + pulled-up sheet + sticky action bar",
+        "profile": "identity block + oversized stat + evidence strip + review card + dual action bar",
+        "onboarding": "progress rail + illustration band + question + option stack + sticky continue"
+      },
+      "rule_breaks": [
+        "horizontal rails bleed past the right gutter",
+        "62px reliability number breaks the card's text grid"
+      ],
+      "critique": {
+        "ShowTell": 5,
+        "Phil": 4,
+        "Hier": 5,
+        "Spec": 5,
+        "Restr": 4,
+        "Var": 5
+      }
+    },
+    {
+      "id": "avenza-landing-2026-09-06",
+      "surface": "marketing landing page (web, Astro, Türkçe)",
+      "mood": "playful/consumer, re-cut athletic — palette reused from the lock, not re-derived",
+      "palette": "Avenza locked orange/blue; web-only additions contrast-verified",
+      "structure": "Long-Scroll Narrative in fastht.ml alternating full-bleed bands",
+      "archetypes": {
+        "nav": "N3 floating pill",
+        "hero": "H5 illustration centrepiece, centred, confetti atmosphere",
+        "feature": "F4 numbered step sequence + F1 alternating bands (x3)",
+        "proof": "P4 recut as an honest price receipt; reliability shown as a captioned real screen",
+        "cta": "C2 statement + C1 inline form",
+        "footer": "Ft4 statement close"
+      },
+      "rule_breaks": [
+        "second elevation token (sticker emboss) added for this surface only",
+        "six section eyebrows reduced to four; the lock's 11px head is house style, so some repetition is earned"
+      ],
+      "critique": {
+        "ShowTell": 5,
+        "Phil": 5,
+        "Hier": 4,
+        "Spec": 5,
+        "Restr": 4,
+        "Var": 4
+      }
+    }
+  ]
+}

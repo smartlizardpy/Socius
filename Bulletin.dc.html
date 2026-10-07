@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" />
+  <style>
+    body { margin: 0; background: #FBF8F3; }
+    * { box-sizing: border-box; }
+    a { color: #1350C8; text-decoration: none; }
+    a:hover { color: #0B2E7A; }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FBF8F3; font-family: 'Instrument Sans', system-ui, -apple-system, sans-serif; color: #101A2B; -webkit-font-smoothing: antialiased;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 44px 20px 0 20px;">
+    <div style="width: 44px; height: 44px; border-radius: 999px; background: #FFFFFF; border: 1px solid #EDE7DC; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M165.66 202.34a8 8 0 0 1-11.32 11.32l-80-80a8 8 0 0 1 0-11.32l80-80a8 8 0 0 1 11.32 11.32L91.31 128Z"></path></svg></div>
+    <div style="width: 44px; height: 44px; border-radius: 999px; background: #FFFFFF; border: 1px solid #EDE7DC; display: flex; align-items: center; justify-content: center;"><svg width="19" height="19" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M184 32H72a16 16 0 0 0-16 16v176a8 8 0 0 0 12.24 6.78L128 193.43l59.77 37.35A8 8 0 0 0 200 224V48a16 16 0 0 0-16-16m0 177.57l-51.77-32.35a8 8 0 0 0-8.48 0L72 209.57V48h112Z"></path></svg></div>
+  </div>
+
+  <div style="padding: 6px 20px 0 20px;">
+    <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k0}}</div>
+    <h1 style="margin: 6px 0 0 0; font-family: 'Bricolage Grotesque', 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-size: 30px; line-height: 1.05; font-weight: 700; letter-spacing: -0.035em;">{{t.k1}}</h1>
+    <p style="margin: 6px 0 0 0; font-size: 14px; line-height: 1.35; font-weight: 500; color: #5A6172;">{{t.k2}}</p>
+  </div>
+
+  <!-- the lead. Ranked on interest alone a Süper Lig headline wins every day, so
+       the slot is held for the story with a source line on it. -->
+  <div style="position: relative; height: 158px; margin: 14px 20px 0 20px; border-radius: 24px; overflow: hidden;">
+    <img src="news-tekke.jpg" alt="Fatih Tekke at a press conference" width="700" height="394" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+    <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(16, 26, 43, 0.05) 30%, rgba(16, 26, 43, 0.86));"></div>
+    <div style="position: absolute; left: 16px; right: 16px; bottom: 14px;">
+      <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: rgba(255, 255, 255, 0.88);">{{t.k3}}</div>
+      <div style="margin-top: 6px; font-family: 'Bricolage Grotesque', 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-size: 21px; line-height: 1.13; font-weight: 700; letter-spacing: -0.025em; color: #FFFFFF;">{{t.k4}}</div>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: baseline; gap: 12px; padding: 18px 20px 0 20px;">
+    <div style="flex-grow: 1; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k5}}</div>
+    <div style="font-size: 13px; font-weight: 600; color: #5A6172;">{{t.k6}}</div>
+  </div>
+
+  <!-- one list, mixed. The publisher name in the kicker is the only thing
+       separating a feed story from one of ours. -->
+  <div style="margin: 10px 20px 0 20px; background: #FFFFFF; border: 1px solid #EFEAE1; border-radius: 20px; overflow: hidden;">
+
+    <div style="display: flex; align-items: center; gap: 12px; padding: 11px 14px;">
+      <img src="news-besiktas.jpg" alt="Beşiktaş players on the pitch" width="184" height="184" style="width: 46px; height: 46px; border-radius: 14px; object-fit: cover; display: block; flex-shrink: 0;" />
+      <div style="flex-grow: 1;">
+        <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k7}}</div>
+        <div style="margin-top: 5px; font-size: 15px; line-height: 1.25; font-weight: 700; letter-spacing: -0.012em;">{{t.k8}}</div>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: #EFEAE1;"></div>
+
+    <div style="display: flex; align-items: center; gap: 12px; padding: 11px 14px;">
+      <img src="news-ucl.jpg" alt="The Champions League trophy at the draw" width="700" height="394" style="width: 46px; height: 46px; border-radius: 14px; object-fit: cover; display: block; flex-shrink: 0;" />
+      <div style="flex-grow: 1;">
+        <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k9}}</div>
+        <div style="margin-top: 5px; font-size: 15px; line-height: 1.25; font-weight: 700; letter-spacing: -0.012em;">{{t.k10}}</div>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: #EFEAE1;"></div>
+
+    <div style="display: flex; align-items: center; gap: 12px; padding: 11px 14px;">
+      <img src="news-tour.jpg" alt="Cyclists on the Tour of İstanbul route" width="184" height="184" style="width: 46px; height: 46px; border-radius: 14px; object-fit: cover; display: block; flex-shrink: 0;" />
+      <div style="flex-grow: 1;">
+        <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k11}}</div>
+        <div style="margin-top: 5px; font-size: 15px; line-height: 1.25; font-weight: 700; letter-spacing: -0.012em;">{{t.k12}}</div>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: #EFEAE1;"></div>
+
+    <div style="display: flex; align-items: center; gap: 12px; padding: 11px 14px;">
+      <img src="news-sultans.jpg" alt="The Turkey women's volleyball team" width="184" height="184" style="width: 46px; height: 46px; border-radius: 14px; object-fit: cover; display: block; flex-shrink: 0;" />
+      <div style="flex-grow: 1;">
+        <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k13}}</div>
+        <div style="margin-top: 5px; font-size: 15px; line-height: 1.25; font-weight: 700; letter-spacing: -0.012em;">{{t.k14}}</div>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: #EFEAE1;"></div>
+
+    <div style="display: flex; align-items: center; gap: 12px; padding: 11px 14px;">
+      <img src="news-milliler.jpg" alt="The Turkey men's basketball team" width="184" height="184" style="width: 46px; height: 46px; border-radius: 14px; object-fit: cover; display: block; flex-shrink: 0;" />
+      <div style="flex-grow: 1;">
+        <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k15}}</div>
+        <div style="margin-top: 5px; font-size: 15px; line-height: 1.25; font-weight: 700; letter-spacing: -0.012em;">{{t.k16}}</div>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: #EFEAE1;"></div>
+
+    <!-- ours: no publisher in the kicker, and it ends in a place you can play -->
+    <div style="display: flex; align-items: center; gap: 12px; padding: 11px 14px;">
+      <img src="card-padel.jpg" alt="Two players rallying across a padel net" width="620" height="244" style="width: 46px; height: 46px; border-radius: 14px; object-fit: cover; display: block; flex-shrink: 0;" />
+      <div style="flex-grow: 1;">
+        <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k17}}</div>
+        <div style="margin-top: 5px; font-size: 15px; line-height: 1.25; font-weight: 700; letter-spacing: -0.012em;">{{t.k18}}</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"lang":{"editor":"enum","options":["English","T\u00fcrk\u00e7e"],"default":"T\u00fcrk\u00e7e","section":"Language"},"$preview":{"width":390,"height":844}}'>
+const S = {
+  English: {"k0": "FRIDAY 28 AUGUST", "k1": "Bulletin", "k2": "Your sports, near you and worldwide", "k3": "FOOTBALL · YENİ ŞAFAK · 3H", "k4": "Trabzonspor refuse Tekke resignation", "k5": "LATEST", "k6": "11 stories", "k7": "FOOTBALL · YENİ ŞAFAK · 13H", "k8": "Beşiktaş lose but make league phase", "k9": "FOOTBALL · GDH · 15H", "k10": "Barcelona to GS, Liverpool to Fenerbahçe", "k11": "CYCLING · GDH · 19H", "k12": "Tour of İstanbul route now confirmed", "k13": "VOLLEYBALL · SABAH · 1D", "k14": "Sultans face Poland for top spot", "k15": "BASKETBALL · SABAH · 1D", "k16": "Türkiye host Lithuania in qualifiers", "k17": "KADIKÖY · PADEL · 2H", "k18": "Three new courts open on the Fenerbahçe side", "flagEn": "display: flex;", "flagTr": "display: none;", "menuEn": "background: #FBF8F3;", "menuTr": "background: transparent;", "checkEn": "display: flex;", "checkTr": "display: none;", "enPill": "background: #101A2B; color: #FFFFFF;", "trPill": "background: transparent; color: #5A6172;"},
+  "Türkçe": {"k0": "28 AĞUSTOS CUMA", "k1": "Bülten", "k2": "Sporların, yakınında ve dünyada", "k3": "FUTBOL · YENİ ŞAFAK · 3 SA", "k4": "Tekke'nin istifası kabul edilmedi", "k5": "SON HABERLER", "k6": "11 haber", "k7": "FUTBOL · YENİ ŞAFAK · 13 SA", "k8": "Beşiktaş kaybetti ama turu geçti", "k9": "FUTBOL · GDH · 15 SA", "k10": "GS'ye Barcelona, FB'ye Liverpool", "k11": "BİSİKLET · GDH · 19 SA", "k12": "Tour of İstanbul'un rotası netleşti", "k13": "VOLEYBOL · SABAH · 1 GÜN", "k14": "Sultanlar liderlik için Polonya ile", "k15": "BASKETBOL · SABAH · 1 GÜN", "k16": "12 Dev Adam Litvanya'yı ağırlıyor", "k17": "KADIKÖY · PADEL · 2 SA", "k18": "Fenerbahçe tarafında üç yeni kort açıldı", "flagEn": "display: none;", "flagTr": "display: flex;", "menuEn": "background: transparent;", "menuTr": "background: #FBF8F3;", "checkEn": "display: none;", "checkTr": "display: flex;", "enPill": "background: transparent; color: #5A6172;", "trPill": "background: #101A2B; color: #FFFFFF;"}
+};
+class Component extends DCLogic {
+  renderVals() {
+    return { t: S[this.props.lang] || S["T\u00fcrk\u00e7e"] };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+---
+// H5 · Illustration centerpiece, centred, confetti as background atmosphere.
+import { Image } from 'astro:assets';
+import Confetti from './Confetti.astro';
+import SignupForm from './SignupForm.astro';
+import heroArt from '../assets/illo/land-hero.png';
+---
+
+<section class="hero">
+	<Confetti />
+
+	<div class="wrap inner">
+		<h1 data-hero-item>Senin gibi oynayanlarla tanış.</h1>
+
+		<p class="lede" data-hero-item>
+			Padel, futbol, tenis ya da pazar koşusu — seviyene göre, sana on dakika mesafede, bu
+			akşam.
+		</p>
+
+		<div class="actions" data-hero-item>
+			<SignupForm id="hero" tone="paper" compact />
+		</div>
+
+		<p class="note" data-hero-item>
+			Açılışta haber veriyoruz · Kadıköy, Moda ve Caddebostan'da başlıyoruz
+			<span aria-hidden="true"> · </span><a href="#nasil">Nasıl çalışır</a>
+		</p>
+	</div>
+
+	<div class="art" data-hero-item>
+		<Image
+			src={heroArt}
+			alt="Padel, futbol, koşu, basketbol, tenis ve bisiklet oynayan altı kişi"
+			widths={[720, 1200, 1800]}
+			sizes="(max-width: 1200px) 100vw, 1200px"
+			loading="eager"
+			fetchpriority="high"
+		/>
+	</div>
+</section>
+
+<style>
+	.hero {
+		position: relative;
+		overflow: hidden;
+		background: var(--paper);
+		padding-top: clamp(56px, 8vw, 92px);
+		padding-bottom: clamp(24px, 3vw, 48px);
+	}
+
+	.inner {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	h1 {
+		max-width: 15ch;
+	}
+
+	.lede {
+		margin-top: var(--s20);
+		max-width: 44ch;
+		color: var(--ink-muted);
+	}
+
+	.actions {
+		width: 100%;
+		max-width: 40rem;
+	}
+
+	.note {
+		margin-top: var(--s16);
+		font-size: var(--step-meta);
+		color: var(--ink-muted);
+	}
+
+	.art {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		max-width: 1320px;
+		margin: clamp(24px, 3vw, 44px) auto 0;
+		padding-inline: var(--gutter);
+	}
+
+	.art :global(img) {
+		width: 100%;
+		height: auto;
+	}
+
+	@media (max-width: 40rem) {
+		h1 {
+			max-width: 12ch;
+		}
+	}
+</style>

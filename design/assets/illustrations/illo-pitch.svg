@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <path d="M28 306L372 344L346 134L58 76Z" fill="#0B2E7A"/>
+  <path d="M70 288L330 316L315 166L86 122Z" fill="none" stroke="#E3ECFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M206 144L208 326" fill="none" stroke="#E3ECFF" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="208" cy="230" rx="52" ry="34" transform="rotate(8 208 230)" fill="none" stroke="#E3ECFF" stroke-width="6"/>
+  <path d="M276 148L344 160L342 232L282 224Z" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M344 160L362 146L360 218L342 232" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="176" cy="315" rx="72" ry="16" fill="#1350C8"/>
+  <circle cx="146" cy="154" r="18" fill="#FFFFFF"/>
+  <path d="M136 175L99 211L115 259L169 240L180 197Z" fill="#1350C8"/>
+  <path d="M101 212L62 190L53 213L115 259Z" fill="#FFFFFF"/>
+  <path d="M169 239L210 278" fill="none" stroke="#101A2B" stroke-width="16" stroke-linecap="round"/>
+  <path d="M116 258L82 315" fill="none" stroke="#1350C8" stroke-width="17" stroke-linecap="round"/>
+  <circle cx="230" cy="174" r="21" fill="#F0651C"/>
+  <path d="M223 196L190 235L216 275L262 254L264 209Z" fill="#F0651C"/>
+  <path d="M191 235L150 230L153 251L216 275Z" fill="#B8430C"/>
+  <path d="M262 254L303 286" fill="none" stroke="#B8430C" stroke-width="16" stroke-linecap="round"/>
+  <path d="M216 274L192 333" fill="none" stroke="#F0651C" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="298" cy="135" r="17" fill="#E3ECFF"/>
+  <path d="M292 154L261 190L277 229L318 218L331 177Z" fill="#101A2B"/>
+  <path d="M263 190L229 184L224 203L277 229Z" fill="#E3ECFF"/>
+  <path d="M318 218L346 260" fill="none" stroke="#E3ECFF" stroke-width="15" stroke-linecap="round"/>
+  <path d="M278 229L250 289" fill="none" stroke="#101A2B" stroke-width="17" stroke-linecap="round"/>
+  <circle cx="197" cy="286" r="14" fill="#F0651C"/>
+  <path d="M188 276L206 296" fill="none" stroke="#B8430C" stroke-width="4" stroke-linecap="round"/>
+  <path d="M207 277L187 295" fill="none" stroke="#B8430C" stroke-width="4" stroke-linecap="round"/>
+</svg>

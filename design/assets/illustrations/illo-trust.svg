@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <circle cx="202" cy="204" r="118" fill="#FFE7D6"/>
+  <circle cx="202" cy="126" r="55" fill="#F0651C"/>
+  <circle cx="279" cy="158" r="55" fill="#B8430C"/>
+  <circle cx="297" cy="239" r="55" fill="#F0651C"/>
+  <circle cx="241" cy="300" r="55" fill="#B8430C"/>
+  <circle cx="160" cy="300" r="55" fill="#F0651C"/>
+  <circle cx="105" cy="239" r="55" fill="#B8430C"/>
+  <circle cx="124" cy="158" r="55" fill="#F0651C"/>
+  <circle cx="202" cy="204" r="88" fill="#F0651C"/>
+  <circle cx="202" cy="204" r="55" fill="#B8430C"/>
+  <path d="M155 198L188 232L253 158" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+  <path d="M156 198L188 231L253 158" fill="none" stroke="#101A2B" stroke-width="12" stroke-linecap="round"/>
+  <path d="M99 64L108 84L130 87L113 101L117 123L99 112L80 123L85 101L68 87L90 84Z" fill="#1350C8"/>
+  <path d="M197 36L205 54L224 57L210 70L213 90L197 80L181 90L185 70L170 57L189 54Z" fill="#0B2E7A"/>
+  <path d="M303 62L312 82L334 85L317 100L321 122L303 110L284 122L289 100L272 85L294 82Z" fill="#1350C8"/>
+  <path d="M350 155L357 170L374 173L361 184L364 201L350 192L336 201L339 184L326 173L343 170Z" fill="#101A2B"/>
+</svg>

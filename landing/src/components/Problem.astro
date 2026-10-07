@@ -1,0 +1,81 @@
+---
+// The problem beat. Deliberately short and type-led — it earns its place as an
+// argument, not as a feature section, so it gets no cards and no icons.
+const faults = [
+	"Kadro WhatsApp'ta kuruluyor. Perşembe akşamı hâlâ iki kişi eksik.",
+	'Gelen ya seni ezip geçiyor ya sen onu. İkisi de oyun değil.',
+	'Biri gelmiyor. Saha parası ortada kalıyor, akşam da.',
+];
+---
+
+<section class="band band--surface" data-reveal>
+	<div class="wrap grid">
+		<div>
+			<h2>Oyun kurmak, oyundan zor.</h2>
+		</div>
+
+		<ul class="faults">
+			{faults.map((f) => <li>{f}</li>)}
+		</ul>
+	</div>
+</section>
+
+<style>
+	.grid {
+		display: grid;
+		grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+		gap: clamp(32px, 5vw, 72px);
+		align-items: start;
+	}
+
+	h2 {
+		max-width: 12ch;
+	}
+
+	.faults {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: var(--s20);
+	}
+
+	.faults li {
+		padding-left: var(--s26);
+		font-size: var(--step-lede);
+		line-height: 1.4;
+		color: var(--ink);
+		position: relative;
+	}
+
+	.faults li + li {
+		padding-top: var(--s20);
+		border-top: 1px solid var(--border);
+	}
+
+	/* An orange tick per fault — the accent as a small mark, well inside its budget. */
+	.faults li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.62em;
+		width: 10px;
+		height: 10px;
+		border-radius: 3px;
+		background: var(--accent);
+	}
+
+	.faults li + li::before {
+		top: calc(0.62em + var(--s20));
+	}
+
+	@media (max-width: 52rem) {
+		.grid {
+			grid-template-columns: 1fr;
+		}
+
+		h2 {
+			max-width: 16ch;
+		}
+	}
+</style>

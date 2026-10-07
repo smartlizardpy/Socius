@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" />
+  <style>
+    body { margin: 0; background: #FBF8F3; }
+    * { box-sizing: border-box; }
+    a { color: #1350C8; text-decoration: none; }
+    a:hover { color: #0B2E7A; }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #FBF8F3; font-family: 'Instrument Sans', system-ui, -apple-system, sans-serif; color: #101A2B; -webkit-font-smoothing: antialiased;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 44px 20px 0 20px;">
+    <div style="width: 44px; height: 44px; border-radius: 999px; background: #FFFFFF; border: 1px solid #EDE7DC; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M165.66 202.34a8 8 0 0 1-11.32 11.32l-80-80a8 8 0 0 1 0-11.32l80-80a8 8 0 0 1 11.32 11.32L91.31 128Z"></path></svg></div>
+    <div style="display: flex; gap: 8px;">
+      <div style="width: 44px; height: 44px; border-radius: 999px; background: #FFFFFF; border: 1px solid #EDE7DC; display: flex; align-items: center; justify-content: center;"><svg width="19" height="19" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M184 32H72a16 16 0 0 0-16 16v176a8 8 0 0 0 12.24 6.78L128 193.43l59.77 37.35A8 8 0 0 0 200 224V48a16 16 0 0 0-16-16m0 177.57l-51.77-32.35a8 8 0 0 0-8.48 0L72 209.57V48h112Z"></path></svg></div>
+      <div style="width: 44px; height: 44px; border-radius: 999px; background: #FFFFFF; border: 1px solid #EDE7DC; display: flex; align-items: center; justify-content: center;"><svg width="19" height="19" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M176 160a39.9 39.9 0 0 0-28.62 12.09l-46.1-29.63a39.8 39.8 0 0 0 0-28.92l46.1-29.63a40 40 0 1 0-8.66-13.45l-46.1 29.63a40 40 0 1 0 0 55.82l46.1 29.63A40 40 0 1 0 176 160m0-128a24 24 0 1 1-24 24a24 24 0 0 1 24-24M64 152a24 24 0 1 1 24-24a24 24 0 0 1-24 24m112 72a24 24 0 1 1 24-24a24 24 0 0 1-24 24"></path></svg></div>
+    </div>
+  </div>
+
+  <div style="height: 176px; margin: 4px 20px 0 20px; border-radius: 20px; overflow: hidden;">
+    <img src="news-ucl.jpg" alt="The Champions League trophy on stage at the draw" width="700" height="394" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+  </div>
+
+  <!-- a publisher's photograph is credited on screen -->
+  <div style="margin: 6px 20px 0 20px; font-size: 11px; font-weight: 500; color: #5A6172;">{{t.k0}}</div>
+
+  <div style="padding: 15px 20px 0 20px;">
+    <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172;">{{t.k1}}</div>
+    <h1 style="margin: 8px 0 0 0; font-family: 'Bricolage Grotesque', 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-size: 25px; line-height: 1.1; font-weight: 700; letter-spacing: -0.032em;">{{t.k2}}</h1>
+    <!-- the sparkle is the tell that a machine wrote the summary; our own items
+         carry the masthead instead -->
+    <div style="display: flex; align-items: center; gap: 7px; margin-top: 10px;">
+      <span style="color: #1350C8; display: flex;"><svg width="15" height="15" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M197.58 129.06L146 110l-19-51.62a15.92 15.92 0 0 0-29.88 0L78 110l-51.62 19a15.92 15.92 0 0 0 0 29.88L78 178l19 51.62a15.92 15.92 0 0 0 29.88 0L146 178l51.62-19a15.92 15.92 0 0 0 0-29.88ZM137 164.22a8 8 0 0 0-4.74 4.74L112 223.85L91.78 169a8 8 0 0 0-4.78-4.78L32.15 144L87 123.78a8 8 0 0 0 4.78-4.78L112 64.15L132.22 119a8 8 0 0 0 4.74 4.74L191.85 144ZM144 40a8 8 0 0 1 8-8h16V16a8 8 0 0 1 16 0v16h16a8 8 0 0 1 0 16h-16v16a8 8 0 0 1-16 0V48h-16a8 8 0 0 1-8-8m104 48a8 8 0 0 1-8 8h-8v8a8 8 0 0 1-16 0v-8h-8a8 8 0 0 1 0-16h8v-8a8 8 0 0 1 16 0v8h8a8 8 0 0 1 8 8"></path></svg></span>
+      <span style="font-size: 12.5px; font-weight: 500; color: #5A6172;">{{t.k3}}</span>
+    </div>
+  </div>
+
+  <div style="padding: 14px 20px 0 20px;">
+    <p style="margin: 0; font-size: 14.5px; line-height: 1.52; font-weight: 500;">{{t.k4}}</p>
+    <p style="margin: 11px 0 0 0; font-size: 14.5px; line-height: 1.52; font-weight: 500; color: #5A6172;">{{t.k5}}</p>
+    <p style="margin: 11px 0 0 0; font-size: 14.5px; line-height: 1.52; font-weight: 500; color: #5A6172;">{{t.k6}}</p>
+  </div>
+
+  <!-- summarised, credited and linked — never reproduced -->
+  <div style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 50px; margin: 16px 20px 0 20px; border-radius: 999px; background: #FFFFFF; border: 1px solid #EDE7DC; color: #5A6172; font-size: 14.5px; font-weight: 600;">
+    <svg width="16" height="16" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"></path></svg><span>{{t.k7}}</span></div>
+
+  <!-- sports news carries a sponsor, and anything sold says so inside the card -->
+  <div style="display: flex; align-items: center; gap: 12px; margin: 18px 20px 0 20px; padding: 12px; background: #FFFFFF; border: 1px solid #EFEAE1; border-radius: 20px;">
+    <div style="width: 44px; height: 44px; border-radius: 14px; background: #FBF8F3; color: #5A6172; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="22" height="22" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M248 120h-8V88a16 16 0 0 0-16-16h-16v-8a16 16 0 0 0-16-16h-24a16 16 0 0 0-16 16v56h-48V64a16 16 0 0 0-16-16H64a16 16 0 0 0-16 16v8H32a16 16 0 0 0-16 16v32H8a8 8 0 0 0 0 16h8v32a16 16 0 0 0 16 16h16v8a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16v-56h48v56a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16v-8h16a16 16 0 0 0 16-16v-32h8a8 8 0 0 0 0-16M32 168V88h16v80Zm56 24H64V64h24zm104 0h-24V64h24zm32-24h-16V88h16Z"></path></svg></div>
+    <div style="flex-grow: 1;">
+      <div style="display: flex; align-items: baseline; gap: 8px;">
+        <span style="font-size: 14.5px; font-weight: 700; letter-spacing: -0.012em;">Vives Spor Salonu</span>
+        <span style="font-size: 9.5px; font-weight: 700; letter-spacing: 0.09em; color: #5A6172; flex-shrink: 0;">{{t.k8}}</span>
+      </div>
+      <div style="margin-top: 3px; font-size: 12.5px; line-height: 1.35; font-weight: 500; color: #5A6172;">{{t.k9}}</div>
+    </div>
+    <span style="color: #5A6172; display: flex; flex-shrink: 0;"><svg width="16" height="16" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"></path></svg></span>
+  </div>
+
+  <!-- a ranked feed owes you the reason -->
+  <div style="display: flex; align-items: center; gap: 7px; margin: 14px 20px 0 20px;">
+    <span style="color: #1350C8; display: flex;"><svg width="14" height="14" viewBox="0 0 256 256" style="display: block; flex-shrink: 0"><path fill="currentColor" d="M215.79 118.17a8 8 0 0 0-5-5.66L153.18 90.9l14.66-73.33a8 8 0 0 0-13.69-7l-112 120a8 8 0 0 0 3 13l57.63 21.61l-14.62 73.25a8 8 0 0 0 13.69 7l112-120a8 8 0 0 0 1.94-7.26M109.37 214l10.47-52.38a8 8 0 0 0-5-9.06L62 132.71l84.62-90.66l-10.46 52.38a8 8 0 0 0 5 9.06l52.8 19.8Z"></path></svg></span>
+    <span style="font-size: 12px; font-weight: 500; color: #5A6172;">{{t.k10}}</span>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"lang":{"editor":"enum","options":["English","T\u00fcrk\u00e7e"],"default":"T\u00fcrk\u00e7e","section":"Language"},"$preview":{"width":390,"height":844}}'>
+const S = {
+  English: {"k0": "Photo: GDH", "k1": "FOOTBALL · GDH", "k2": "Barcelona to GS, Liverpool to Fenerbahçe", "k3": "Summarised by Avenza · 28 August", "k4": "The Champions League league phase draw was made on Thursday evening and both Turkish clubs learned all eight opponents. Galatasaray host Barcelona at home and travel to Paris Saint-Germain.", "k5": "Fenerbahçe, through from the play-off round, drew Liverpool and Roma at home and Atletico Madrid and Aston Villa away. Their tie with Shakhtar Donetsk is set for Stamford Bridge in London.", "k6": "Each club plays eight games, four of them at home, under the expanded format. Galatasaray also drew Sporting, Feyenoord, Lille, Stuttgart and AEK, while Fenerbahçe got Villarreal, Slavia Prague and LASK.", "k7": "Read the full story on GDH", "k8": "SPONSORED", "k9": "Moda · first session free for Avenza players", "k10": "In your feed because you play football", "flagEn": "display: flex;", "flagTr": "display: none;", "menuEn": "background: #FBF8F3;", "menuTr": "background: transparent;", "checkEn": "display: flex;", "checkTr": "display: none;", "enPill": "background: #101A2B; color: #FFFFFF;", "trPill": "background: transparent; color: #5A6172;"},
+  "Türkçe": {"k0": "Fotoğraf: GDH", "k1": "FUTBOL · GDH", "k2": "GS'ye Barcelona, FB'ye Liverpool", "k3": "Avenza tarafından özetlendi · 28 Ağustos", "k4": "Şampiyonlar Ligi lig aşaması kurası perşembe akşamı çekildi ve iki temsilcimizin sekiz rakibi de belli oldu. Galatasaray iç sahada Barcelona'yı ağırlayacak, deplasmanda ise Paris Saint-Germain'e konuk olacak.", "k5": "Play-off turunu geçen Fenerbahçe ise evinde Liverpool ve Roma'yı, deplasmanda Atletico Madrid ve Aston Villa'yı buldu. Shakhtar Donetsk randevusu Londra'da Stamford Bridge'de oynanacak.", "k6": "Yeni formatta her iki takım da dördü iç sahada olmak üzere sekiz maç oynayacak. Galatasaray'ın diğer rakipleri Sporting, Feyenoord, Lille, Stuttgart ve AEK; Fenerbahçe'nin ise Villarreal, Slavia Prag ve LASK.", "k7": "Haberin tamamını GDH'de oku", "k8": "SPONSORLU", "k9": "Moda · Avenza oyuncularına ilk ders ücretsiz", "k10": "Futbol oynadığın için akışında", "flagEn": "display: none;", "flagTr": "display: flex;", "menuEn": "background: transparent;", "menuTr": "background: #FBF8F3;", "checkEn": "display: none;", "checkTr": "display: flex;", "enPill": "background: transparent; color: #5A6172;", "trPill": "background: #101A2B; color: #FFFFFF;"}
+};
+class Component extends DCLogic {
+  renderVals() {
+    return { t: S[this.props.lang] || S["T\u00fcrk\u00e7e"] };
+  }
+}
+</script>
+</body>
+</html>

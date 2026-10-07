@@ -1,0 +1,148 @@
+---
+// The saturated colour band — blue tint stands in for fastht.ml's periwinkle.
+// Cards get no shadow: the colour block underneath is the separation.
+// Native <details>, so it opens with no JavaScript and is keyboard-operable as shipped.
+const faqs = [
+	{
+		q: 'Hangi şehirlerde var?',
+		a: "Şimdilik İstanbul. Kadıköy, Moda ve Caddebostan çevresinde başlıyoruz — oyun nerede birikirse orada büyür. Socius'un maçı olmayan bir semt için sayı vermeyiz.",
+	},
+	{
+		q: 'Hangi sporlar?',
+		a: 'Maç açılan sporlar padel, futbol, tenis ve koşu. Basketbol, voleybol, bisiklet ve fitness profilinde seçilebiliyor, ama henüz onlarda kurulmuş bir kadro yok.',
+	},
+	{
+		q: 'Seviyemi bilmiyorum.',
+		a: 'Dört kısa soru var; her biri bir üst basamağın ne yapabildiğini tarif eder. Verdiğin cevap başlangıç seviyeni koyar, sonrasını birlikte oynadıkların düzeltir.',
+	},
+	{
+		q: 'Koşuda seviye nasıl işliyor?',
+		a: 'İşlemiyor. Koşu ve bisiklet puanlanmaz — tempo ve mesafeyle ilerler, o yüzden profilde yanlarında yıldız görmezsin. Fitnessta seviye adımı hiç yok.',
+	},
+	{
+		q: 'Para ne zaman çekiliyor?',
+		a: 'Katılırken yerini ayırırsın, ama maç yeterli oyuncuya ulaşana kadar hesabından hiçbir şey çıkmaz. Maça 6 saatten fazla varken iptal edersen tamamı iade edilir.',
+	},
+	{
+		q: 'Gelemezsem ne oluyor?',
+		a: 'Profilindeki güvenilirlik kaydında turuncu bir çizgi olarak durur. Hesap kapatma ya da ceza yok — sadece bir sonraki ev sahibi, sen katılmadan önce görebiliyor.',
+	},
+	{
+		q: 'Bültendeki haberler nereden geliyor?',
+		a: "Yeni sahalar, kort fiyatları ve kadro arayan ligler Socius'un kendi verisinden. Dünya sporu lisanslı kaynaklardan gelir; özetlenir, künyesinde yayının adı yazar ve tam metni için kaynağına bağlanır.",
+	},
+];
+---
+
+<section class="band band--lg band--tint" id="sss">
+	<div class="wrap split">
+		<div class="head" data-reveal>
+			<p class="eyebrow">SSS</p>
+			<h2>Sorusu olan?</h2>
+			<p class="lede">
+				Ürünün bugün ne yapıp ne yapmadığı. Henüz olmayan bir şeyi var gibi yazmadık.
+			</p>
+		</div>
+
+		<div class="list" data-reveal style="--reveal-delay:80ms">
+			{
+				faqs.map((f) => (
+					<details name="sss">
+						<summary>
+							<span>{f.q}</span>
+							<svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+								<path
+									d="M10 4v12M4 10h12"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</summary>
+						<p>{f.a}</p>
+					</details>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<style>
+	.split {
+		display: grid;
+		grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
+		gap: clamp(32px, 5vw, 80px);
+		align-items: start;
+	}
+
+	.head {
+		position: sticky;
+		top: 96px;
+	}
+
+	.head .lede {
+		margin-top: var(--s16);
+		color: var(--ink-muted);
+	}
+
+	.list {
+		display: grid;
+		gap: var(--s12);
+	}
+
+	details {
+		background: var(--surface);
+		border-radius: var(--r-inner);
+	}
+
+	summary {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--s16);
+		min-height: 44px;
+		padding: var(--s20) var(--s22);
+		font-weight: 600;
+		cursor: pointer;
+		list-style: none;
+		color: var(--ink);
+	}
+
+	summary::-webkit-details-marker {
+		display: none;
+	}
+
+	summary svg {
+		flex-shrink: 0;
+		color: var(--primary);
+		transition: transform 0.2s var(--ease);
+	}
+
+	details[open] summary svg {
+		transform: rotate(45deg);
+	}
+
+	details p {
+		padding: 0 var(--s22) var(--s22);
+		max-width: 62ch;
+		color: var(--ink-muted);
+		font-size: var(--step-meta);
+		line-height: 1.55;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		summary svg {
+			transition: none;
+		}
+	}
+
+	@media (max-width: 56rem) {
+		.split {
+			grid-template-columns: 1fr;
+		}
+
+		.head {
+			position: static;
+		}
+	}
+</style>
