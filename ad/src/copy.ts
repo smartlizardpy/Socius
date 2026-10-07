@@ -2,7 +2,7 @@
  * Every Turkish string that appears in this ad.
  *
  * The `ui` block is app copy — each line is the Turkish the app itself renders,
- * lifted from mobile/src/strings.gen.ts (which is generated from
+ * lifted from mobile/src/generated/strings.gen.ts (which is generated from
  * design/strings.json). The English key each one answers to is kept in the
  * comment so a translator change over there can be found over here.
  *

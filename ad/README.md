@@ -41,8 +41,8 @@ scene opens one at (932, 983), which is where `Join` closed one. Both cuts
 honour it, so the cut points are identical either way.
 
 The product section is built from the real app: tokens transcribed from
-`mobile/src/theme.ts`, Phosphor paths copied out of `mobile/src/icons.gen.ts`,
-Turkish lifted from `mobile/src/strings.gen.ts`, and the seeded activity
+`mobile/src/theme.ts`, Phosphor paths copied out of `mobile/src/generated/icons.gen.ts`,
+Turkish lifted from `mobile/src/generated/strings.gen.ts`, and the seeded activity
 `five-a-side-moda` with its real roster, prices and reliability records. Nothing
 on screen is an invented Socius UI.
 
